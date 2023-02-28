@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "next",
+    "next/core-web-vitals",
+    "prettier" //これでESLintの不要なルールが無効化される。なお、他の設定をオーバーライドできるように、必ず配列の末尾に"prettier"を記入する必要がある。
+  ],
+  "rules": {
+    // ここに追加したいルールをいれます
+    "react/no-unknown-property": [
+      2,
+      {
+        "ignore": [
+          "jsx"
+        ]
+      }
+    ]
+    //https://github.com/vercel/next.js/discussions/40269
+  }
+}
