@@ -1,0 +1,400 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "asUrl":"Simulated-Experience-Or-Dream",
+      "year": 2022,
+      "client":"graduation-MA",
+      "abstract": "3d modeling tool for art project", 
+      "title":"\"Simulated Experience or Dream\"",
+      "oneLine": "仮想空間での出来事を考える",
+      "mentions": [
+        "exhibited @ KIT Graduation Show 2022"
+      ],
+      "tags":["software","experimental","conceptual","artistic research"],
+      "bannar": {
+        "path" : "./00_MA_GRADUATION/img/desk_trimmed.png",
+        "bVideo" : false
+      },
+      "medium":[
+        {
+          "path" : "./00_MA_GRADUATION/img/capture_screen-ceiling.png",
+          "type" : "image",
+          "caption":""
+        },
+        {
+          "path" : "./00_MA_GRADUATION/img/capture_screen-event_01.png",
+          "type" : "image",
+          "caption":""
+        },
+        {
+          "path" : "./00_MA_GRADUATION/img/capture_screen-listed.png",
+          "type" : "image",
+          "caption":""
+        },
+        {
+          "path" : "./00_MA_GRADUATION/img/capture_screen-modeling_01.png",
+          "type" : "image",
+          "caption":""
+        },
+        {
+          "path" : "./00_MA_GRADUATION/img/capture_screen-modeling_02.png",
+          "type" : "image",
+          "caption":""
+        },
+        {
+          "path" : "./00_MA_GRADUATION/img/capture_screen-modeling_03.png",
+          "type" : "image",
+          "caption":""
+        },
+        {
+          "path" : "./00_MA_GRADUATION/img/caption.png",
+          "type" : "image",
+          "caption":"CAPTION PLACED AT MA GRADUATION SHOW 2022, KYOTO"
+        },
+        {
+          "path" : "./00_MA_GRADUATION/img/resulted-object.png",
+          "type" : "image",
+          "caption":""
+        },
+        {
+          "path" : "./00_MA_GRADUATION/img/installation_01.png",
+          "type" : "image",
+          "caption":""
+        },
+        {
+          "path" : "./00_MA_GRADUATION/img/installation_02.jpg",
+          "type" : "image",
+          "caption":""
+        },
+        {
+          "path" : "./00_MA_GRADUATION/img/installation_03.png",
+          "type" : "image",
+          "caption":""
+        },
+        {
+          "path":"./00_MA_GRADUATION/txt/essay.md",
+          "type":"markdown",
+          "caption":"TEXT BY GAISHI KUDO, TYPEFACE : Noto Sans JP"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "id": 2,
+      "asUrl":"The-Way-We-Design",
+      "year": 2019,
+      "client":"graduation-BA",
+      "abstract": "new method of making",
+      "title":"\"The Way We Design\"",
+      "oneLine": "人とコンピューターを考える",
+      "tags":["furniture","experimental","conceptual","artistic research"],
+      "mentions": [
+        "exhibited @ KIT Graduation Show 2019",
+        "guided by Eizo Okada"
+      ],
+      
+      "bannar": {
+        "path" : "./00_BA_GRADUATION/img/resulted-object_01.png",
+        "bVideo" : false
+      },
+      "medium":[
+        {
+          "path" : "./00_BA_GRADUATION/img/resulted-object_01.png",
+          "type" : "image",
+          "caption":"研究初期に誕生 : CG"
+        },
+        {
+          "path" : "./00_BA_GRADUATION/img/resulted-object_02.jpg",
+          "type" : "image",
+          "caption":"研究中期に誕生 : CG"
+        },
+        {
+          "path" : "./00_BA_GRADUATION/img/resulted-object_03.jpg",
+          "type" : "image",
+          "caption":"研究後期に誕生 : 3D-PRINTED | CNC MILLED"
+        },
+        {
+          "path" : "./00_BA_GRADUATION/video/7.mp4",
+          "type" : "video",
+          "caption":"制作したカスタムツールのキャプチャ画面, Processing (JAVA) + Rhino6 + Grasshopper"
+        },
+        {
+          "path" : "./00_BA_GRADUATION/video/6.mp4",
+          "type" : "video",
+          "caption":"制作したカスタムツールのキャプチャ画面, Processing (JAVA) + Rhino6 + Grasshopper"
+        },
+        {
+          "path" : "./00_BA_GRADUATION/txt/essay.md",
+          "type" : "markdown",
+          "caption":"TEXT BY GAISHI KUDO, TYPEFACE : Noto Sans JP"
+        }
+        
+      ],
+      "description": "私はヒト特有の震えや癖に、コンピューターの計算生成には代え難い強い魅力を感じる。癖をコンピューターで扱うことはできるだろうか。単純な動作であり、被験者によって様々な結果が得られる「円のドローイング」を用いて実験することにする。\n以下の手順を構想し、ヒト特有の震えや癖をコンピューターを用いることで、より魅力的に出力しようと試みた。\n\n#1. 被験者が入力した円のドローイングから描こうとしたであろう理想の真円を予測することで、ドローイングがどれだけ真円と離れているのかを数値化する。\n#2. 数値化された理想値との誤差から一つのタイルを生成する。\n#3. 生成されたタイルを交互に並べてパターンを作り、そのデータを別のアプリケーションで制作したスツール骨格モデルの表面に送信する。\n\n人間特有の有機的データがデザインエレメントとなる。出来上がるものは奇妙である。震える手はそれを制御するべきだろうか。情報技術がより発達した世界は奇妙で有機的な形であふれかえっているのだろうか。そう遠くない未来世界の価値体系を妄想する。"
+    },
+    {
+      "id": 3,
+      "asUrl":"Bebento",
+      "year": 2017,
+      "client":"school",
+      "abstract": "storytelling",
+      "title":"BEBENTO",
+      "oneLine": "人とデジタルファブリケーションを考える",
+      "tags":["film","awarded"],
+      "mentions": [
+        "workshop with Frank Kolkman",
+        "exhibited at Broken Nature Show @ XX11 Milano Triennale 2019, Italy",
+        "screening at Real To Reel 2019, by Crafts Council, United Kingdom",
+        "selected as runner-up at RCA Helen Hamlyn Fixperts Award 2018, United Kingdom",
+        "screening at Nordic Makers' Film Festival, Kristinestad, Finland",
+        "screening at Cinewaves Films 2020, Saudi Arabia"
+      ],  
+      "bannar": {
+        "path" : "./00_FIXPERTS/img/capture_screen-video.jpg",
+        "bVideo" : false
+      },
+      "medium":[
+        {
+          "path" : "./00_FIXPERTS/img/capture_screen-video.jpg",
+          "type" : "image",
+          "caption":""
+        },
+        {
+          "path":"https://www.youtube.com/embed/Se5VDiULb5M",
+          "type":"youtube",
+          "caption":""
+        },
+        {
+          "path":"./00_FIXPERTS/txt/essay.md",
+          "type":"markdown",
+          "caption":"TEXT BY GAISHI KUDO, TYPEFACE : Noto Sans JP"
+        }
+      ],
+      "description":"私たちのチーム（工藤外四、中山うらら、八木まどか、Ah Hyoen Kim）は、京都市内を移動しながら靴の修理をおこなうナカガワミチオ氏をパートナーに、民俗学的調査と密着取材の協力を得て、ナカガワ氏が移動した場所で効率的かつ迅速に仕事場とディスプレイのセットアップを可能にする方法の開発に取り組んだ。解決策として、日本のお弁当箱をベースに、セットアップの時間を大幅に短縮できるボックスセットをデザインすることにした。\nこのボックスセットはFixpertsを代表する作品の一つとして選出され、Paola Antonelliがキュレーターを務める「Broken Nature:the XXII triennale di milano, Italy」に展示された。\nまた、本プロジェクトを一本の映像にまとめたドキュメンタリーフィルムは「Real To Reel 2019, Crafts Council, UK」、「RCA Helen Hamlyn Fixperts Award 2018, UK」、「Nordic Makers' Film Festival, Kristinestad, Finland」、「Cinewaves Films, Saudi Arabia」に選出されヨーロッパをはじめ、サウジアラビアなど国境を越えて複数の都市で上映された。"
+    },
+    {
+      "id": 4,
+      "asUrl":"A-coathook-designed-for-the-exhibition-in-Milan",
+      "year": 2018,
+      "client":"zemi",
+      "abstract": "coathook", 
+      "title":"A coathook designed for the exhibition in Milan",
+      "oneLine": "人と家具を考える",
+      "mentions": [
+        "exhibited @ Milan Design Week Salone Satellite 2018",
+        "guided by Eizo Okada"
+      ],
+      "tags":["furniture","conceptual"],
+      "bannar": {
+        "path" : "./00_COATHOOK/img/resulted-object_01.jpg",
+        "bVideo" : false
+      },
+      "medium":[
+        {
+          "path" : "./00_COATHOOK/img/resulted-object_01.jpg",
+          "type" : "image",
+          "caption":"PHOTO BY TOMOMI TAKANO"
+        },
+        {
+          "path" : "./00_COATHOOK/img/resulted-object_02.jpg",
+          "type" : "image",
+          "caption":"PHOTO BY TOMOMI TAKANO"
+        }
+      ],
+      "description": "-\n文字盤の上から服をかけるこのコートフックは、時計本来の機能を奪う。\nモノから機能が失われた時、初めて人はものの持つ表情や美しさに目を向ける。\n鑑賞の対象である時計に積極的に働きかける振る舞いは、時計が持つ不思議な魅力に気づく助けとなる。\n(PROOFREADED BY zemi 2018)"
+    },
+    {
+      "id": 5,
+      "asUrl":"THE-LAUGHINGMAN-KNOWS",
+      "year": 2018,
+      "client":"workshop",
+      "abstract": "conceptual work", 
+      "title":"THE LAUGHINGMAN KNOWS",
+      "oneLine": "人とデータを考える",
+      "mentions": [
+        "workshop with Sam Conrad Joyce [SUTD]",
+        "some pieces of these exhbited @ La Biennale Architettura 2018, Singapore Pavilion"
+      ],
+      "tags":["data-vizualization","conceptual"],
+      "bannar": {
+        "path" : "./00_VENICE-BIENNNALE/img/resulted-graphic_01.jpg",
+        "bVideo" : false
+      },
+      "medium":[
+        {
+          "path" : "./00_VENICE-BIENNNALE/img/resulted-graphic_01.jpg",
+          "type" : "image",
+          "caption":"VISUAL BY TAKUMA SHIOZAKI & GAISHI KUDO"
+        },
+        {
+          "path" : "./00_VENICE-BIENNNALE/video/out.mp4",
+          "type" : "video",
+          "caption":""
+        },
+        {
+          "path":"./00_VENICE-BIENNNALE/txt/essay.md",
+          "type":"markdown",
+          "caption":"(＊):TAKUMA SHIOZAKI & GAISHI KUDO, TEXT BY GAISHI KUDO, TYPEFACE : Noto Sans JP"
+        },
+        {
+          "path" : "./00_VENICE-BIENNNALE/img/resulted-graphic_02.jpg",
+          "type" : "image",
+          "caption":"VISUAL BY TAN GEE YANG [SUTD] & MIO HATAKENAKA [KIT] & NORIKO MIYAZAKI [KIT] & GAISHI KUDO [KIT] & EIZO OKADA [KIT] & SAM CONRAD JOYCE [SUTD]\nDIRECTED BY EIZO OKADA [KIT] & SAM CONRAD JOYCE [SUTD]"
+        },
+        {
+          "path" : "./00_VENICE-BIENNNALE/img/view-exhibition.jpg",
+          "type" : "image",
+          "caption":"PHOTO BY GAISHI KUDO"
+        }
+      ],
+      "description": "SNS からは人の感情とそれに関する詳しい客観的な情報を入手することができる。時間情報、地理情報、送信者のプロフィールなどである。\npythonで抽出したデータをgrasshopperを用いてモデリングに変換、plotlibを用いてグラフに変換した。\n\n#1: finding tweets including \"w\" and \"笑\"\n#2: eccept for [www.] \/\/ website link\n#3: counting number of letters \"w\" and \"笑\" in each tweet\n#4: calculating sum of \"#3\" in each area(1*1km)\n#5: plotting data in each area per an hour, x=latitude y=longitudez=numbers of the letters( \"w\" and \" 笑 \")\n\n本ワークショップは、シンガポール工科デザイン大学（SUTD）と京都工芸繊維大学（KIT）によって主催され、場所を移してベネツィアビエンナーレ2018・シンガポール館会場においても継続することとなった。会場では「Time」、「Locals and Tourists」、「Positive or Negative」という３つのテーマで、シンガポール、京都、ベネツィアの三都市を比較するビジュアライゼーションを制作し、床に並べて展示した。"
+    },
+    {
+      "id": 7,
+      "asUrl":"AFRICANIZATION",
+      "year": 2018,
+      "client":"school",
+      "abstract": "conceptual work", 
+      "title":"唾液を噴霧するギフト",
+      "oneLine": "人とグローバル化を考える",
+      "mentions": [
+        "assignment brief \" Imagine Gift in 2050 \" given by Eizo Okada",
+        "guided by Eizo Okada"
+      ],
+      "tags":["conceptual"],
+      "bannar": {
+        "path" : "./00_GIFT/img/resulted-object_01.jpg",
+        "bVideo" : false
+      },
+      "medium":[
+        {
+          "path" : "./00_GIFT/img/resulted-object_01.jpg",
+          "type" : "image",
+          "caption":""
+        },
+        {
+          "path" : "./00_GIFT/img/resulted-object_02.png",
+          "type" : "image",
+          "caption":"PHOTO ASSISTANT : KANTA NAKANO"
+        },
+        {
+          "path" : "./00_GIFT/img/resulted-object_03.png",
+          "type" : "image",
+          "caption":"PHOTO ASSISTANT : KANTA NAKANO"
+        },
+        {
+          "path":"./00_GIFT/txt/essay.md",
+          "type":"markdown",
+          "caption":"TYPEFACE : Noto Sans JP"
+        }
+      ],
+      "description": "近い将来、巨大グローバル企業の発行する仮想通貨が流通し、それを柱とする共同体が国家の枠組みを超えて誕生すると予測されている。\n誕生する共同体は、移動手段の発達により国境が消え、自動翻訳技術に支えられ極端にグローバル化した社会であると考えられる。\nグローバル化社会では多様な文化が交錯し、それらは衝突し消滅し、あるいは混同し歪み継承されるだろう。\n急速に進むグローバル社会において人はどう文化と向き合っていくのだろうか？？"
+    },
+    {
+      "id": 8,
+      "asUrl":"Homeless-People-in-a-Preferable-future",
+      "year": 2021,
+      "client":"school(exchange)",
+      "abstract": "conceptual work", 
+      "title":"Homeless-People in A Preferable Future.",
+      "oneLine": "「福祉国家の中にありながら、福祉の対象にない」",
+      "mentions": [
+        "Specialzation Project in ArtEZ(NL), guided by Frank Kolkman"
+      ],
+      "tags":["conceptual"],
+      "bannar": {
+        "path" : "./00_ARTEZ/img/resulted-object_01.png",
+        "bVideo" : false
+      },
+      "medium":[
+        {
+          "path" : "./00_ARTEZ/img/resulted-object_01.png",
+          "type" : "image",
+          "caption":"STORY-01 : 「移動式電光広告」"
+        },
+        {
+          "path" : "./00_ARTEZ/img/resulted-story_01.png",
+          "type" : "image",
+          "caption":"STORY-01 : 「移動式電光広告」"
+        },
+        {
+          "path" : "./00_ARTEZ/img/resulted-object_02.png",
+          "type" : "image",
+          "caption":"STORY-02 : 「形式主義ポスト運動概念模型」"
+        },
+        {
+          "path":"./00_ARTEZ/img/resulted-story_02.png",
+          "type":"image",
+          "caption":"STORY-02 : 「形式主義ポスト運動概念模型」"
+        },
+        {
+          "path":"./00_ARTEZ/img/resulted-object_04.jpg",
+          "type":"image",
+          "caption":"THE OBJECT SEEN IN STORY-02 : 「形式主義ポスト運動概念模型」"
+        },
+        {
+          "path":"./00_ARTEZ/img/resulted-object_03.jpg",
+          "type":"image",
+          "caption":"SKETCH, THE CUP IN THE PEREFARABLE FUTURE, EXTREME-CASHLESS SOCIETY"
+        },
+        {
+          "path":"./00_ARTEZ/img/resulted-object_05.png",
+          "type":"image",
+          "caption":"COLLAGE (SKETCH), USING AN IMAGE FROM 「ホームレスからかかってきた電話。（ばぃちぃ）」(https://note.com/atorie/n/nba44bcb323bf?magazine_key=m9c63da2955d0)"
+        }
+      ],
+      "description": "Big thanks to Frank Kolkman.\nー\nオランダ・アーテズ芸術大学との交換留学期間におけるプロジェクト\nー\n本プロジェクトは、企業広告の中のような「都合の良い近未来」におけるホームレスの生活に着目した。パンデミックの発生も貢献して加速するキャッシュレス化であるが、それが100%実現した近未来社会においては、ホームレスはいかにして金銭的援助を受けるのだろうか。そもそもキャッシュレス社会は彼らを置き去りにするのだろうか。\n生存の方法を妄想してみる。"
+    },
+    {
+      "id": 9,
+      "asUrl":"StudioMonoya-Web",
+      "year": 2021,
+      "client":"studio-monoya",
+      "abstract": "portfolio-website",
+      "title":"Website For Studio Monoya",
+      "oneLine": "だるま、ふくすけ、モノ、その配置",
+      "tags":["web","webgl","client"],
+      "mentions": [
+        "for studio monoya"
+      ],
+      "bannar":{
+        "path":"./00_MONOYA/video/captured_LP_short.mp4",
+        "bVideo":true
+      },
+      "medium":[
+        {
+          "path" :"./00_MONOYA/video/captured_LP_short.mp4",
+          "type" : "video",
+          "caption":""
+        },
+        {
+          "path" : "./00_MONOYA/img/monoya_web_studio_003.png",
+          "type" : "image",
+          "caption":""
+        },
+        {
+          "path" : "./00_MONOYA/img/monoya_web_studio_005.png",
+          "type" : "image",
+          "caption":""
+        },
+        {
+          "path" : "./00_MONOYA/img/monoya_web_studio_002.png",
+          "type" : "image",
+          "caption":""
+        },
+        {
+          "path" : "./00_MONOYA/img/monoya_web_studio_004.png",
+          "type" : "image",
+          "caption":""
+        },
+        {
+          "path" : "./00_MONOYA/img/monoya_web_studio_001.png",
+          "type" : "image",
+          "caption":""
+        }
+      ],
+      "description": "スタジオものやのポートフォリオサイト。\n\n京都市北区に実店舗を構え、市場で買い集めた古道具や価値を見出された蒐集物、制作途中で生まれたモノなど様々な物を取り扱っています。またそれらの蒐集物を新しい発想の種とし、空間構成や什器/家具プロダクトなどの設計業務を行うスタジオを同時に運営しています。\n（スタジオものやWEBSITEより）\n\nVISIT : [www.studiomonoya.com](https://www.studiomonoya.com)"
+    }
+  ]
+}

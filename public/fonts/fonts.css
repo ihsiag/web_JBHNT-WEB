@@ -1,0 +1,22 @@
+/* @font-face {
+  font-family: "LINE Seed JP";
+  font-weight:200;
+  src: url("/asset/LINE_Seed_JP/LINESeedJP_OTF_Th.woff2");} */
+
+@font-face {
+  font-family: "LINE Seed JP";
+  font-weight:400;
+  src: url("/fonts/LINE_Seed_JP/LINESeedJP_OTF_Rg.woff2");
+}
+
+@font-face {
+  font-family: "LINE Seed JP";
+  font-weight:600;
+  src: url("/fonts/LINE_Seed_JP/LINESeedJP_OTF_Bd.woff2");
+}
+
+@font-face {
+  font-family: "LINE Seed JP";
+  font-weight:800;
+  src: url("/fonts/LINE_Seed_JP/LINESeedJP_OTF_Eb.woff2");
+}

@@ -1,0 +1,378 @@
+{
+  "info": {
+    "introduction" : {
+      "name": {
+        "ja": "工藤外四",
+        "en": "Gaishi Kudo"
+      },
+      "role":{
+        "ja":"テクニカルアーティスト",
+        "en":"Technical Artist"
+      },
+      "abst":{
+        "ja":"工藤外四はインタラクティブデザイン/アート、ウェブサイト/ソフトウェア開発、コンセプチュアルアート/デザインフィクションに関心が強く、テクニカルアーティストを志向しています。",
+        "en":"Gaishi Kudo is a technical artist who plays within the fields of Interactive Design / Art, Websites / Software and Conceptual Art / Design Fiction."
+      },
+      "texts":[
+        {
+          "ja":"こんにちは。ご覧いただきありがとうございます。\n私は、デザインとプログラミングに従事しています。\nデザインを教育機関で学び、プログラミングを独学しています。\n日本語を話し、英語の読み書きができます。",
+          "en": "Hello. Thank you for visiting here.\nI work as a designer and as a programmer, \nspeak Japanese and be able to read and write English."
+        },
+        {
+          "ja":"大学では、プロダクトデザインを中心にデザインの歴史と流行を学び、卒業研究プロジェクトではコンピューターを用いたデザイン手法の行方を展望しました。\n大学院では、「デザインの歴史と流行」に独特な形で影響を与え続けるオランダデザインを学ぶため、オランダのArtEZと呼ばれる美術学校のInteraction Design学科とProduct Design学科に交換留学をしました。\n帰国後は、情報技術を用いて芸術活動を行うアーティストのもとでアシスタントとして活動を行いました。\n同時に並行して行った修了研究プロジェクトでは、独自の3Dモデリングアプリを開発し、その中（仮想空間）でおこる出来事に意味を模索しました。",
+          "en":"At university, I studied the history and trends of design, focusing on product design, and my graduation research project looked at the future of computer-based design methods. In graduate school, I studied at the Interaction Design and Product Design departments of an art school called ArtEZ in the Netherlands as an exchange student to learn about Dutch design, which continues to influence the \"history and trends of design\" in a unique way. After returning to Japan, I worked as an assistant for an artist who uses information technology in his artistic activities."
+        },
+        {
+          "ja":"大学院終了後は、学生時代からお世話になっているスタジオにデザイナー・プログラマーとして入社し、芸術の企画やWEB制作のデザインとフロントエンド、ソフトウェア・アプリのモックアップ開発を行っています。",
+          "en":"At the same time, I developed my own 3D modeling application and searched for meaning in the events that took place in the application (virtual space)."
+        }
+      ]
+    },
+    "career": {
+      "histories": [
+        {
+          "text": "京都工芸繊維大学 デザイン建築学課程",
+          "period": {
+            "start": "2015.04",
+            "end": "2019.03"
+          },
+          "categories": [
+            "Education"
+          ]
+        },
+        {
+          "text": "京都工芸繊維大学大学院 デザイン学専攻 岡田栄造研究室",
+          "period": {
+            "start": "2019.04",
+            "end": "2022.03"
+          },
+          "categories": [
+            "Education"
+          ]
+        },
+        {
+          "text": "ArtEZ University of the Arts (NL), Product Design Department | Interaction Design Department (As an exchange)",
+          "period": {
+            "start": "2019.09",
+            "end": "2020.08"
+          },
+          "categories": [
+            "Education"
+          ]
+        },
+        {
+          "text": "sunayama studio, プログラマー | デザイナー（インターン）",
+          "period": {
+            "start": "2020.07",
+            "end": "2021.07"
+          },
+          "categories": [
+            "Job"
+          ]
+        },
+        {
+          "text": "白木良 (DUMB TYPE他), アシスタント | プログラマー",
+          "period": {
+            "start": "2020.11",
+            "end": "2022.03"
+          },
+          "categories": [
+            "Job"
+          ]
+        },
+        {
+          "text": "株式会社砂木 (旧 sunayama studio), プログラマー | デザイナー",
+          "period": {
+            "start": "2022.04",
+            "end": "2022.12"
+          },
+          "categories": [
+            "Job"
+          ]
+        }
+      ],
+      "opportunities": [
+        {
+          "text": "RCA Helen Hamlyn Fixperts Award 2018 as Runner Up",
+          "period": {
+            "start": "2018.06"
+          },
+          "categories": [
+            "Award"
+          ],
+          "links": [
+            {
+              "type": "ext",
+              "title": "external link",
+              "url": "https://www.d-lab.kit.ac.jp/news/2018/fixperts-award-2/"
+            },
+            {
+              "type": "int",
+              "text": "見えない人",
+              "url": "bebento"
+            }
+          ]
+        },
+        {
+          "text": "Milano Salone Satellite 2018",
+          "period": {
+            "start": "2018.04"
+          },
+          "categories": [
+            "Exhibition"
+          ],
+          "links": [
+            {
+              "type": "int",
+              "title": "",
+              "url": "A-coathook-designed-for-the-exhibition-in-Milan"
+            },
+            {
+              "type":"ext",
+              "title":"",
+              "url":"https://glimmer-marlin-f5f.notion.site/483b33518d8e4bee93ff61e853c6b643?v=fbace237170340bea1e62b55a8c93d36&p=1039de3de8ef4bb89fb7ac9fb28eee09&pm=c"
+            }
+          ]
+        },
+        {
+          "text": "Singapore Pavilion, Venice Biennale 2018",
+          "period": {
+            "start": "2018.09"
+          },
+          "categories": [
+            "Exhibition"
+          ],
+          "links": [
+            {
+              "type" : "ext",
+              "title": "Decoding Data Landscapes",
+              "url": "https://www.d-lab.kit.ac.jp/news/2018/venice-biennale/"
+            },
+            {
+              "type" : "int",
+              "title": "The Laughing Man Knows",
+              "url": "THE-LAUGHINGMAN-KNOWS"
+            }
+          ]
+        },
+        {
+          "text": "BA Graduaiton Show 2019, Kyoto Institute of Technology",
+          "period": {
+            "start": "2019.02"
+          },
+          "categories": [
+            "Exhibition"
+          ],
+          "links": [
+            {
+              "type" : "int",
+              "title": "人と計算機の共創",
+              "url": "the-way-we-design"
+            }
+          ]
+        },
+        {
+          "text": "Broken Nature, XXII Triennale Milano 2019, Milan",
+          "period": {
+            "start": "2019.04"
+          },
+          "categories": [
+            "Exhibition"
+          ],
+          "links": [
+            {
+              "type":"int",
+              "title": "見えない人",
+              "url": "bebento"
+            },
+            {
+              "type":"ext",
+              "title":">",
+              "url":"https://www.designboom.com/design/xxii-triennale-di-milano-broken-nature-02-27-2019/"
+            }
+          ]
+        },
+        {
+          "text": "Real to Reel: The Craft Film Festival, London",
+          "period": {
+            "start": "2019.04"
+          },
+          "categories": [
+            "Selected","Screening"
+          ],
+          "links": [
+            { 
+              "type":"int",
+              "title": "見えない人",
+              "url": "bebento"
+            },
+            {
+              "type" :"ext",
+              "title" : ">",
+              "url" : "https://www.d-lab.kit.ac.jp/news/2019/real-to-reel-the-craft-film-festival/"
+            }
+
+          ]
+        },
+        {
+          "text": "MAKERS BAZAAR, Osaka, 2019",
+          "period": {
+            "start": "2019.07"
+          },
+          "categories": [
+            "Exhibition"
+          ],
+          "links": [
+            {
+              "type" : "int",
+              "title": "人と計算機の共創",
+              "url": "the-way-we-design"
+            },
+            {
+              "type":"ext",
+              "title":">",
+              "url" : "https://makersbazaar.jp/booth/"
+            }
+          ]
+        },
+        {
+          "text": "Nordic Makers' Film Festival, Kristinestad, Finland ",
+          "period": {
+            "start": "2020.10"
+          },
+          "categories": [
+            "Selected","Screening"
+          ],
+          "links": [
+            {
+              "type":"int",
+              "title": "見えない人",
+              "url": "bebento"
+            },
+            {
+              "type":"ext",
+              "title":">",
+              "url":"https://makersfilmfestival.fi/real-to-reel-1.html"
+            }
+          ]
+        },
+        {
+          "text": "Cinewaves Films, Saudi Arabia, screening as part of Cinewaves Films' library's arts and crafts project selection.",
+          "period": {
+            "start": "2021.10"
+          },
+          "categories": [
+            "Selected","Screening"
+          ],
+          "links": [
+            {
+              "type":"int",
+              "title": "見えない人",
+              "url": "bebento"
+            }
+          ]
+        },
+        {
+          "text": "TOKYO MIDTOWN AWARD 2021",
+          "period": {
+            "start": "2021.10"
+          },
+          "categories": [
+            "Award"
+          ],
+          "links": [
+            {
+              "type":"ext",
+              "title": ">",
+              "url": "https://compe.japandesign.ne.jp/result/midtown-design-2021/"
+            }
+          ]
+        },
+        {
+          "text": "MA Graduaiton Show 2022, Kyoto Institute of Technology",
+          "period": {
+            "start": "2022.02"
+          },
+          "categories": [
+            "Exhibition"
+          ],
+          "links": [
+            {
+              "type":"int",
+              "title": "とある出来事の設計IIのためのプログラム",
+              "url": "simulated-experience-or-dream"
+            }
+          ]
+        }
+      ],
+      "selectedProjects" :[
+        {
+          "text": "スタジオものや　WEBサイト",
+          "period": {
+            "start": "2022.01"
+          },
+          "categories": [
+            "Next.js",
+            "Design"
+          ],
+          "links": [
+            {
+              "type": "ext",
+              "title": "external link",
+              "url": "https://www.studiomonoya.com/"
+            },
+            {
+              "type": "int",
+              "text": "ものや",
+              "url": "studiomonoya-web"
+            }
+          ]
+        },
+        {
+          "text": "ヴァーチャル空間展示構成, Tokyo Art Book Fair 2020",
+          "period": {
+            "start": "2020.11"
+          },
+          "categories": [
+            "3D Modeling",
+            "Space Desgin"
+          ],
+          "links": [
+            {
+              "type": "ext",
+              "title": "external link",
+              "url": "https://2020.virtualartbookfair.com/"
+            },
+            {
+              "type": "int",
+              "text": "",
+              "url": "404"
+            }
+          ]
+        },
+        {
+          "text": "紙上の建築 | LIXIL EYE No.24 コラム, 2021",
+          "period": {
+            "start": "2021.02"
+          },
+          "categories": [
+            "Conceptual Art"
+          ],
+          "links": [
+            {
+              "type": "ext",
+              "title": "external link",
+              "url": "https://www.biz-lixil.com/column/pic/lixileye/no024/LIXILeye_no024_02.pdf"
+            },
+            {
+              "type": "int",
+              "text": "とある出来事の設計",
+              "url": "404"
+            }
+          ]
+        }
+
+      ]
+    }
+  }
+}

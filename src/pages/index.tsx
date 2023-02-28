@@ -1,27 +1,54 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import type { NextPage } from 'next';
-import Layout_Page_Parent from 'src/components/LAYOUT_PAGE_PARENT';
+import fsPromises from "fs/promises";
+import path from "path";
+import { PageProps_Minimal} from "src/types/dataTypes";
 
-type Props ={
-  about:string;
-}
+import type { NextPage } from "next";
 
-const Page_Home: NextPage<Props> = ({ about }: Props) => {
+import * as THEMES from "src/styles/theme";
+import Layout_Page_Parent from "src/components/LAYOUT_PAGE_PARENT";
+import Parts_Home_Canvas from "src/components/PARTS_HOME_CANVAS";
+
+
+const Page_Home: NextPage<PageProps_Minimal> = ({title_header}:PageProps_Minimal) => {
   return (
     <>
-      <Head>
-        <title>HOME | Gaishi Kudo</title>
-      </Head>
-      <Layout_Page_Parent backgroundColor='rgb(240,240,240)'>
+      <Layout_Page_Parent title={title_header}>
         <>
-        <h1>Under Construction</h1>
+        <div className="component">
+          <div className="canvas">
+            <Parts_Home_Canvas/>
+          </div>
+        </div>
         </>
       </Layout_Page_Parent>
       <style jsx>{`
+        .component{
+          display:flex;
+          align-items:center;
+          position:relative;
+          /* height:100vh; */
+        }
+        
+        .canvas{
+          height:${THEMES.blockUnits.vert.l};
+          position:absolute;
+          z-index:-1;
+          top:calc(50vh -  ${THEMES.blockUnits.m});
+          left:50%;
+          transform:translate(-50%,-65%);
+        }
       `}</style>
     </>
   );
+};
+
+//create props only when built _gk
+export const getStaticProps = () => {
+  return {
+    props: {
+      title_header:"HOME",
+    },
+  };
 };
 
 export default Page_Home;
