@@ -12,23 +12,23 @@ const MyDocument = () => {
 
         {/* -- LOADING FONT -- */}
         <>
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
-          <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet" />
+          <link rel="stylesheet" href="/fonts/fonts.css"/>
+          <link rel="preconnect" href="https://fonts.googleapis.com"/>
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="crossOrigin"/>
+          <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;900&display=swap" rel="stylesheet"/>          
         </>
 
         {/* <!-- SET SEO --> */}
         <>
           <MISC_Seo
             pageTitle={"工藤外四 | Gaishi Kudo"}
-            pagePath={"https://web-jbhnt-web.vercel.app/"}
+            pagePath={"https://www.gaishikudo.com"}
             pageDescription={`
-              工藤外四 / Gaishi Kudo
+            Gaishi Kudo is a technical artist who plays within the fields of Interactive Design / Art, Websites / Softwares and Conceptual Art / Design Fiction.
             `}
-            pageImg={"/element/seo.jpg"}
-            pageImgWidth={540}
-            pageImgHeight={540}
+            pageImg={"/element/no_material.jpg"}
+            pageImgWidth={1200}
+            pageImgHeight={630}
           />
         </>
       </Head>

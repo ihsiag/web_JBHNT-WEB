@@ -1,5 +1,4 @@
-import { ReactChild, useEffect, useRef, useState } from "react";
-
+import { Children, ReactChild, ReactChildren, useEffect, useRef, useState } from "react";
 
 //Y軸方向のスクロール量を取得するカスタムフック
 export const useScrollPosition = () => {
@@ -33,9 +32,7 @@ const ScrollDirection = {
   Up: "up",
   Down: "down",
 } as const;
-export type ScrollDirectionType =
-  typeof ScrollDirection[keyof typeof ScrollDirection];
-
+export type ScrollDirectionType = typeof ScrollDirection[keyof typeof ScrollDirection];
 
 //スクロール方向を取得するカスタムフック
 export const useScrollDirection = () => {
@@ -61,13 +58,21 @@ export const useScrollDirection = () => {
   return direction;
 };
 
-
 //external Link
-export const ExtLink = ({href,children}:{href:string;children?:ReactChild;}):JSX.Element =>{
-  return(
-    <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>
+export const ExtLink = ({ href, children }: { href: string; children?: ReactChild }): JSX.Element => {
+  return (
+    <>
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      {children}
+    </a>
+    <style jsx>{`
+    a {
+      width:fit-content;
+    }
+    `}</style>
+    </>
   );
-}
+};
 
 //hex to rgb num[]
 export const hex2rgb = (hex?: string): number[] => {
@@ -88,27 +93,35 @@ export const rgbNums2rgbCss = (rgbNums: number[], opacity?: number): string => {
   else return `rgba(${rgbNums[0]},${rgbNums[1]},${rgbNums[2]},${opacity})`;
 };
 
-
 //generateSerialNumArray
-export const generateSerialNumArray = (start:number,end:number,step?:number):number[] =>{
+export const generateSerialNumArray = (start: number, end: number, step?: number): number[] => {
   step && console.warn("sorry, gaishi has not yet finished to make this option work...");
-  return [...Array<number>(end-start+1)].map((_,i)=>i+start);
-}
+  return [...Array<number>(end - start + 1)].map((_, i) => i + start);
+};
 
-export const getPostsPerPage = <Json_T,>(posts_num_per_page:number,currentPageNumStr:string,objectDataContents:Json_T[]):Json_T[] =>{
+export const getPostsPerPage = <Json_T,>(posts_num_per_page: number, currentPageNumStr: string, objectDataContents: Json_T[]): Json_T[] => {
   let currentPageNum = 0;
-  let start = 0, end = 1;
-  if(typeof currentPageNumStr === "string"){
+  let start = 0,
+    end = 1;
+  if (typeof currentPageNumStr === "string") {
     currentPageNum = Number.parseInt(currentPageNumStr);
   }
-  start = (currentPageNum-1) * posts_num_per_page +1;
-  end = start -1 + posts_num_per_page;
+  start = (currentPageNum - 1) * posts_num_per_page + 1;
+  end = start - 1 + posts_num_per_page;
 
   const posts_per_page = objectDataContents.filter(function (item, index) {
-    if (index+1 >= start && index+1<=end) return true;
+    if (index + 1 >= start && index + 1 <= end) return true;
   });
 
   return posts_per_page;
-}
+};
 
-
+export const getYMHMSfromNodeJsStatsTime = (_nodeJsStatsTime?: string) => {
+  const year = _nodeJsStatsTime?.split("-")[0] || "0000";
+  const month = _nodeJsStatsTime?.split("-")[1] || "00";
+  const day = _nodeJsStatsTime?.split("-")[2].substring(0, 2) || "00";
+  const hour = _nodeJsStatsTime?.split("-")[2].substring(3, 5) || "00";
+  const minute = _nodeJsStatsTime?.split("-")[2].substring(6, 8) || "00";
+  const second = _nodeJsStatsTime?.split("-")[2].substring(9, 11) || "00";
+  return { ye: year, mo: month, da: day, ho: hour, mi: minute, se: second };
+};
