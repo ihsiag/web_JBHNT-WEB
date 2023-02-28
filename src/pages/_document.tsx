@@ -21,9 +21,10 @@ const MyDocument = () => {
         {/* <!-- SET SEO --> */}
         <>
           <MISC_Seo
-            pageTitle={"Gaishi Kudo"}
+            pageTitle={"工藤外四 | Gaishi Kudo"}
+            pagePath={"https://web-jbhnt-web.vercel.app/"}
             pageDescription={`
-              Gaishi Kudo の web ページです。
+              工藤外四 / Gaishi Kudo
             `}
             pageImg={"/element/seo.jpg"}
             pageImgWidth={540}
