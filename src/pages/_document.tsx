@@ -25,9 +25,9 @@ const MyDocument = () => {
             pageDescription={`
               Gaishi Kudo の web ページです。
             `}
-            pageImg={"/element/no_material.jpg"}
-            pageImgWidth={1200}
-            pageImgHeight={630}
+            pageImg={"/element/seo.jpg"}
+            pageImgWidth={540}
+            pageImgHeight={540}
           />
         </>
       </Head>

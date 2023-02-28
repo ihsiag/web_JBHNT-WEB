@@ -15,7 +15,7 @@ const Page_Home: NextPage<Props> = ({ about }: Props) => {
       </Head>
       <Layout_Page_Parent backgroundColor='rgb(240,240,240)'>
         <>
-        りんたろうくんみえてますか
+        <h1>Under Construction</h1>
         </>
       </Layout_Page_Parent>
       <style jsx>{`
