@@ -11,7 +11,7 @@ const Page_NotFound: NextPage = () => {
       <Head>
         <title>UC or 404 | Gaishi Kudo</title>
       </Head>
-      <Layout_Page_Parent backgroundColor='rgb(240,240,240)'>
+      <Layout_Page_Parent>
         <>    
         <br/>
         <br/>    
