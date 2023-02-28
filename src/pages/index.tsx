@@ -3,7 +3,9 @@ import Link from 'next/link';
 import type { NextPage } from 'next';
 import Layout_Page_Parent from 'src/components/LAYOUT_PAGE_PARENT';
 
-
+type Props ={
+  about:string;
+}
 
 const Page_Home: NextPage<Props> = ({ about }: Props) => {
   return (
