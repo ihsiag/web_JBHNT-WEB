@@ -17,129 +17,128 @@ type Props = {
     mentions?: string[];
     year: string;
     tags: string[];
-    selectedTags:string[];
+    selectedTags: string[];
   };
 };
 
-const StyleDataArea  = styled.div<{methodIsIndex:boolean}>`
-.dataBlocks {
-  background-color: ${THEMES.colors.bg.sub};
-  /* background-color:red; */
-  padding: ${THEMES.paddings.vert.m} ${THEMES.paddings.hori.m} ${THEMES.blockUnits.s};
-  transition-duration:${(props)=> props.methodIsIndex ? THEMES.animations.duration.xs : "0s"};
-}
+const StyleDataArea = styled.div<{ methodIsIndex: boolean }>`
+  .dataBlocks {
+    background-color: ${THEMES.colors.bg.sub};
+    /* background-color:red; */
+    padding: ${THEMES.paddings.vert.m} ${THEMES.paddings.hori.m} ${THEMES.blockUnits.s};
+    transition-duration: ${(props) => (props.methodIsIndex ? THEMES.animations.duration.xs : "0s")};
+  }
 
-.dataBlocks:hover{
-  background-color: ${(props)=>props.methodIsIndex ? THEMES.colors.accent.gray : THEMES.colors.bg.sub};
-}
+  .dataBlocks:hover {
+    background-color: ${(props) => (props.methodIsIndex ? THEMES.colors.accent.gray : THEMES.colors.bg.sub)};
+  }
 
-.dataBlock:last-child {
-  border-bottom: ${THEMES.colors.text.sub} 1px solid;
-}
+  .dataBlock:last-child {
+    border-bottom: ${THEMES.colors.text.sub} 1px solid;
+  }
 
-.one {
-  display: flex;
-  justify-content: flex-start;
-  padding-bottom: ${THEMES.blockUnits.s};
-}
+  .one {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: ${THEMES.blockUnits.s};
+  }
 
-.one p {
-  font-size: ${THEMES.fontSizes.l};
-  font-weight: ${THEMES.fontWeights.b};
-}
+  .one p {
+    font-size: ${THEMES.fontSizes.l};
+    font-weight: ${THEMES.fontWeights.b};
+  }
 
-.one div {
-  width: fit-content;
-  padding-left: ${THEMES.gaps.hori.l};
-}
+  .one div {
+    width: fit-content;
+    padding-left: ${THEMES.gaps.hori.l};
+  }
 
-.one div:first-child {
-  padding-left: 0;
-}
+  .one div:first-child {
+    padding-left: 0;
+  }
 
-.two p,.three p{
-  font-size:${THEMES.fontSizes.s};
-}
+  .two p,
+  .three p {
+    font-size: ${THEMES.fontSizes.s};
+  }
 
-.three .tags {
-  display: flex;
-  justify-content: flex-start;
-}
+  .three .tags {
+    display: flex;
+    justify-content: flex-start;
+  }
 
-.tag{
-  display:flex;
-  width:fit-content;
-}
+  .tag {
+    display: flex;
+    width: fit-content;
+  }
 
-.tag p{
-  padding-right:${THEMES.gaps.hori.m};
-}
+  .tag p {
+    padding-right: ${THEMES.gaps.hori.m};
+  }
 
-.tagSelected{
-  background:linear-gradient(transparent 55%, ${UTILS.rgbNums2rgbCss(UTILS.hex2rgb(THEMES.colors.accent.red),0.7)} 0%)
-}
+  .tagSelected {
+    background: linear-gradient(transparent 55%, ${UTILS.rgbNums2rgbCss(UTILS.hex2rgb(THEMES.colors.accent.red), 0.7)} 0%);
+  }
 
-.three {
-  padding-bottom: ${THEMES.blockUnits.s};
-}
+  .three {
+    padding-bottom: ${THEMES.blockUnits.s};
+  }
 `;
 
 const StyleVisualArea = styled.div`
-.visualBlock {
-display: flex;
-justify-content: center;
-padding: 75px 0;
-}
+  .visualBlock {
+    display: flex;
+    justify-content: center;
+    padding: 75px 0;
+  }
 
-.visualArea {
-width: 70%;
-}
+  .visualArea {
+    width: 70%;
+  }
 `;
 
 const StyleImageWrap = styled.div`
-& > span img {
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  
-  position: relative !important; //to hold apect
-  width: 100% !important; //to hold apect
-  height: unset !important; //to hold apect
-}
-& > span {
-  border-radius: ${THEMES.rs.xs};
-  filter: drop-shadow(${THEMES.dropShadows.default});
-  transition-duration: ${THEMES.animations.duration.l};
+  & > span img {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 
-  position: unset !important; //to hold apect
-}
+    position: relative !important; //to hold apect
+    width: 100% !important; //to hold apect
+    height: unset !important; //to hold apect
+  }
+  & > span {
+    border-radius: ${THEMES.rs.xs};
+    filter: drop-shadow(${THEMES.dropShadows.default});
+    transition-duration: ${THEMES.animations.duration.l};
 
-& > span:hover {
-  transform: scale(1.01);
-  filter: drop-shadow(${THEMES.dropShadows.hovered_strong});
-}
+    position: unset !important; //to hold apect
+  }
+
+  & > span:hover {
+    transform: scale(1.01);
+    filter: drop-shadow(${THEMES.dropShadows.hovered_strong});
+  }
 `;
 
 const StyleVideoWrap = styled.div`
-& > video {
-width: 100%;
-height: 100%;
-backface-visibility: hidden;
--webkit-backface-visibility: hidden;
-border-radius: ${THEMES.rs.xs};
-filter: drop-shadow(${THEMES.dropShadows.default});
-transition-duration: ${THEMES.animations.duration.l};
-}
+  & > video {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: ${THEMES.rs.xs};
+    filter: drop-shadow(${THEMES.dropShadows.default});
+    transition-duration: ${THEMES.animations.duration.l};
+  }
 
-& > video:hover {
-transform: scale(1.01);
-filter: drop-shadow(${THEMES.dropShadows.hovered_strong});
-}
+  & > video:hover {
+    transform: scale(1.01);
+    filter: drop-shadow(${THEMES.dropShadows.hovered_strong});
+  }
 `;
 
 const Parts_Projects_ProjectContainer = ({ methodIsIndex, data }: Props) => {
   // console.log(methodIsIndex);
-
-
 
   const Parts_Data = () => {
     return (
@@ -155,15 +154,9 @@ const Parts_Projects_ProjectContainer = ({ methodIsIndex, data }: Props) => {
           </div>
 
           <div className="dataBlock two">
-            <div className="title">
-              {data.title?.length>1
-              ? <p>{data.title},</p>
-              :<p>---,</p>
-              }
-             
-            </div>
+            <div className="title">{data.title?.length > 1 ? <p>{data.title},</p> : <p>---,</p>}</div>
           </div>
-          
+
           <div className="dataBlock two">
             <div className="year">
               <p>{data.year},</p>
@@ -173,14 +166,11 @@ const Parts_Projects_ProjectContainer = ({ methodIsIndex, data }: Props) => {
           <div className="dataBlock three">
             <div className="tags">
               {data.tags.map((tag, index) => (
-              <div key={`parts_projects_projectContainer_tags_${index}`} className="tag">
-                {data.selectedTags.includes(tag)
-                  ?<p className="tagSelected">{tag}</p>
-                  :<p>{tag}</p>
-                }
-                <p>/</p>
-              </div>
-            ))}
+                <div key={`parts_projects_projectContainer_tags_${index}`} className="tag">
+                  {data.selectedTags.includes(tag) ? <p className="tagSelected">{tag}</p> : <p>{tag}</p>}
+                  <p>/</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -201,18 +191,7 @@ const Parts_Projects_ProjectContainer = ({ methodIsIndex, data }: Props) => {
                   </StyleVideoWrap>
                 ) : (
                   <StyleImageWrap>
-                    <Image
-                      src={data.bannar.path}
-                      alt="bannr image"
-                      quality={40}
-                      priority={false}
-                      loading={"lazy"}
-                      unoptimized={false}
-                      layout={"fill"}
-                      objectFit={"contain"}
-                      blurDataURL="data:image/jpeg;base64,"
-                      placeholder="blur"
-                    />
+                    <Image src={data.bannar.path} alt="bannr image" quality={40} priority={false} loading={"lazy"} unoptimized={false} layout={"fill"} objectFit={"contain"} blurDataURL="data:image/jpeg;base64," placeholder="blur" />
                   </StyleImageWrap>
                 )}
               </a>
@@ -227,7 +206,7 @@ const Parts_Projects_ProjectContainer = ({ methodIsIndex, data }: Props) => {
     <>
       <div className="component">
         {methodIsIndex ? (
-          <Link href={data.urlToProject} scroll = {false}>
+          <Link href={data.urlToProject} scroll={false}>
             <a>
               <StyleDataArea methodIsIndex={methodIsIndex}>
                 <Parts_Data />
@@ -235,7 +214,7 @@ const Parts_Projects_ProjectContainer = ({ methodIsIndex, data }: Props) => {
             </a>
           </Link>
         ) : (
-          <StyleDataArea methodIsIndex = {methodIsIndex}>
+          <StyleDataArea methodIsIndex={methodIsIndex}>
             <Parts_Data />
           </StyleDataArea>
         )}
