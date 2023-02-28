@@ -71,14 +71,9 @@
           "path" : "./00_MA_GRADUATION/img/installation_03.png",
           "type" : "image",
           "caption":""
-        },
-        {
-          "path":"./00_MA_GRADUATION/txt/essay.md",
-          "type":"markdown",
-          "caption":"TEXT BY GAISHI KUDO, TYPEFACE : Noto Sans JP"
         }
       ],
-      "description": ""
+      "description": "研究報告書 : [ダウンロードリンク](/DB/projects/00_MA_GRADUATION/report.pdf)"
     },
     {
       "id": 2,
@@ -251,6 +246,38 @@
       "description": "SNS からは人の感情とそれに関する詳しい客観的な情報を入手することができる。時間情報、地理情報、送信者のプロフィールなどである。\npythonで抽出したデータをgrasshopperを用いてモデリングに変換、plotlibを用いてグラフに変換した。\n\n#1: finding tweets including \"w\" and \"笑\"\n#2: eccept for [www.] \/\/ website link\n#3: counting number of letters \"w\" and \"笑\" in each tweet\n#4: calculating sum of \"#3\" in each area(1*1km)\n#5: plotting data in each area per an hour, x=latitude y=longitudez=numbers of the letters( \"w\" and \" 笑 \")\n\n本ワークショップは、シンガポール工科デザイン大学（SUTD）と京都工芸繊維大学（KIT）によって主催され、場所を移してベネツィアビエンナーレ2018・シンガポール館会場においても継続することとなった。会場では「Time」、「Locals and Tourists」、「Positive or Negative」という３つのテーマで、シンガポール、京都、ベネツィアの三都市を比較するビジュアライゼーションを制作し、床に並べて展示した。"
     },
     {
+      "id": 6,
+      "asUrl":"Custom-CG-Filming-Tool",
+      "year": 2022,
+      "client":"shinkenchiku-lab",
+      "abstract": "Custom-CG-Filming-Tool",
+      "title":"Custom CG Filming Tool",
+      "oneLine": "",
+      "tags":["software","video"],
+      "mentions": [
+        "work with Kohei Kuromiya [SHINKENCHIKU-LAB]",
+        "big support from SHINKENCHIKU-LAB Team"
+      ],
+      
+      "bannar": {
+        "path" : "./00_APP-FOR-SHINKENCHIKU_PRMOVIE/video/editor_expo.mp4",
+        "bVideo" : true
+      },
+      "medium":[
+        {
+          "path" : "./00_APP-FOR-SHINKENCHIKU_PRMOVIE/video/editor_expo.mp4",
+          "type" : "video",
+          "caption":"EDITOR SCREEN, BUILT WITH OPENFRAMEWORKS"
+        },
+        {
+          "path" : "./00_APP-FOR-SHINKENCHIKU_PRMOVIE/video/renderer_expo.mp4",
+          "type" : "video",
+          "caption":"RENDERER SCREEN, BUILT WITH OPENFRAMEWORKS"
+        }     
+      ],
+      "description": "Using OpenFrameworks(C++,OpenGL)\nー\nEditor画面とRenderer画面の２つを用いて映像制作を行えるようにした。\nEditor画面内で各種パラメーターの変更とカメラワークを設定できるようにした。\n物体のアニメーションシーンは、コードベースで制作することとし、Editor画面のUIからシーンの切り替えを行えるようにした。"
+    },
+    {
       "id": 7,
       "asUrl":"AFRICANIZATION",
       "year": 2018,
@@ -395,6 +422,124 @@
         }
       ],
       "description": "スタジオものやのポートフォリオサイト。\n\n京都市北区に実店舗を構え、市場で買い集めた古道具や価値を見出された蒐集物、制作途中で生まれたモノなど様々な物を取り扱っています。またそれらの蒐集物を新しい発想の種とし、空間構成や什器/家具プロダクトなどの設計業務を行うスタジオを同時に運営しています。\n（スタジオものやWEBSITEより）\n\nVISIT : [www.studiomonoya.com](https://www.studiomonoya.com)"
+    },
+    {
+      "id": 10,
+      "asUrl":"Trimming-Tool",
+      "year": 2021,
+      "client":"shinkenchiku-lab",
+      "abstract": "trimming-tool",
+      "title":"サムネイル画像制作補助ツール",
+      "tags":["software","client"],
+      "mentions": [
+      ],
+      "oneLine": "",
+      "bannar":{
+        "path":"./00_APP-FOR-SHINKENCHIKU_TRIMMING/img/capture_app_trimmed.png",
+        "bVideo":false
+      },
+      "medium":[
+        {
+          "path" :"./00_APP-FOR-SHINKENCHIKU_TRIMMING/video/Sequence.mp4",
+          "type" : "video",
+          "caption":"CLIENT-APP(PROCESSING)のキャプチャ画面\nPHOTOS : 新建築"
+        },
+        {
+          "path" :"./00_APP-FOR-SHINKENCHIKU_TRIMMING/img/sk_2021_01_082099@1200x630.jpg",
+          "type" : "image",
+          "caption":"CLIENT-APP(PROCESSING)で切り出されたサムネイル画像の例\nPHOTOS : 新建築, TRIMMED : GAISHI KUDO"
+        }
+      ],
+      "description": "Using Processing (Java) \nー\nWEB記事のサムネイル画像を用意する作業を補助するツール。\nー\n#1. サムネイルのもととなる画像はプロジェクトごとにフォルダに入れて管理されている。\n#2. 画像はすべて幅5000px近いデータであるため、表示の際は小さくリサイズしてレンダリングする仕様とした。\n#3. WEB記事で使用される際の画像サイズが決まっていたため、比率を固定してのトリミング、サイズを固定しての書き出しに限定する仕様とした。また、WEB記事で使用される際（フロントエンドで処理される際）のファイル命名規則が指定されていたため、書き出しの際にリネームして規則に則る仕様とした。 \n#4. 起動時に、1プロジェクトの画像の読み込み、スペースキーでページ送り、矢印キーで前後のプロジェクトに移動・読み込み、マウススクロールで切り出し範囲の操作、'h'キーでガイド表示、's'キーで指定のサイズ/指定のファイル名で書き出しが可能な仕様とした。\n#5. 起動時、または、'r'キーで以前に切り出しが完了しているプロジェクトはスキップする仕様とした。"
+    },
+    {
+      "id": 11,
+      "asUrl":"Marking-Tool",
+      "year": 2022,
+      "client":"shinkenchiku-lab",
+      "abstract": "marking-tool",
+      "title":"ノーテーションのためのマーキングツール",
+      "oneLine": "",
+      "tags":["software","client"],
+      "mentions": [
+      ],
+      "bannar":{
+        "path":"./00_APP-FOR-SHINKENCHIKU_GET-COORD/video/Sequence 01_1.mp4",
+        "bVideo":true
+      },
+      "medium":[
+        {
+          "path" : "./00_APP-FOR-SHINKENCHIKU_GET-COORD/img/capture_screen_01.png",
+          "type" : "image",
+          "caption":"CLIENT-APPLICATION(OPENFRAMEWORKS)のキャプチャ画面"
+        },
+        {
+          "path" : "./00_APP-FOR-SHINKENCHIKU_GET-COORD/img/capture_screen_02.png",
+          "type" : "image",
+          "caption":"CLIENT-APPLICATION(OPENFRAMEWORKS)のキャプチャ画面"
+        },
+        {
+          "path" : "./00_APP-FOR-SHINKENCHIKU_GET-COORD/img/capture_screen_03.png",
+          "type" : "image",
+          "caption":"CLIENT-APPLICATION(OPENFRAMEWORKS)のキャプチャ画面"
+        },
+        {
+          "path" : "./00_APP-FOR-SHINKENCHIKU_GET-COORD/img/capture_screen_04.png",
+          "type" : "image",
+          "caption":"CLIENT-APPLICATION(OPENFRAMEWORKS)のキャプチャ画面"
+        },
+        {
+          "path" : "./00_APP-FOR-SHINKENCHIKU_GET-COORD/img/capture_screen_05.png",
+          "type" : "image",
+          "caption":"CLIENT-APPLICATION(OPENFRAMEWORKS)のキャプチャ画面"
+        },
+        {
+          "path" : "./00_APP-FOR-SHINKENCHIKU_GET-COORD/img/capture_screen_06.png",
+          "type" : "image",
+          "caption":"WEB-APPLICATION(NEXT.JS)のキャプチャ画面"
+        }
+        ,
+        {
+          "path" : "./00_APP-FOR-SHINKENCHIKU_GET-COORD/video/Sequence 01_2.mp4",
+          "type" : "video",
+          "caption":"CLIENT-APPLICATION(OPENFRAMEWORKS)のキャプチャ画面"
+        }
+      ],
+      "description": "Using OpenFrameworks(C++,OpenGL), Next.js, microCMS\nー\n任意の建材がどのプロジェクトの、どの部分に使用されているかを管理するための補助ツール。\nプロジェクトは数枚の画像によって管理され、任意の建材の使用箇所の情報はmicroCMSと呼ばれるCMSサービスを用いて管理されることが前提条件であった。\n「建材の使用箇所を取得するツール」と「CMSへ入力した情報を視覚的に確認するツール」の２つに分けて開発を行った。\n ー \n「建材の使用箇所を取得するツール」は、\n#1. どのプロジェクトの\n#2. どの画像の\n#3. どの部分に使用されているのか\nをマウスで選択し、情報をクリップボードにコピーする仕様とした。\n ー \n「CMSへ入力した情報を視覚的に確認するツール」は、建材ごとにそれぞれどのプロジェクトの、どの画像の、どの部分に使用されているかを一覧で確認できる仕様とした。\n ー \nそれぞれOpenFrameworks、Next.jsを用いている。\n(*このページでは一部画像を差し替えて表示している。）"
+    },
+    {
+      "id": 12,
+      "asUrl":"SunayamaStudio-Conceptual-Invitation-Shodoshima",
+      "year": 2021,
+      "client":"sunayama-studio",
+      "abstract": "conceptual-website(dev)",
+      "title":"小豆島への招待状",
+      "oneLine": "",
+      "tags":["webgl","web","experimental","sketch"],
+      "mentions": ["webgl study"
+      ],
+      "bannar":{
+        "path":"./00_SKETCH-SHODOSHIMA/img/0.png",
+        "bVideo":false
+      },
+      "medium":[
+        {
+          "path" : "./00_SKETCH-SHODOSHIMA/video/1.mp4",
+          "type" : "video",
+          "caption":""
+        },
+        {
+          "path" : "./00_SKETCH-SHODOSHIMA/video/2.mp4",
+          "type" : "video",
+          "caption":""
+        },
+        {
+          "path" : "./00_SKETCH-SHODOSHIMA/video/3.mp4",
+          "type" : "video",
+          "caption":""
+        }
+      ],
+      "description": "Using three.js"
     }
   ]
 }
