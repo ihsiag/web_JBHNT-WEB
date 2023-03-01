@@ -31,7 +31,7 @@ const Page_Bebento: NextPage<Props> =({project}:Props)=>{
   );
 }
 
-export const getStaticProps = async()=>{
+export const getStaticProps = ()=>{
   const project:T_PROJECT = {
     title:"BEBENTO",
     subtitle:"市内を移動し続ける靴修理職人のための\"弁当箱\"",

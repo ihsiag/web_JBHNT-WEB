@@ -17,7 +17,7 @@ const PA_Visual = ({ visual}: Props) => {
           <S_ImageWrap r={THEMES.rs.s} abs={true}>
             <Image 
                 src={visual.src} 
-                alt={visual.alt?visual.alt:""} 
+                alt="" 
                 quality={40} 
                 priority={false} 
                 loading={"lazy"} 
