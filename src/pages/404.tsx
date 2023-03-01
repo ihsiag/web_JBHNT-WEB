@@ -2,7 +2,7 @@
 import Head from 'next/head';
 import type { NextPage } from 'next';
 import Link from 'next/link';
-import Layout_Page_Parent from 'src/components/LAYOUT_PAGE_PARENT';
+import Layout_Page_Parent from 'src/components/PA_Layout';
 
 
 const Page_NotFound: NextPage = () => {

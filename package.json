@@ -6,8 +6,8 @@
   "lastupdate": "",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "d": "next dev",
+    "b": "next build",
     "export": "next build && next export",
     "start": "next start",
     "lint": "next lint --dir src",

@@ -34,8 +34,10 @@ export const gaps = {
 export const blockUnits={
   xs:"50px",
   s:"100px",
-  m:"250px",
-  l:"300px",
+  m:"150px",
+  l:"200px",
+  xl:"250px",
+  xxl:"300px"
 } as const;
 
 export const rs={

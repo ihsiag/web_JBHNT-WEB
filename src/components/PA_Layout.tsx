@@ -5,7 +5,7 @@ type Props = {
   children?: ReactChild;
 };
 
-const Layout_Page_Parent = ({ children }: Props) => {
+const P_Layout = ({ children }: Props) => {
   return (
     <>
       <div className="component">
@@ -22,7 +22,7 @@ const Layout_Page_Parent = ({ children }: Props) => {
 
         .contentArea {
           width: 1000px;
-          padding: ${THEMES.blockUnits.xs} 0 ${THEMES.blockUnits.xs} 0;
+          padding: ${THEMES.blockUnits.m} 0;
         }
 
         @media screen and (max-width: 1366px) {
@@ -42,4 +42,4 @@ const Layout_Page_Parent = ({ children }: Props) => {
   );
 };
 
-export default Layout_Page_Parent;
+export default P_Layout;
