@@ -10,9 +10,8 @@ const SVG_CrossThin = ({defaultColor,rotate}:{defaultColor:string;rotate?:number
   </svg>
   <style jsx>{`
     svg{
-      /* height:100%; */
       width:100%;
-      transform:rotate(${rotate}deg);
+      ${rotate!==undefined?`transform:rotate(${rotate}deg);`:""}
     }
     rect{
       fill:${defaultColor};
