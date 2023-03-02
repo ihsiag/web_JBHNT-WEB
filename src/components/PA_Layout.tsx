@@ -22,7 +22,7 @@ const P_Layout = ({ children }: Props) => {
 
         .contentArea {
           width: 1000px;
-          padding: ${THEMES.blockUnits.m} 0;
+          padding: ${THEMES.blockUnits.s} 0;
         }
 
         @media screen and (max-width: 1366px) {

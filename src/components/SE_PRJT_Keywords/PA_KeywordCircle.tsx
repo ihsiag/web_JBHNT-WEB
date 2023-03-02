@@ -30,10 +30,10 @@ const PA_KeywordCircle = ({keyword}:Props) => {
       width:100%;
       height:100%;
       border-radius:50%;
-      background-color:green;
       display:flex;
       justify-content:center;
       align-items:center;
+      border:${THEMES.colors.accent.red} 2px solid;
     }
     
     .textBox{
