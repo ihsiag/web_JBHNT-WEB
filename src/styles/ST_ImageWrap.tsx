@@ -15,7 +15,7 @@ const S_ImageWrap = styled.div<Props>`
     height:${(props)=>props.h?props.h:"100%"};
   }
   & > span {
-    border-radius: ${(props) => props.r?props.r:"0px"};
+    border-radius:${(props) => props.r?props.r:"0px"};
   }
 `
 

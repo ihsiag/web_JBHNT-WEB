@@ -4,6 +4,12 @@ export type T_JSON_ALL ={
   foge:string;
 }
 
+export type T_PRJT_VISUALS ={
+  title:string;
+  description?:string;
+  images:T_IMAGE[];
+}
+
 export type T_PRJT_PHASES ={
   title:string;
   descriptions:string[];
@@ -18,6 +24,7 @@ export type T_PROJECT = {
   catchDescription:string;
   keywords:string[];
   phases:T_PRJT_PHASES;
+  visuals:T_PRJT_VISUALS;
 }
 
 export type T_IMAGE ={

@@ -6,6 +6,7 @@ import P_SectionTitle from "src/components/PA_SectionTitle";
 import SE_Catch from "src/components/SE_PRJT_Catch";
 import SE_Phases from "src/components/SE_PRJT_Phases";
 import SE_Keywords from "src/components/SE_PRJT_Keywords";
+import SE_Visuals from "src/components/SE_PRJT_Visuals";
 
 
 type Props ={
@@ -20,8 +21,7 @@ const Page_Bebento: NextPage<Props> =({project}:Props)=>{
         <SE_Catch project={project}/>
         <SE_Keywords keywords={project.keywords}/>
         <SE_Phases phases = {project.phases}/>
-        {/* <SE_Visuals/> */}
-        <P_SectionTitle text="プロトタイプ"/>
+        <SE_Visuals visuals={project.visuals}/>
       </>
     </P_Layout>
     <style jsx>{`
@@ -38,7 +38,7 @@ export const getStaticProps = ()=>{
     catchVisual:{
       src:"/DB/projects/BEBENTO/0.jpg",
     },
-    catchCopy:"中川さんが喜ぶものをつくりたい...!",
+    catchCopy:"中川さんが\n喜ぶものをつくりたい...!",
     catchDescription:"京都市内各所を靴修理をしてまわるナカガワさんは、移動する先々で開店準備に時間がかかっていた。 私達は、ナカガワさんが開店を素早く、美しく行えるよう援助する道具を日本のお弁当箱から着想を得て制作した。",
     keywords:["聞き取り","観察","試作"],
     phases:{
@@ -54,11 +54,25 @@ export const getStaticProps = ()=>{
 
       ],
       images:[
-        {src:"",caption:""},
-        {src:"",caption:""},
-        {src:"",caption:""}
+        {src:"/DB/PROJECTS/BEBENTO/phase_01.png",caption:""},
+        {src:"/DB/PROJECTS/BEBENTO/phase_02.png",caption:""},
+        {src:"/DB/PROJECTS/BEBENTO/phase_03.png",caption:""},
+        {src:"/DB/PROJECTS/BEBENTO/phase_04.png",caption:""},
+        {src:"/DB/PROJECTS/BEBENTO/phase_05.png",caption:""},
+        {src:"/DB/PROJECTS/BEBENTO/phase_06.png",caption:""},
+        {src:"/DB/PROJECTS/BEBENTO/phase_07.png",caption:""},
+        {src:"/DB/PROJECTS/BEBENTO/phase_08.png",caption:""},
       ]
     },
+    visuals:{
+      title:"プロトタイプ",
+      description:"",
+      images:[
+        {src:"/DB/PROJECTS/BEBENTO/proto_01.png",caption:""},
+        {src:"/DB/PROJECTS/BEBENTO/proto_02.png",caption:""},
+        {src:"/DB/PROJECTS/BEBENTO/proto_03.png",caption:""},
+      ]
+    } 
    }
   return{
     props:{

@@ -48,7 +48,7 @@ const InParts_Profile = () => {
           <ul className="container">
             <li className="photoArea">
               <S_ImageWrap r={THEMES.rs.m}>
-                <Image src="/profile/profileImage.JPG" alt="profile image" quality={40} priority={false} loading={"lazy"} unoptimized={false} layout={"fill"} objectFit={"contain"} blurDataURL="data:image/jpeg;base64," placeholder="blur" />
+                <Image src="/profile/profileImage.JPG" alt="" quality={40} priority={false} loading={"lazy"} unoptimized={false} layout={"fill"} objectFit={"contain"} blurDataURL="data:image/jpeg;base64," placeholder="blur" />
               </S_ImageWrap>
             </li>
             <li className="textArea">

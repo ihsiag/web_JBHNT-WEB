@@ -1,5 +1,38 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import Document,{ Html, Head, Main, NextScript, DocumentContext } from "next/document";
 import MISC_Seo from "src/components/MISC_Seo";
+import { ServerStyleSheet } from "styled-components";
+
+//To Fix Styled-Component BUG
+export default class CustomizedDocument extends Document {
+  static async getInitialProps(ctx: DocumentContext) {
+    const sheet = new ServerStyleSheet();
+    const originalRenderPage = ctx.renderPage;
+
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: (App) => (props) =>
+            sheet.collectStyles(<App {...props} />),
+        });
+
+      const initialProps = await Document.getInitialProps(ctx);
+      return {
+        ...initialProps,
+        styles: (
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>
+        ),
+      };
+    } finally {
+      sheet.seal();
+    }
+  }
+  render(){
+    return MyDocument();
+  }  
+}
 
 const MyDocument = () => {
   return (
@@ -26,7 +59,7 @@ const MyDocument = () => {
             pageDescription={`
               工藤外四 / Gaishi Kudo
             `}
-            pageImg={"/element/seo.jpg"}
+            pageImg={"/element/seo.png"}
             pageImgWidth={540}
             pageImgHeight={540}
           />
@@ -34,11 +67,10 @@ const MyDocument = () => {
       </Head>
 
       <body>
+        <script></script>
         <Main />
         <NextScript />
       </body>
     </Html>
   );
 };
-
-export default MyDocument;
