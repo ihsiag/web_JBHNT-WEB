@@ -31,11 +31,11 @@ const PA_PhaseText = ({index,description}:Props)=>{
       }
 
       .descriptionArea{
-        padding-top:calc(${THEMES.blockUnits.m} / 2);
+        padding-top:calc(${THEMES.blockUnits.s} / 2);
       }
   
       .descriptionArea p{
-        font-size:${THEMES.fontSizes.l};
+        font-size:${THEMES.fontSizes.s};
       }
       `}</style>
     </>

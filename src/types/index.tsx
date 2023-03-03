@@ -25,6 +25,7 @@ export type T_PROJECT = {
   keywords:string[];
   phases:T_PRJT_PHASES;
   visuals:T_PRJT_VISUALS;
+  finalBanar:T_IMAGE;
 }
 
 export type T_IMAGE ={

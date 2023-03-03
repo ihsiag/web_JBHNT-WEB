@@ -7,6 +7,7 @@ import SE_Catch from "src/components/SE_PRJT_Catch";
 import SE_Phases from "src/components/SE_PRJT_Phases";
 import SE_Keywords from "src/components/SE_PRJT_Keywords";
 import SE_Visuals from "src/components/SE_PRJT_Visuals";
+import SE_FinalBanar from "src/components/SE_PRJT_FINALBANAR";
 
 
 type Props ={
@@ -22,6 +23,8 @@ const Page_Bebento: NextPage<Props> =({project}:Props)=>{
         <SE_Keywords keywords={project.keywords}/>
         <SE_Phases phases = {project.phases}/>
         <SE_Visuals visuals={project.visuals}/>
+        <SE_FinalBanar visual={project.finalBanar}/>
+        {/* <SE_Navi/> */}
       </>
     </P_Layout>
     <style jsx>{`
@@ -72,7 +75,8 @@ export const getStaticProps = ()=>{
         {src:"/DB/PROJECTS/BEBENTO/proto_02.png",caption:""},
         {src:"/DB/PROJECTS/BEBENTO/proto_03.png",caption:""},
       ]
-    } 
+    },
+    finalBanar:{src:"/DB/PROJECTS/BEBENTO/finalBanar.png",caption:""} 
    }
   return{
     props:{

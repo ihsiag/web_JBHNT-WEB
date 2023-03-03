@@ -14,10 +14,8 @@ const SE_Visuals = ({visuals}:Props)=>{
     <div className="component">
       <PA_SectionTitle text={visuals.title}/>
       <div className="flexContainer">
-        {visuals.images.map((i,_i)=>{
-          return(
-            <>
-            <div className="item">
+        {visuals.images.map((i,_i)=>
+            <div className="item" key={`SE_PRJT_VISUALS_${_i}`}>
               <S_ImageWrap r={THEMES.rs.s}>
                 <Image 
                   src={i.src} 
@@ -33,14 +31,12 @@ const SE_Visuals = ({visuals}:Props)=>{
                 />
               </S_ImageWrap>
             </div>
-            </>
-          )
-        })}
+          )}
       </div>
     </div>
     <style jsx>{`
       .component{
-        
+        padding-bottom:${THEMES.blockUnits.l};
       }
       .flexContainer{
         display:flex;

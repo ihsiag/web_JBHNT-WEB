@@ -9,7 +9,7 @@ type Props = {
 
 const PA_Visual = ({ visual}: Props) => {
   const _w = "100%";
-  const _aR = 16/9;
+  const _aR = 4/3;
   return (
     <>
       <div className="component">
