@@ -2,7 +2,6 @@ import { NextPage } from "next";
 import { PageProps_Minimal, T_PROJECT } from "src/types";
 
 import P_Layout from "src/components/PA_Layout";
-import P_SectionTitle from "src/components/PA_SectionTitle";
 import SE_Catch from "src/components/SE_PRJT_Catch";
 import SE_Phases from "src/components/SE_PRJT_Phases";
 import SE_Keywords from "src/components/SE_PRJT_Keywords";
@@ -14,7 +13,7 @@ type Props = PageProps_Minimal &{
   project:T_PROJECT;
 };
 
-const Page_Coathook: NextPage<Props> =({project}:Props)=>{
+const Page_Stool: NextPage<Props> =({project}:Props)=>{
   return(
     <>
     <P_Layout>
@@ -36,21 +35,19 @@ const Page_Coathook: NextPage<Props> =({project}:Props)=>{
 
 export const getStaticProps = ()=>{
   const project:T_PROJECT = {
-    title:"STRIKE",
+    title:"THE-WAY-WE-DESIGN",
     subtitle:"国際家具見本市に向けてデザインしたコートフック",
     catchVisual:{
       src:"/DB/projects/COATHOOK/0.jpg",
     },
-    catchCopy:"こんなところに時計が...!",
-    catchDescription:"文字盤の上から服をかけるこのコートフックは、時計本来の機能を奪う。モノから機能が失われた時、初めて人はものの持つ表情や美しさに目を向ける。鑑賞の対象である時計に積極的に働きかける振る舞いは、時計が持つ不思議な魅力に気づく助けとなる。",
-    keywords:["リサーチ","クラフト","ディテール"],
+    catchCopy:"人らしさってなんだろう...？",
+    catchDescription:"人間特有の有機的データがデザインエレメントとなる。出来上がるものは奇妙である。震える手はそれを制御するべきだろうか。情報技術がより発達した世界は奇妙で有機的な形であふれかえっているのだろうか。そう遠くない未来世界の価値体系を妄想する。",
+    keywords:["ヒトと\nコンピューター","未来","即興"],
     phases:{
       title:"丁寧にものづくり",
       descriptions:[
-        "とことん自分の好きなデザインについて調査。",
-        "アイデアをスケッチしたり、手で触れるものに起こしていく。",
-        "",
-        ""
+        "コンピューターと人が共にデザインを行っていく未来はあるだろうか？",
+        "コンピューターと比較してヒトらしさは何だろう？",
       ],
       images:[
         {src:"/DB/PROJECTS/COATHOOK/phase_01.png",caption:""},
@@ -79,11 +76,11 @@ export const getStaticProps = ()=>{
    }
   return{
     props:{
-      head:"COATHOOK",
+      head:"STOOL",
       project:project  
     }
 }
 }
 
-export default Page_Coathook;
+export default Page_Stool;
 

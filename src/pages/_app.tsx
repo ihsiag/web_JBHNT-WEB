@@ -1,16 +1,34 @@
 import "src/styles/reset.css";
 import "src/styles/reset_gk.css";
 
+import Head from "next/head";
 import type { AppProps } from "next/app";
-import PN_Menu from "src/components/PN_Menu";
-import PN_Profile from "src/components/PN_Profile";
+import { GKContextProvider } from "src/context";
+import { PageProps_Minimal } from "src/types";
 
-function MyApp({ Component, pageProps }: AppProps) {
+import SE_Profile from "src/components/SE_Profile";
+import SE_Menu from "src/components/SE_Menu";
+
+type Override<T extends U, U> = Omit<T, keyof U> & U
+export type GKAppProps = Override<
+  AppProps<PageProps_Minimal>,
+  { pageProps: PageProps_Minimal }
+>
+
+
+function MyApp({ Component, pageProps,router }: GKAppProps) {
   return (
     <>
-      <PN_Menu/>
-      <PN_Profile/>
-      <Component {...pageProps} />
+      <Head>
+        <title>{pageProps.head} | GK</title>
+      </Head>
+      <GKContextProvider>
+        <>
+        <SE_Menu/>
+        <SE_Profile/>
+        <Component {...pageProps} />
+        </>
+      </GKContextProvider>
     </>
   );
 }

@@ -23,6 +23,7 @@ const P_Layout = ({ children }: Props) => {
         .contentArea {
           width: 1000px;
           padding: ${THEMES.blockUnits.s} 0;
+          overflow:hidden;
         }
 
         @media screen and (max-width: 1366px) {

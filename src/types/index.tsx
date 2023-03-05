@@ -1,5 +1,9 @@
 // export type Json_All
 
+export type PageProps_Minimal = {
+  head:string;
+}
+
 export type T_JSON_ALL ={
   foge:string;
 }
@@ -31,4 +35,9 @@ export type T_PROJECT = {
 export type T_IMAGE ={
   src:string;
   caption?:string;
+}
+
+export type T_VEC2 ={
+  x:number;
+  y:number;
 }

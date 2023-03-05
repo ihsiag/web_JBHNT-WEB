@@ -21,8 +21,8 @@ const PA_KeywordCircle = ({keyword}:Props) => {
     }
 
     .component{
-      width:${THEMES.blockUnits.l};
-      height:${THEMES.blockUnits.l};
+      width:${THEMES.blockUnits.xl};
+      height:${THEMES.blockUnits.xl};
       padding:${THEMES.gaps.l};
     }
     
@@ -33,12 +33,13 @@ const PA_KeywordCircle = ({keyword}:Props) => {
       display:flex;
       justify-content:center;
       align-items:center;
-      border:${THEMES.colors.accent.red} 2px solid;
+      border:${THEMES.colors.text.main} 10px solid;
     }
     
     .textBox{
       padding:${THEMES.gaps.s};
       width:fit-content;
+      text-align:center;
     }
   `}</style>
   </>

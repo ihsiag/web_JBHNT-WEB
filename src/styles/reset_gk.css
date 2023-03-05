@@ -91,3 +91,10 @@ div , ul , li , p {
   /* outline: 1px solid rgb(126, 57, 57); */
   outline-offset:-1px; 
 }
+
+button{
+  border:none;
+  background:none;
+  margin:none;
+  padding:none;
+}

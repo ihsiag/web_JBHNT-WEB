@@ -24,7 +24,7 @@ export const gaps = {
   xxs:"2px",
   xs:"5px",
   s:"8px",
-  m:"10px",
+  m:"10px",//default
   l:"25px",
   xl:"50px",
   xxl:"100px",
@@ -34,7 +34,7 @@ export const gaps = {
 export const blockUnits={
   xs:"50px",
   s:"100px",
-  m:"150px",
+  m:"150px",//default
   l:"200px",
   xl:"250px",
   xxl:"300px"
@@ -43,7 +43,7 @@ export const blockUnits={
 export const rs={
   xs:"4px",
   s:"8px",
-  m:"20px",
+  m:"20px",//default
   l:"30px"
 } as const;
 
@@ -51,7 +51,7 @@ export const animations = {
   duration:{
     xs:"0.05s",
     s:"0.1s",
-    m:"0.2s",
+    m:"0.2s",//default
     l:"0.4s"
   },
   delay:{
@@ -70,19 +70,19 @@ export const fontFamilies ={
 export const fontSizes={
   xs:"0.8rem",
   s:"1.25rem",
-  m:"1.5rem",
+  m:"1.5rem",//default
   l:"2rem",
   xl:"4rem",
   xxl:"8rem"
 } as const;
 
 export const lineHeights={
-  default:"1.6",
+  default:"1.6",//default
   wide:"2.0"
 } as const;
 
 export const fontWeights={
-  n:400,
+  n:400,//default
   b:600,
   eb:800,
   sub:{

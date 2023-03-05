@@ -25,7 +25,7 @@ const SE_Phases = ({phases}:Props)=>{
         <div className="visualArea">
           {phases.images.map((i,_i)=>
             <div className={["item",_i%2==0?"item-a":"item-b"].join(" ")} key={`InParts_Phase_${_i}`}>
-              <PA_PhaseVisual index = {_i+1} image={i} />
+              {/* <PA_PhaseVisual index = {_i+1} image={i} /> */}
             </div>
           )}
         </div>

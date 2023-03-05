@@ -1,16 +1,15 @@
 import { NextPage } from "next";
-import { T_PROJECT } from "src/types";
+import { PageProps_Minimal, T_PROJECT } from "src/types";
 
 import P_Layout from "src/components/PA_Layout";
-import P_SectionTitle from "src/components/PA_SectionTitle";
 import SE_Catch from "src/components/SE_PRJT_Catch";
 import SE_Phases from "src/components/SE_PRJT_Phases";
 import SE_Keywords from "src/components/SE_PRJT_Keywords";
 import SE_Visuals from "src/components/SE_PRJT_Visuals";
-import SE_FinalBanar from "src/components/SE_PRJT_FINALBANAR";
+import SE_FinalBanar from "src/components/SE_PRJT_FinalBar";
 
 
-type Props ={
+type Props = PageProps_Minimal & {
   project:T_PROJECT;
 };
 
@@ -19,11 +18,11 @@ const Page_Bebento: NextPage<Props> =({project}:Props)=>{
     <>
     <P_Layout>
       <> 
-        <SE_Catch project={project}/>
-        <SE_Keywords keywords={project.keywords}/>
+        <SE_Catch project = {project}/>
+        <SE_Keywords keywords = {project.keywords}/>
         <SE_Phases phases = {project.phases}/>
-        <SE_Visuals visuals={project.visuals}/>
-        <SE_FinalBanar visual={project.finalBanar}/>
+        <SE_Visuals visuals = {project.visuals}/>
+        <SE_FinalBanar visual = {project.finalBanar}/>
         {/* <SE_Navi/> */}
       </>
     </P_Layout>
@@ -43,9 +42,9 @@ export const getStaticProps = ()=>{
     },
     catchCopy:"中川さんが\n喜ぶものをつくりたい...!",
     catchDescription:"京都市内各所を靴修理をしてまわるナカガワさんは、移動する先々で開店準備に時間がかかっていた。 私達は、ナカガワさんが開店を素早く、美しく行えるよう援助する道具を日本のお弁当箱から着想を得て制作した。",
-    keywords:["聞き取り","観察","試作"],
+    keywords:["観察","試作","映像制作"],
     phases:{
-      title:"潜在的なニーズを見つけるところから",
+      title:"潜在課題の発見から",
       descriptions:[
         "中川さんという靴修理の職人に取材を行った。",
         "目視で観察取材をする中で、刃物が修理台に当たっている点が気になった。",
@@ -80,7 +79,8 @@ export const getStaticProps = ()=>{
    }
   return{
     props:{
-     project:project  
+      head:"BEBENTO",
+      project:project
     }
 }
 }

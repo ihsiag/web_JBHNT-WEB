@@ -1,35 +1,48 @@
-import Link from "next/link";
+import PA_BasicProfile from "./PA_BasicProfile";
+import PA_Motivations from "./PA_Motivations";
+import PA_Skills from "./PA_Skills";
 import * as THEMES from "src/styles/theme";
 
-const PN_Profile = () => {
-  const _w = THEMES.blockUnits.s;
+type Props ={
+  bIsOpen:boolean;
+}
+
+const PN_Profile = ({bIsOpen}:Props) => {
   return (
     <>
       <div className="component">
-        <div className="textBox">
-          <p>私について</p>
+        <div className={["panel",bIsOpen?"open":""].join(" ")}>
+          <PA_BasicProfile/>
+          <PA_Skills/>
+          <PA_Motivations/>
         </div>
       </div>
-      <style jsx>{`
-        p {
-          font-size: ${THEMES.fontSizes.xl};
-        }
-        .component {
-          position: fixed;
-          top: calc(100vh - ${_w});
-          left: 100%;
-          width: 100vh;
-          height: ${_w};
-          background-color: lightgreen;
-          transform-origin: left bottom;
-          transform:rotate(-90deg);
+
+      <style jsx>{` 
+      body{
+        ${bIsOpen?"overflow:hidden;":""}
+      }       
+        .component{
+          position:absolute;
+          width:100%;
+          height:100%;
+          
           display:flex;
           justify-content:center;
           align-items:center;
         }
-        .textBox{
-          width:fit-content;
-          /* background-color:red; */
+
+        .panel{
+          opacity:0;
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          align-items:center; 
+          transition-duration:${THEMES.animations.duration.m};
+        }
+        .open{
+          opacity:1;
+          transition-delay:${THEMES.animations.duration.l};
         }
       `}</style>
     </>

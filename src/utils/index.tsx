@@ -111,4 +111,10 @@ export const getPostsPerPage = <Json_T,>(posts_num_per_page:number,currentPageNu
   return posts_per_page;
 }
 
+export const getNumFromStr = (str:string):number=>{
+  const regex = /[^0-9]/g;
+  const number = str.replace(regex, "");
+  return parseInt(number);
+}
+
 
