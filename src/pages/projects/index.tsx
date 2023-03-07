@@ -99,6 +99,9 @@ const Page_Projects: NextPage<Props> = ({ title_header,projects}: Props) => {
           }
           </div>
         </div>
+        {/* <div className="filterArea">
+            <Parts_Projects_Filtering filterOptions={filterOptions} handleFilterOptionClick={handleFilterOptionClick}/>
+          </div> */}
         </>
       </Layout_Page_Parent>
       <style jsx>{`
