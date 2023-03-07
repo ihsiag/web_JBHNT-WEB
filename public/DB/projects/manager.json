@@ -2,6 +2,131 @@
   "projects": [
     {
       "id": 1,
+      "asUrl":"Bebento",
+      "year": 2017,
+      "client":"school",
+      "abstract": "storytelling",
+      "title":"BEBENTO",
+      "oneLine": "人とデジタルファブリケーションを考える",
+      "tags":["film","awarded"],
+      "mentions": [
+        "workshop with Frank Kolkman",
+        "exhibited at Broken Nature Show @ XX11 Milano Triennale 2019, Italy",
+        "screening at Real To Reel 2019, by Crafts Council, United Kingdom",
+        "selected as runner-up at RCA Helen Hamlyn Fixperts Award 2018, United Kingdom",
+        "screening at Nordic Makers' Film Festival, Kristinestad, Finland",
+        "screening at Cinewaves Films 2020, Saudi Arabia"
+      ],  
+      "bannar": {
+        "path" : "./00_FIXPERTS/img/capture_screen-video.jpg",
+        "bVideo" : false
+      },
+      "medium":[
+        {
+          "path" : "./00_FIXPERTS/img/capture_screen-video.jpg",
+          "type" : "image",
+          "caption":""
+        },
+        {
+          "path":"https://www.youtube.com/embed/Se5VDiULb5M",
+          "type":"youtube",
+          "caption":""
+        },
+        {
+          "path":"./00_FIXPERTS/txt/essay.md",
+          "type":"markdown",
+          "caption":"TEXT BY GAISHI KUDO, TYPEFACE : Noto Sans JP"
+        }
+      ],
+      "description":"私たちのチーム（工藤外四、中山うらら、八木まどか、Ah Hyoen Kim）は、京都市内を移動しながら靴の修理をおこなうナカガワミチオ氏をパートナーに、民俗学的調査と密着取材の協力を得て、ナカガワ氏が移動した場所で効率的かつ迅速に仕事場とディスプレイのセットアップを可能にする方法の開発に取り組んだ。解決策として、日本のお弁当箱をベースに、セットアップの時間を大幅に短縮できるボックスセットをデザインすることにした。\nこのボックスセットはFixpertsを代表する作品の一つとして選出され、Paola Antonelliがキュレーターを務める「Broken Nature:the XXII triennale di milano, Italy」に展示された。\nまた、本プロジェクトを一本の映像にまとめたドキュメンタリーフィルムは「Real To Reel 2019, Crafts Council, UK」、「RCA Helen Hamlyn Fixperts Award 2018, UK」、「Nordic Makers' Film Festival, Kristinestad, Finland」、「Cinewaves Films, Saudi Arabia」に選出されヨーロッパをはじめ、サウジアラビアなど国境を越えて複数の都市で上映された。"
+    }
+    {
+      "id": 2,
+      "asUrl":"The-Way-We-Design",
+      "year": 2019,
+      "client":"graduation-BA",
+      "abstract": "new method of making",
+      "title":"\"The Way We Design\"",
+      "oneLine": "人とコンピューターを考える",
+      "tags":["furniture","experimental","conceptual","artistic research"],
+      "mentions": [
+        "exhibited @ KIT Graduation Show 2019",
+        "guided by Eizo Okada"
+      ],
+      
+      "bannar": {
+        "path" : "./00_BA_GRADUATION/img/resulted-object_01.png",
+        "bVideo" : false
+      },
+      "medium":[
+        {
+          "path" : "./00_BA_GRADUATION/img/resulted-object_01.png",
+          "type" : "image",
+          "caption":"研究初期に誕生 : CG"
+        },
+        {
+          "path" : "./00_BA_GRADUATION/img/resulted-object_02.jpg",
+          "type" : "image",
+          "caption":"研究中期に誕生 : CG"
+        },
+        {
+          "path" : "./00_BA_GRADUATION/img/resulted-object_03.jpg",
+          "type" : "image",
+          "caption":"研究後期に誕生 : 3D-PRINTED | CNC MILLED"
+        },
+        {
+          "path" : "./00_BA_GRADUATION/video/7.mp4",
+          "type" : "video",
+          "caption":"制作したカスタムツールのキャプチャ画面, Processing (JAVA) + Rhino6 + Grasshopper"
+        },
+        {
+          "path" : "./00_BA_GRADUATION/video/6.mp4",
+          "type" : "video",
+          "caption":"制作したカスタムツールのキャプチャ画面, Processing (JAVA) + Rhino6 + Grasshopper"
+        },
+        {
+          "path" : "./00_BA_GRADUATION/txt/essay.md",
+          "type" : "markdown",
+          "caption":"TEXT BY GAISHI KUDO, TYPEFACE : Noto Sans JP"
+        }
+        
+      ],
+      "description": "私はヒト特有の震えや癖に、コンピューターの計算生成には代え難い強い魅力を感じる。癖をコンピューターで扱うことはできるだろうか。単純な動作であり、被験者によって様々な結果が得られる「円のドローイング」を用いて実験することにする。\n以下の手順を構想し、ヒト特有の震えや癖をコンピューターを用いることで、より魅力的に出力しようと試みた。\n\n#1. 被験者が入力した円のドローイングから描こうとしたであろう理想の真円を予測することで、ドローイングがどれだけ真円と離れているのかを数値化する。\n#2. 数値化された理想値との誤差から一つのタイルを生成する。\n#3. 生成されたタイルを交互に並べてパターンを作り、そのデータを別のアプリケーションで制作したスツール骨格モデルの表面に送信する。\n\n人間特有の有機的データがデザインエレメントとなる。出来上がるものは奇妙である。震える手はそれを制御するべきだろうか。情報技術がより発達した世界は奇妙で有機的な形であふれかえっているのだろうか。そう遠くない未来世界の価値体系を妄想する。"
+    },
+
+    {
+      "id": 3,
+      "asUrl":"A-coathook-designed-for-the-exhibition-in-Milan",
+      "year": 2018,
+      "client":"zemi",
+      "abstract": "coathook", 
+      "title":"A coathook designed for the exhibition in Milan",
+      "oneLine": "人と家具を考える",
+      "mentions": [
+        "exhibited @ Milan Design Week Salone Satellite 2018",
+        "guided by Eizo Okada"
+      ],
+      "tags":["furniture","conceptual"],
+      "bannar": {
+        "path" : "./00_COATHOOK/img/resulted-object_01.jpg",
+        "bVideo" : false
+      },
+      "medium":[
+        {
+          "path" : "./00_COATHOOK/img/resulted-object_01.jpg",
+          "type" : "image",
+          "caption":"PHOTO BY TOMOMI TAKANO"
+        },
+        {
+          "path" : "./00_COATHOOK/img/resulted-object_02.jpg",
+          "type" : "image",
+          "caption":"PHOTO BY TOMOMI TAKANO"
+        }
+      ],
+      "description": "-\n文字盤の上から服をかけるこのコートフックは、時計本来の機能を奪う。\nモノから機能が失われた時、初めて人はものの持つ表情や美しさに目を向ける。\n鑑賞の対象である時計に積極的に働きかける振る舞いは、時計が持つ不思議な魅力に気づく助けとなる。\n(PROOFREADED BY zemi 2018)"
+    },
+    {
+      "id": 4,
       "asUrl":"Simulated-Experience-Or-Dream",
       "year": 2022,
       "client":"graduation-MA",
@@ -74,130 +199,6 @@
         }
       ],
       "description": "研究報告書 : [ダウンロードリンク](/DB/projects/00_MA_GRADUATION/report.pdf)"
-    },
-    {
-      "id": 2,
-      "asUrl":"The-Way-We-Design",
-      "year": 2019,
-      "client":"graduation-BA",
-      "abstract": "new method of making",
-      "title":"\"The Way We Design\"",
-      "oneLine": "人とコンピューターを考える",
-      "tags":["furniture","experimental","conceptual","artistic research"],
-      "mentions": [
-        "exhibited @ KIT Graduation Show 2019",
-        "guided by Eizo Okada"
-      ],
-      
-      "bannar": {
-        "path" : "./00_BA_GRADUATION/img/resulted-object_01.png",
-        "bVideo" : false
-      },
-      "medium":[
-        {
-          "path" : "./00_BA_GRADUATION/img/resulted-object_01.png",
-          "type" : "image",
-          "caption":"研究初期に誕生 : CG"
-        },
-        {
-          "path" : "./00_BA_GRADUATION/img/resulted-object_02.jpg",
-          "type" : "image",
-          "caption":"研究中期に誕生 : CG"
-        },
-        {
-          "path" : "./00_BA_GRADUATION/img/resulted-object_03.jpg",
-          "type" : "image",
-          "caption":"研究後期に誕生 : 3D-PRINTED | CNC MILLED"
-        },
-        {
-          "path" : "./00_BA_GRADUATION/video/7.mp4",
-          "type" : "video",
-          "caption":"制作したカスタムツールのキャプチャ画面, Processing (JAVA) + Rhino6 + Grasshopper"
-        },
-        {
-          "path" : "./00_BA_GRADUATION/video/6.mp4",
-          "type" : "video",
-          "caption":"制作したカスタムツールのキャプチャ画面, Processing (JAVA) + Rhino6 + Grasshopper"
-        },
-        {
-          "path" : "./00_BA_GRADUATION/txt/essay.md",
-          "type" : "markdown",
-          "caption":"TEXT BY GAISHI KUDO, TYPEFACE : Noto Sans JP"
-        }
-        
-      ],
-      "description": "私はヒト特有の震えや癖に、コンピューターの計算生成には代え難い強い魅力を感じる。癖をコンピューターで扱うことはできるだろうか。単純な動作であり、被験者によって様々な結果が得られる「円のドローイング」を用いて実験することにする。\n以下の手順を構想し、ヒト特有の震えや癖をコンピューターを用いることで、より魅力的に出力しようと試みた。\n\n#1. 被験者が入力した円のドローイングから描こうとしたであろう理想の真円を予測することで、ドローイングがどれだけ真円と離れているのかを数値化する。\n#2. 数値化された理想値との誤差から一つのタイルを生成する。\n#3. 生成されたタイルを交互に並べてパターンを作り、そのデータを別のアプリケーションで制作したスツール骨格モデルの表面に送信する。\n\n人間特有の有機的データがデザインエレメントとなる。出来上がるものは奇妙である。震える手はそれを制御するべきだろうか。情報技術がより発達した世界は奇妙で有機的な形であふれかえっているのだろうか。そう遠くない未来世界の価値体系を妄想する。"
-    },
-    {
-      "id": 3,
-      "asUrl":"Bebento",
-      "year": 2017,
-      "client":"school",
-      "abstract": "storytelling",
-      "title":"BEBENTO",
-      "oneLine": "人とデジタルファブリケーションを考える",
-      "tags":["film","awarded"],
-      "mentions": [
-        "workshop with Frank Kolkman",
-        "exhibited at Broken Nature Show @ XX11 Milano Triennale 2019, Italy",
-        "screening at Real To Reel 2019, by Crafts Council, United Kingdom",
-        "selected as runner-up at RCA Helen Hamlyn Fixperts Award 2018, United Kingdom",
-        "screening at Nordic Makers' Film Festival, Kristinestad, Finland",
-        "screening at Cinewaves Films 2020, Saudi Arabia"
-      ],  
-      "bannar": {
-        "path" : "./00_FIXPERTS/img/capture_screen-video.jpg",
-        "bVideo" : false
-      },
-      "medium":[
-        {
-          "path" : "./00_FIXPERTS/img/capture_screen-video.jpg",
-          "type" : "image",
-          "caption":""
-        },
-        {
-          "path":"https://www.youtube.com/embed/Se5VDiULb5M",
-          "type":"youtube",
-          "caption":""
-        },
-        {
-          "path":"./00_FIXPERTS/txt/essay.md",
-          "type":"markdown",
-          "caption":"TEXT BY GAISHI KUDO, TYPEFACE : Noto Sans JP"
-        }
-      ],
-      "description":"私たちのチーム（工藤外四、中山うらら、八木まどか、Ah Hyoen Kim）は、京都市内を移動しながら靴の修理をおこなうナカガワミチオ氏をパートナーに、民俗学的調査と密着取材の協力を得て、ナカガワ氏が移動した場所で効率的かつ迅速に仕事場とディスプレイのセットアップを可能にする方法の開発に取り組んだ。解決策として、日本のお弁当箱をベースに、セットアップの時間を大幅に短縮できるボックスセットをデザインすることにした。\nこのボックスセットはFixpertsを代表する作品の一つとして選出され、Paola Antonelliがキュレーターを務める「Broken Nature:the XXII triennale di milano, Italy」に展示された。\nまた、本プロジェクトを一本の映像にまとめたドキュメンタリーフィルムは「Real To Reel 2019, Crafts Council, UK」、「RCA Helen Hamlyn Fixperts Award 2018, UK」、「Nordic Makers' Film Festival, Kristinestad, Finland」、「Cinewaves Films, Saudi Arabia」に選出されヨーロッパをはじめ、サウジアラビアなど国境を越えて複数の都市で上映された。"
-    },
-    {
-      "id": 4,
-      "asUrl":"A-coathook-designed-for-the-exhibition-in-Milan",
-      "year": 2018,
-      "client":"zemi",
-      "abstract": "coathook", 
-      "title":"A coathook designed for the exhibition in Milan",
-      "oneLine": "人と家具を考える",
-      "mentions": [
-        "exhibited @ Milan Design Week Salone Satellite 2018",
-        "guided by Eizo Okada"
-      ],
-      "tags":["furniture","conceptual"],
-      "bannar": {
-        "path" : "./00_COATHOOK/img/resulted-object_01.jpg",
-        "bVideo" : false
-      },
-      "medium":[
-        {
-          "path" : "./00_COATHOOK/img/resulted-object_01.jpg",
-          "type" : "image",
-          "caption":"PHOTO BY TOMOMI TAKANO"
-        },
-        {
-          "path" : "./00_COATHOOK/img/resulted-object_02.jpg",
-          "type" : "image",
-          "caption":"PHOTO BY TOMOMI TAKANO"
-        }
-      ],
-      "description": "-\n文字盤の上から服をかけるこのコートフックは、時計本来の機能を奪う。\nモノから機能が失われた時、初めて人はものの持つ表情や美しさに目を向ける。\n鑑賞の対象である時計に積極的に働きかける振る舞いは、時計が持つ不思議な魅力に気づく助けとなる。\n(PROOFREADED BY zemi 2018)"
     },
     {
       "id": 5,
