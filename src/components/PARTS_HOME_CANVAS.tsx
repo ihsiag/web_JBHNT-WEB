@@ -46,7 +46,6 @@ const Parts_Home_Canvas = () => {
         .homeCanvas {
           width: 100%;
           height: 100%;
-          background-color:red;
         }
       `}</style>
     </>
