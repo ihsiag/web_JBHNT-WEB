@@ -27,10 +27,11 @@ const Parts_Breadcrumbs = ({ pageNames }: Props) => {
     <>
       <div className="component">
         <nav className="crumbs">
-            <div className="crumb gkweb">
+            <div className="crumb gkwebWrap">
               <Link href="/"><a>
-                  <div className="crumbContent"><p>{">> "}<span className={pageNames?"":"underline"}>GKWEB</span></p></div>
-                  <div className="crumbContent"><p>/</p></div>
+                  {/* <div className="crumbContent"><p>{">> "}<span className={pageNames?"":"underline"}>GKWEB</span></p></div> */}
+                  <div className="crumbContent gkweb"><p> {">> "}<span >GKWEB</span></p></div>
+                  <div className="crumbContent separator"><p>/</p></div>
               </a></Link>
               <div className="menu">
                 <Parts_Menu/>
@@ -86,11 +87,11 @@ const Parts_Breadcrumbs = ({ pageNames }: Props) => {
         }
 
         .crumb:first-child .crumbContent:first-child{
-          padding-left:0;
+          /* padding-left:0; */
         }
 
         .crumb:last-child .crumbContent:last-child{
-          padding-right:0;
+          /* padding-right:0; */
         }
 
         .crumb {
@@ -118,7 +119,7 @@ const Parts_Breadcrumbs = ({ pageNames }: Props) => {
           transform:translate(-50vw,0);
         }
 
-        .gkweb:hover .menu{
+        .gkwebWrap:hover .menu{
           display:block;
           opacity:1.0;
           transform:translate(0,0);
@@ -170,6 +171,24 @@ const Parts_Breadcrumbs = ({ pageNames }: Props) => {
         .underline{
           text-decoration:underline;
           text-underline-offset:${THEMES.paddings.vert.s};
+        }
+
+        .crumb .gkweb{
+          border:2px solid;
+          border-radius:${THEMES.rs.s};
+          padding:0 ${THEMES.paddings.hori.s} 0 ${THEMES.paddings.hori.xs};
+        }
+
+        .crumb{
+          border-color: ${THEMES.colors.text.sub};
+        }
+
+        .crumb:last-child {
+          border-color: ${THEMES.colors.text.sub};
+        }
+
+        .separator{
+          border:none;
         }
       `}</style>
     </>

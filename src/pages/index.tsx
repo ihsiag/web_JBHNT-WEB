@@ -7,6 +7,7 @@ import type { NextPage } from "next";
 import * as THEMES from "src/styles/theme";
 import Layout_Page_Parent from "src/components/LAYOUT_PAGE_PARENT";
 import Parts_Home_Canvas from "src/components/PARTS_HOME_CANVAS";
+import Link from "next/link";
 
 
 const Page_Home: NextPage<PageProps_Minimal> = ({title_header}:PageProps_Minimal) => {
@@ -15,9 +16,11 @@ const Page_Home: NextPage<PageProps_Minimal> = ({title_header}:PageProps_Minimal
       <Layout_Page_Parent title={title_header}>
         <>
         <div className="component">
-          <div className="canvas">
+          <Link href="projects">
+          <a><div className="canvas">
             <Parts_Home_Canvas/>
-          </div>
+          </div></a>
+          </Link>
         </div>
         </>
       </Layout_Page_Parent>
@@ -26,13 +29,12 @@ const Page_Home: NextPage<PageProps_Minimal> = ({title_header}:PageProps_Minimal
           display:flex;
           align-items:center;
           position:relative;
-          /* height:100vh; */
         }
         
         .canvas{
           height:${THEMES.blockUnits.vert.l};
           position:absolute;
-          z-index:-1;
+          z-index:1;
           top:calc(50vh -  ${THEMES.blockUnits.m});
           left:50%;
           transform:translate(-50%,-65%);

@@ -66,13 +66,13 @@ const Page_Projects: NextPage<Props> = ({ title_header,projects}: Props) => {
         <>
         <div className="component">
           
-          <div className="filterArea">
+          {/* <div className="filterArea">
             <Parts_Projects_Filtering filterOptions={filterOptions} handleFilterOptionClick={handleFilterOptionClick}/>
-          </div>
+          </div> */}
 
-          <div className="viewMethodArea">
+          {/* <div className="viewMethodArea">
               <Parts_Projects_ViewMethod currentParentViewMethodIsIndex = {viewMethodIsIndex} setParentViewMethodIsIndex={handleViewMethodIsIndex}/>
-          </div>
+          </div> */}
 
           <div className="projectsContainersArea">
           {

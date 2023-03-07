@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { Router, useRouter } from "next/router";
 import { useState,useEffect, useRef, MutableRefObject } from "react";
 import Sketches_Panels from "src/sketches/SKETCHES_PANELS";
 
@@ -24,7 +26,9 @@ const Parts_Home_Canvas = () => {
   useEffect(() => {
     const canvasElm = Sketches_Panels(divSize);
     mountRef.current.appendChild(canvasElm);
-    return ()=> {if(mountRef.current)mountRef.current.removeChild(canvasElm)};
+    return ()=> {
+      if(mountRef.current)mountRef.current.removeChild(canvasElm);
+    };
   }, [divSize]);
   
   return (
@@ -42,6 +46,7 @@ const Parts_Home_Canvas = () => {
         .homeCanvas {
           width: 100%;
           height: 100%;
+          background-color:red;
         }
       `}</style>
     </>
