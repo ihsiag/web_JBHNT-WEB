@@ -9,6 +9,8 @@ import { PageProps_Minimal } from "src/types";
 import SE_Profile from "src/components/SE_Profile";
 import SE_Menu from "src/components/SE_Menu";
 
+import {AnimatePresence} from "framer-motion";
+
 type Override<T extends U, U> = Omit<T, keyof U> & U
 export type GKAppProps = Override<
   AppProps<PageProps_Minimal>,
@@ -26,7 +28,9 @@ function MyApp({ Component, pageProps,router }: GKAppProps) {
         <>
         <SE_Menu/>
         <SE_Profile/>
-        <Component {...pageProps} />
+        <AnimatePresence mode="wait" onExitComplete={()=>window.scrollTo({top:0,behavior:"auto"})}>
+          <Component {...pageProps} />
+        </AnimatePresence>
         </>
       </GKContextProvider>
     </>
