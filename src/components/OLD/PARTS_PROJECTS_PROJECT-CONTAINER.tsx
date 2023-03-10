@@ -4,7 +4,7 @@ import styled from "styled-components";
 import * as UTILS from "src/utils";
 import * as THEMES from "src/styles/theme";
 import { useState, memo } from "react";
-import { Json_Bannar, LoadedNextImage } from "src/types/dataTypes";
+import { Json_Bannar, LoadedNextImage } from "src/types";
 
 type Props = {
   methodIsIndex: boolean;

@@ -2,9 +2,9 @@
 import Head from 'next/head';
 import type { NextPage } from 'next';
 import Link from 'next/link';
-import Layout_Page_Parent from 'src/components/LAYOUT_PAGE_PARENT';
+import Layout_Page_Parent from 'src/components/PA_Layout';
 import * as UTILS from "src/utils";
-import { PageProps_Minimal} from "src/types/dataTypes";
+import { PageProps_Minimal} from "src/types";
 
 
 const Page_NotFound: NextPage<PageProps_Minimal> = () => {

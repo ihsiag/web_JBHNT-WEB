@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { ExtLink } from "src/utils";
-import { Json_Bilingual,Json_Utils_Period, Json_Utils_Link, Json_Career_Child } from "src/types/dataTypes";
+import { T_BILINGUAL} from "src/types";
 import * as THEMES from "src/styles/theme";
 
 
-const Parts_Info_Intro_Texts = ({texts}: {texts: Json_Bilingual[];}) => {
+const Parts_Info_Intro_Texts = ({texts}: {texts: T_BILINGUAL[];}) => {
   return (
     <>
       <div className="component">
@@ -42,11 +42,11 @@ const Parts_Info_Intro_Texts = ({texts}: {texts: Json_Bilingual[];}) => {
         //same with texts --begin
         .paragraphWrap{
           display:flex;
-          padding: 0 0 calc(${THEMES.paddings.hori.l} * 1) 0;
+          padding: 0 0 calc(${THEMES.gaps.l} * 1) 0;
         }
 
         .paragraph{
-          padding:0 ${THEMES.paddings.hori.l} 0 0;
+          padding:0 ${THEMES.gaps.l} 0 0;
         }
 
         .paragraphWrap{

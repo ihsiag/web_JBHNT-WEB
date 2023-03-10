@@ -1,10 +1,12 @@
-import Link from "next/link";
-import { ExtLink } from "src/utils";
-import { Json_Utils_Period, Json_Utils_Link, Json_Career_Child } from "src/types/dataTypes";
+import { T_BILINGUAL } from "src/types";
 import * as THEMES from "src/styles/theme";
-import { Json_Bilingual } from "src/types/dataTypes";
 
-const Parts_Info_Intro_Names = ({ name, role }: { name: Json_Bilingual; role: Json_Bilingual }) => {
+type Props ={
+  name:T_BILINGUAL;
+  role:T_BILINGUAL;
+}
+
+const Parts_Info_Intro_Names = ({ name, role }: Props) => {
   return (
     <>
       <div className="component">
@@ -49,11 +51,10 @@ const Parts_Info_Intro_Names = ({ name, role }: { name: Json_Bilingual; role: Js
         .paragraph{
           width:100%;
           display:flex;
-          padding-right:${THEMES.paddings.hori.l};
+          padding-right:${THEMES.gaps.l};
         }
 
         .textBoxArea{
-          /* width:calc(100% - calc(${THEMES.blockUnits.vert.xs} * 1.)); */
           flex:1;
           height:100%;
         }
@@ -103,7 +104,7 @@ const Parts_Info_Intro_Names = ({ name, role }: { name: Json_Bilingual; role: Js
         }
 
         .inlineWrap >*{
-          padding: 0 ${THEMES.paddings.hori.s};
+          padding: 0 ${THEMES.gaps.xs};
         }
 
         .inlineWrap >*:first-child {

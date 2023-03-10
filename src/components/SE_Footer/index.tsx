@@ -2,7 +2,7 @@ import * as THEMES from "src/styles/theme";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-const Parts_Footer = () => {
+const SE_Footer = () => {
   const getCurrentDate = (_newDate: Date) => {
     const year = _newDate.getFullYear();
     const month = _newDate.getMonth() + 1;
@@ -32,7 +32,10 @@ const Parts_Footer = () => {
           
           <ul className="panel toLeft">
             <li className="intro">
-              <p>Gaishi Kudo is a technical artist who plays within the fields of Interactive Design / Art, Websites / Softwares and Conceptual Art / Design Fiction.</p>
+              <p>工藤外四は、ヒトとモノの接点に注目することに夢中です。
+                 遊び心のあるインタラクション、
+                 想像的で物語性のある作品、
+                 小綺麗なソフトウェア・インターフェースの開発を楽しみます。</p>
             </li>
             <li className="line">
               <p>-</p>
@@ -91,15 +94,15 @@ const Parts_Footer = () => {
       <style jsx>{`
         .component {
           width: 100%;
-          height: ${THEMES.blockUnits.vert.l};
-          padding: ${THEMES.paddings.vert.l};
+          height: ${THEMES.blockUnits.xl};
+          padding: ${THEMES.gaps.l};
           display: flex;
           justify-content: center;
         }
         
         a{
           width:fit-content;
-          transition-duration:${THEMES.animations.duration.l};
+          transition-duration:${THEMES.durations.l};
         }
 
         a:hover{
@@ -126,7 +129,7 @@ const Parts_Footer = () => {
         }
 
         .inlineWrap > *{
-          padding: 0 ${THEMES.paddings.hori.xs};
+          padding: 0 ${THEMES.gaps.xxs};
         }
 
         .inlineWrap >*:first-child {
@@ -147,7 +150,7 @@ const Parts_Footer = () => {
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
-          padding:0 ${THEMES.paddings.hori.m};
+          padding:0 ${THEMES.gaps.m};
           /* border-left:1px solid ${THEMES.colors.text.main}; */
         }
 
@@ -179,7 +182,7 @@ const Parts_Footer = () => {
         }
 
         .contact p{
-          padding:${THEMES.paddings.hori.s} ${THEMES.paddings.hori.s};
+          padding:${THEMES.gaps.xs};
         }
 
         .borderRight li{
@@ -188,7 +191,7 @@ const Parts_Footer = () => {
 
         .available{
           text-decoration:underline;
-          text-underline-offset:${THEMES.paddings.vert.s};
+          text-underline-offset:${THEMES.gaps.xs};
         }
 
         .notAvailable{
@@ -199,4 +202,4 @@ const Parts_Footer = () => {
   );
 };
 
-export default Parts_Footer;
+export default SE_Footer;

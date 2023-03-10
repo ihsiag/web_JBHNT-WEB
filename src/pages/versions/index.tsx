@@ -4,10 +4,10 @@ import * as THEMES from "src/styles/theme";
 
 
 import type { NextPage } from "next";
-import Layout_Page_Parent from "src/components/LAYOUT_PAGE_PARENT";
+import Layout_Page_Parent from "src/components/PA_Layout";
 
 
-import { PageProps_Minimal} from "src/types/dataTypes";
+import { PageProps_Minimal} from "src/types";
 
 
 const Page_Versions: NextPage<PageProps_Minimal> = ({title_header}: PageProps_Minimal) => {

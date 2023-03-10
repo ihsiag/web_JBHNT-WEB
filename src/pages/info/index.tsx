@@ -1,26 +1,28 @@
 import fsPromises from "fs/promises";
 import path from "path";
-import { PageProps_Minimal,Json_Info } from "src/types/dataTypes";
+import { PageProps_Minimal,T_INF_ALL } from "src/types";
 
 import type { NextPage } from "next";
 import Image from "next/image";
 
 import * as THEMES from "src/styles/theme";
-import Layout_Page_Parent from "src/components/LAYOUT_PAGE_PARENT";
+import PA_Layout from "src/components/PA_Layout";
 import Parts_Info_Intro_Names from "src/components/PARTS_INFO_INTRO_NAMES";
 import Parts_Info_Intro_Texts from "src/components/PARTS_INFO_INTRO_TEXTS";
 import Parts_Info_Intro_Abst from "src/components/PARTS_INFO_INTRO_ABST";
 import Parts_Venn_Canvas from "src/components/PARTS_VENN_CANVAS";
 import Parts_Info_Careers from "src/components/PARTS_INFO_CAREERS";
+import SE_Layout from "src/components/SE_Layout";
 
 type Props = PageProps_Minimal & {
-  info: Json_Info;
+  info: T_INF_ALL;
 };
 
-const Page_Info: NextPage<Props> = ({ title_header,info }: Props) => {
+const Page_Info: NextPage<Props> = ({info }: Props) => {
   return (
     <>
-      <Layout_Page_Parent title={title_header}>
+      <PA_Layout>
+        <SE_Layout>
         <>
           <div className="component">
 
@@ -36,12 +38,6 @@ const Page_Info: NextPage<Props> = ({ title_header,info }: Props) => {
               <Parts_Info_Intro_Texts texts={info.introduction.texts} />
             </div>
 
-            {/* <div className="intro_venn section">
-              <div className="imgWrap">
-                <Image src ="/element/venn.png" layout="fill" objectFit="contain"/>
-              </div>
-            </div> */}
-
             <div className="symbol section">
               <div className="circle"></div>
             </div>
@@ -56,7 +52,8 @@ const Page_Info: NextPage<Props> = ({ title_header,info }: Props) => {
 
           </div>
         </>
-      </Layout_Page_Parent>
+        </SE_Layout>
+      </PA_Layout>
       <style jsx>{`
         .component{
         }
@@ -71,12 +68,6 @@ const Page_Info: NextPage<Props> = ({ title_header,info }: Props) => {
 
         .intro_abst{
           padding-bottom:${THEMES.blockUnits.m};
-        }
-
-        .intro_venn{
-          /* height:${THEMES.blockUnits.vert.l}; */
-          height:800px;
-          padding-bottom:${THEMES.blockUnits.vert.m};
         }
 
         .imgWrap{
@@ -107,13 +98,13 @@ const Page_Info: NextPage<Props> = ({ title_header,info }: Props) => {
 export const getStaticProps = async () => {
   const jsonFilePath = path.join(process.cwd(), "public/DB/info/manager.json");
   const data: Buffer = await fsPromises.readFile(jsonFilePath);
-  type Json_In = { info: Json_Info };
-  const objectData = JSON.parse(data.toString()) as Json_In;
-  const info: Json_Info = objectData.info;
+  type T_JSON_IN = { info: T_JSON_IN };
+  const objectData = JSON.parse(data.toString()) as T_JSON_IN;
+  const info: T_JSON_IN = objectData.info;
   return {
     props: {
-      title_header:"INFO",
-      pageNames_crumbs:["INFO"],
+      head:"INFO",
+      crumbs:["INFO"],
       info
     },
   };

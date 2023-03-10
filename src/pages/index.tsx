@@ -1,19 +1,21 @@
 import fsPromises from "fs/promises";
 import path from "path";
-import { PageProps_Minimal} from "src/types/dataTypes";
+import { PageProps_Minimal} from "src/types";
 
 import type { NextPage } from "next";
 
 import * as THEMES from "src/styles/theme";
-import Layout_Page_Parent from "src/components/LAYOUT_PAGE_PARENT";
+import PA_Layout from "src/components/PA_Layout";
 import Parts_Home_Canvas from "src/components/PARTS_HOME_CANVAS";
 import Link from "next/link";
+import SE_Layout from "src/components/SE_Layout";
 
 
-const Page_Home: NextPage<PageProps_Minimal> = ({title_header}:PageProps_Minimal) => {
+const Page_Home: NextPage<PageProps_Minimal> = () => {
   return (
     <>
-      <Layout_Page_Parent title={title_header}>
+      <PA_Layout noPadding={true}>
+        <SE_Layout custom={true}>
         <>
         <div className="component">
           <Link href="projects">
@@ -23,7 +25,8 @@ const Page_Home: NextPage<PageProps_Minimal> = ({title_header}:PageProps_Minimal
           </Link>
         </div>
         </>
-      </Layout_Page_Parent>
+        </SE_Layout>
+      </PA_Layout>
       <style jsx>{`
         .component{
           display:flex;
@@ -32,23 +35,22 @@ const Page_Home: NextPage<PageProps_Minimal> = ({title_header}:PageProps_Minimal
         }
         
         .canvas{
-          height:${THEMES.blockUnits.vert.l};
+          width:100%;
+          height:100vh;
           position:absolute;
-          z-index:1;
-          top:calc(50vh -  ${THEMES.blockUnits.m});
-          left:50%;
-          transform:translate(-50%,-65%);
+          z-index:-1;
+          /* background-color:green; */
         }
       `}</style>
     </>
   );
 };
 
-//create props only when built _gk
+
 export const getStaticProps = () => {
   return {
     props: {
-      title_header:"HOME",
+      head:"HOME",
     },
   };
 };

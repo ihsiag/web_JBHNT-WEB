@@ -1,6 +1,6 @@
 
 import * as THEMES from "src/styles/theme";
-import {FilterOption} from "src/types/dataTypes";
+import {FilterOption} from "src/types";
 import memo from "react";
 import { NextRouter } from "next/router";
 

@@ -1,12 +1,12 @@
 import fsPromises from "fs/promises";
 import path from "path";
-import { PageProps_Minimal,Json_Dev } from "src/types/dataTypes";
+import { PageProps_Minimal,Json_Dev } from "src/types";
 
 import type { NextPage } from "next";
 import Image from "next/image";
 
 import * as THEMES from "src/styles/theme";
-import Layout_Page_Parent from "src/components/LAYOUT_PAGE_PARENT";
+import Layout_Page_Parent from "src/components/PA_Layout";
 import { ExtLink } from "src/utils";
 import Link from "next/link";
 import styled from "styled-components";

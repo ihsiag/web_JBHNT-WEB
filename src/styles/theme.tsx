@@ -19,95 +19,39 @@ export const colors = {
   },
 }
 
-export const margins = {
-  hori:{
-    s:"",
-    m:"",
-    l:""
-  },
-  vert:{
-    s:"",
-    m:"",
-    l:""
-  },
-  s:"",
-  m:"",
-  l:""
-} as const;
-
-
-export const paddings = {
-  hori:{
-    xs:"2px",
-    s:"5px",
-    m:"10px",
-    l:"25px"
-  },
-  vert:{
-    s:"2px",
-    m:"10px",
-    l:"25px"
-  },
-  s:"",
-  m:"",
-  l:"",
-  xl:"50px"
-} as const;
 
 export const gaps = {
-  hori:{
-    s:"",
-    m:"5px",
-    l:"15px"
-  },
-  vert:{
-    s:"5px",
-    m:"8px",
-    l:"10px"
-  },
-  s:"",
-  m:"",
-  l:""
+  xxs:"2px",
+  xs:"5px",
+  s:"8px",
+  m:"10px",//default
+  l:"25px",
+  xl:"50px",
+  xxl:"100px",
 } as const;
 
 
 export const blockUnits={
-  hori:{
-    xs:"5px",
-    s:"25px",
-    m:"50px",
-    l:"250px"
-  },
-  vert:{
-    xs:"5px",
-    s:"25px",
-    m:"50px",
-    l:"250px"
-  },
-  s:"25px",
-  m:"50px",
-  l:"250px"
+  xs:"50px",
+  s:"100px",
+  m:"150px",//default
+  l:"200px",
+  xl:"250px",
+  xxl:"300px"
 } as const;
 
 export const rs={
   xs:"4px",
   s:"8px",
-  m:"20px",
+  m:"20px",//default
   l:"30px"
 } as const;
 
-export const animations = {
-  duration:{
-    xs:"0.05s",
-    s:"0.1s",
-    m:"0.2s",
-    l:"0.4s"
-  },
-  delay:{
-    s:"",
-    m:"0.1s",
-    l:""
-  }
+export const durations = {
+  xs:"0.05s",
+  s:"0.1s",
+  m:"0.2s",//default
+  l:"0.4s"
 } as const;
 
 export const fontFamilies ={
@@ -119,19 +63,19 @@ export const fontFamilies ={
 export const fontSizes={
   xs:"0.8rem",
   s:"1.25rem",
-  m:"1.5rem",
+  m:"1.5rem",//default
   l:"2rem",
   xl:"4rem",
   xxl:"8rem"
 } as const;
 
 export const lineHeights={
-  default:"1.6",
+  default:"1.6",//default
   wide:"2.0"
 } as const;
 
 export const fontWeights={
-  n:400,
+  n:400,//default
   b:600,
   eb:800,
   sub:{
@@ -147,4 +91,3 @@ export const dropShadows = {
   hovered:"0 0 7px rgba(30,30,46,0.3)",
   hovered_strong:"0 0 10px rgba(30,30,46,0.4)",
 }
-

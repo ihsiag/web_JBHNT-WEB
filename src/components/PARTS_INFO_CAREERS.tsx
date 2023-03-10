@@ -1,16 +1,16 @@
 import Link from "next/link";
 import { ExtLink } from "src/utils";
-import { Json_Utils_Period, Json_Utils_Link, Json_Career_Child } from "src/types/dataTypes";
+import {  T_LINK, T_INF_CAREER_CHILD } from "src/types";
 import * as THEMES from "src/styles/theme";
 import Svg_Link_Ext from "./SVG_LINK_EXT";
 import Svg_Link_Int from "./SVG_LINK_INT";
 
-const Parts_Info_Careers = ({ title, contentList }: { title: string; contentList: Json_Career_Child[] }) => {
-  const get_link_int_list = (links: Json_Utils_Link[]) => {
+const Parts_Info_Careers = ({ title, contentList }: { title: string; contentList: T_INF_CAREER_CHILD[] }) => {
+  const get_link_int_list = (links: T_LINK[]) => {
     return links.filter((item) => item.type == "int");
   };
 
-  const get_link_ext_list = (links: Json_Utils_Link[]) => {
+  const get_link_ext_list = (links: T_LINK[]) => {
     return links.filter((item) => item.type == "ext");
   };
 
@@ -51,7 +51,7 @@ const Parts_Info_Careers = ({ title, contentList }: { title: string; contentList
 
         .displayPeriod_start,.displayPeriod_end{
           display:flex;
-          padding-right:${THEMES.paddings.hori.m};
+          padding-right:${THEMES.gaps.m};
         }
 
         .displayPeriod_separater{
@@ -131,7 +131,7 @@ const Parts_Info_Careers = ({ title, contentList }: { title: string; contentList
         }
 
         .component > div {
-          padding: ${THEMES.paddings.vert.m} 0 ${THEMES.paddings.vert.m} 0;
+          padding: ${THEMES.gaps.m} 0;
         }
 
         .title {
@@ -140,16 +140,16 @@ const Parts_Info_Careers = ({ title, contentList }: { title: string; contentList
 
         .grid{
           background-color: ${THEMES.colors.bg.sub};
-          padding: ${THEMES.paddings.vert.m} ${THEMES.paddings.hori.m} ${THEMES.blockUnits.s};
+          padding: ${THEMES.gaps.m} ${THEMES.gaps.m} ${THEMES.blockUnits.s};
         }
 
         .gridRow {
           display: grid;
           grid-template-columns: 20% auto 2.5rem 2.5rem 20%;
-          gap: ${THEMES.gaps.hori.m};
-          padding:calc(${THEMES.gaps.vert.s} / 2) 0 calc(${THEMES.gaps.vert.s} / 2) 0;
+          gap: ${THEMES.gaps.xs};
+          padding:calc(${THEMES.gaps.xs} / 2) 0;
           /* height:calc(${THEMES.fontSizes.l} * ${THEMES.lineHeights.default}); */
-          transition-duration: ${THEMES.animations.duration.xs};
+          transition-duration: ${THEMES.durations.xs};
         }
 
         .circle{
@@ -157,7 +157,7 @@ const Parts_Info_Careers = ({ title, contentList }: { title: string; contentList
           width:100%;
           line-height:100%;
           text-align:center;         
-          transition-duration: ${THEMES.animations.duration.xs};
+          transition-duration: ${THEMES.durations.xs};
           /* height:12px; */
         }
 
@@ -167,7 +167,7 @@ const Parts_Info_Careers = ({ title, contentList }: { title: string; contentList
           width:100%;
           line-height:100%;
           text-align:center;
-          transition-duration: ${THEMES.animations.duration.s};
+          transition-duration: ${THEMES.durations.s};
         }
 
         .gridRow:hover{
@@ -205,7 +205,7 @@ const Parts_Info_Careers = ({ title, contentList }: { title: string; contentList
         }
 
         .inlineWrap >*{
-          padding: 0 ${THEMES.paddings.hori.s};
+          padding: 0 ${THEMES.gaps.xs};
         }
 
         .inlineWrap >*:first-child {
