@@ -1,0 +1,260 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "asUrl": "Bebento",
+      "title": "BEBENTO",
+      "subtitle": "屋外で働く職人さんのための「弁当箱」",
+      "oneLine": "モノづくりで喜ばせたい！",
+      "keywords": [
+        "観察",
+        "プロトタイピング",
+        "ストーリーテリング"
+      ],
+      "mentions": [
+        "指導教員 : Frank Kolkman",
+        "銀賞 : RCA Helen Hamlyn Fixperts Award 2018, United Kingdom",
+        "選出展示 : Broken Nature Show @ XX11 Milano Triennale 2019, Italy",
+        "選出上映 : Real To Reel 2019, by Crafts Council, United Kingdom",
+        "選出上映 : Nordic Makers' Film Festival, Kristinestad, Finland",
+        "選出上映 : Cinewaves Films 2020, Saudi Arabia"
+      ],
+      "bannar": {
+        "path": "./00_FIXPERTS/img/capture_screen-video.jpg",
+        "bVideo": false
+      },
+      "sections": [
+        {
+          "sectionId": 0,
+          "sectionTitle": "",
+          "oneLine": "",
+          "descriptions": [""],
+          "medium": [
+            {
+              "path": "https://www.youtube.com/embed/Se5VDiULb5M",
+              "type": "youtube",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 1,
+          "sectionTitle": "コンセプト",
+          "oneLine": "弁当箱のように",
+          "descriptions": ["収納と陳列を素早く。"],
+          "medium": [
+            {
+              "path": "./00_FIXPERTS/img/capture_screen-video.jpg",
+              "type": "image",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 2,
+          "sectionTitle": "背景",
+          "oneLine": "弁当箱のように",
+          "descriptions": ["70歳近くになるナカガワさん","京都市内を移動しながら靴を修理している。","モノづくりが好きで困難は都度自分で解決してしまう。"],
+          "medium": [
+            {
+              "path": "./00_FIXPERTS/img/capture_screen-video.jpg",
+              "type": "image",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 3,
+          "sectionTitle": "気づかない問題に気付くために",
+          "oneLine": "",
+          "descriptions": [""],
+          "medium": [
+            {
+              "path": "https://www.youtube.com/embed/Se5VDiULb5M",
+              "type": "youtube",
+              "caption": ""
+            },
+            {
+              "path": "./00_FIXPERTS/txt/essay.md",
+              "type": "markdown",
+              "caption": "TEXT BY GAISHI KUDO, TYPEFACE : Noto Sans JP"
+            }
+          ]
+        },
+        {
+          "sectionId": 4,
+          "sectionTitle": "使ってもらいがら改良",
+          "oneLine": "",
+          "descriptions": [""],
+          "medium": [
+            {
+              "path": "./00_FIXPERTS/img/prototypes/1.png",
+              "type": "image",
+              "caption": "!! おおきすぎる..."
+            },
+            {
+              "path": "./00_FIXPERTS/img/prototypes/2.png",
+              "type": "image",
+              "caption": "!! 陳列したときに中が見えない..."
+            },
+            {
+              "path": "./00_FIXPERTS/img/prototypes/3.png",
+              "type": "image",
+              "caption": "!! 壊れやすい..."
+            },
+            {
+              "path": "./00_FIXPERTS/img/prototypes/testing1.mp4",
+              "type": "video",
+              "caption": ""
+            },
+            {
+              "path": "./00_FIXPERTS/img/prototypes/testing2.mp4",
+              "type": "video",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 5,
+          "sectionTitle": "ドキュメンタリー制作",
+          "oneLine": "",
+          "descriptions": [""],
+          "medium": [
+            {
+              "path": "./00_FIXPERTS/img/captures_binded/1.png",
+              "type": "image",
+              "caption": ""
+            },
+            {
+              "path": "./00_FIXPERTS/img/captures_binded/2.png",
+              "type": "image",
+              "caption": ""
+            },
+            {
+              "path": "./00_FIXPERTS/img/captures_binded/3.png",
+              "type": "image",
+              "caption": ""
+            },
+            {
+              "path": "./00_FIXPERTS/img/captures_binded/4.png",
+              "type": "image",
+              "caption": ""
+            }
+          ]
+        }
+      ],
+      "description": "私たちのチーム（工藤外四、中山うらら、八木まどか、Ah Hyoen Kim）は、京都市内を移動しながら靴の修理をおこなうナカガワミチオ氏をパートナーに、民俗学的調査と密着取材の協力を得て、ナカガワ氏が移動した場所で効率的かつ迅速に仕事場とディスプレイのセットアップを可能にする方法の開発に取り組んだ。解決策として、日本のお弁当箱をベースに、セットアップの時間を大幅に短縮できるボックスセットをデザインすることにした。\nこのボックスセットはFixpertsを代表する作品の一つとして選出され、Paola Antonelliがキュレーターを務める「Broken Nature:the XXII triennale di milano, Italy」に展示された。\nまた、本プロジェクトを一本の映像にまとめたドキュメンタリーフィルムは「Real To Reel 2019, Crafts Council, UK」、「RCA Helen Hamlyn Fixperts Award 2018, UK」、「Nordic Makers' Film Festival, Kristinestad, Finland」、「Cinewaves Films, Saudi Arabia」に選出されヨーロッパをはじめ、サウジアラビアなど国境を越えて複数の都市で上映された。"
+    },
+    {
+      "id": 2,
+      "asUrl": "The_Way_We_Design",
+      "title": "The Way We Design | ファーストコンタクト",
+      "subtitle": "人とコンピューターの共創",
+      "oneLine": "モノづくりで喜ばせたい！",
+      "keywords": [
+        "人とコンピューター",
+        "未来思索",
+        "即興"
+      ],
+      "mentions": [
+        "指導教員 : 岡田栄造",
+        "展示 : 京都工芸繊維大学卒業制作展 2019, 京都",
+        "展示 : MAKERS FAIR 2019, 大阪"
+      ],
+      "bannar": {
+        "path": "./00_BA_GRADUATION/img/resulted-object_01.png",
+        "bVideo": false
+      },
+      "sections": [
+        {
+          "sectionId": 1,
+          "sectionTitle": "CONCEPT",
+          "oneLine": "弁当箱のように",
+          "descriptions": [""],
+          "medium": [
+            {
+              "path": "https://www.youtube.com/embed/Se5VDiULb5M",
+              "type": "youtube",
+              "caption": ""
+            }
+          ]
+        }
+      ],
+      "description": "私はヒト特有の震えや癖に、コンピューターの計算生成には代え難い強い魅力を感じる。癖をコンピューターで扱うことはできるだろうか。単純な動作であり、被験者によって様々な結果が得られる「円のドローイング」を用いて実験することにする。\n以下の手順を構想し、ヒト特有の震えや癖をコンピューターを用いることで、より魅力的に出力しようと試みた。\n\n#1. 被験者が入力した円のドローイングから描こうとしたであろう理想の真円を予測することで、ドローイングがどれだけ真円と離れているのかを数値化する。\n#2. 数値化された理想値との誤差から一つのタイルを生成する。\n#3. 生成されたタイルを交互に並べてパターンを作り、そのデータを別のアプリケーションで制作したスツール骨格モデルの表面に送信する。\n\n人間特有の有機的データがデザインエレメントとなる。出来上がるものは奇妙である。震える手はそれを制御するべきだろうか。情報技術がより発達した世界は奇妙で有機的な形であふれかえっているのだろうか。そう遠くない未来世界の価値体系を妄想する。"
+    },
+    {
+      "id": 3,
+      "asUrl": "A_coathook_designed_for_the_exhibition_in_Milan",
+      "title": "DAVE (STRIKE)",
+      "subtitle": "ミラノ国際家具見本市出展に向けてデザインしたコートフック",
+      "oneLine": "モノづくりで喜ばせたい！",
+      "keywords": [
+        "リサーチ",
+        "クラフト",
+        "ディテール"
+      ],
+      "mentions": [
+        "指導教員 : 岡田栄造",
+        "展示 : Milan Design Week Salone Satellite 2018, Italy",
+        "商談 : WOUD, Furniture Company, Denmark"
+      ],
+      "bannar": {
+        "path": "./00_COATHOOK/img/resulted-object_01.jpg",
+        "bVideo": false
+      },
+      "sections": [
+        {
+          "sectionId": 1,
+          "sectionTitle": "CONCEPT",
+          "oneLine": "弁当箱のように",
+          "descriptions": [""],
+          "medium": [
+            {
+              "path": "https://www.youtube.com/embed/Se5VDiULb5M",
+              "type": "youtube",
+              "caption": ""
+            }
+          ]
+        }
+      ],
+      "description": "-\n文字盤の上から服をかけるこのコートフックは、時計本来の機能を奪う。\nモノから機能が失われた時、初めて人はものの持つ表情や美しさに目を向ける。\n鑑賞の対象である時計に積極的に働きかける振る舞いは、時計が持つ不思議な魅力に気づく助けとなる。\n(PROOFREADED BY zemi 2018)"
+    },
+    {
+      "id": 4,
+      "asUrl": "Simulated_Experience_Or_Dream",
+      "title": "とある出来事の設計II",
+      "subtitle": "仮想空間での出来事を記録し、モデリングする3Dソフト",
+      "oneLine": "人間らしさとは...?",
+      "keywords": [
+        "リサーチ",
+        "クラフト",
+        "ディテール"
+      ],
+      "mentions": [
+        "指導教員 : 岡田栄造 + 多田羅景太 + 砂山太一",
+        "展示 : 京都工芸繊維大学修了制作展 2022, 京都",
+        "注記 : sunayama stduioの作品「とある出来事の設計」（担当：砂山太一、工藤外四）のコンセプトおよびプロセス設計に基づいている"
+      ],
+      "bannar": {
+        "path": "./00_MA_GRADUATION/img/desk_trimmed.png",
+        "bVideo": false
+      },
+      "sections": [
+        {
+          "sectionId": 1,
+          "sectionTitle": "CONCEPT",
+          "oneLine": "弁当箱のように",
+          "descriptions": [""],
+          "medium": [
+            {
+              "path": "https://www.youtube.com/embed/Se5VDiULb5M",
+              "type": "youtube",
+              "caption": ""
+            }
+          ]
+        }
+      ],
+      "description": "研究報告書 : [ダウンロードリンク](/DB/projects/00_MA_GRADUATION/report.pdf)"
+    }
+  ]
+}
