@@ -57,7 +57,7 @@ const Page_Projects: NextPage<Props> = ({projects}: Props) => {
 
 //create props only when built _gk
 export const getStaticProps = async () => {
-  const jsonFilePath = path.join(process.cwd(), "public/DB/PROJECTS/manager.json");
+  const jsonFilePath = path.join(process.cwd(), "public/DB/araara/manager.json");
   const data: Buffer = await fsPromises.readFile(jsonFilePath);
   type T_JSON_IN = { projects: T_PRJT_IMPORTED[] };
   const objectData = JSON.parse(data.toString()) as T_JSON_IN;
