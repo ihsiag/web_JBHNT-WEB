@@ -12,7 +12,7 @@ type Props ={
 const ST_IMAGE = styled.div<Props>`
   & > span img {
     position: ${(props)=>props.ntl?"relative !important":props.abs?"absolute":"relative"}; //to hold apect
-    //top:0;left:0;//
+    ${(props)=>props.abs?"position:absolute;\ntop:0;\nleft:0;":""}
     width: ${(props)=>props.ntl?"100% !important":"100%"}; //to hold apect
     height: ${(props)=>props.ntl?"unset !important":props.h?props.h:"100%"} ; //to hold apect
   }

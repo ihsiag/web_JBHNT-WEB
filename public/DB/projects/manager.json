@@ -25,10 +25,10 @@
       },
       "sections": [
         {
-          "sectionId": 1,
+          "sectionId": 0,
           "sectionTitle": "",
           "oneLine": "",
-          "description": "",
+          "descriptions": [""],
           "medium": [
             {
               "path": "https://www.youtube.com/embed/Se5VDiULb5M",
@@ -38,10 +38,23 @@
           ]
         },
         {
-          "sectionId": 2,
-          "sectionTitle": "CONCEPT",
+          "sectionId": 1,
+          "sectionTitle": "コンセプト",
           "oneLine": "弁当箱のように",
-          "description": "収納と陳列を素早く。",
+          "descriptions": ["収納と陳列を素早く。"],
+          "medium": [
+            {
+              "path": "./00_FIXPERTS/img/capture_screen-video.jpg",
+              "type": "image",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 2,
+          "sectionTitle": "背景",
+          "oneLine": "弁当箱のように",
+          "descriptions": ["70歳近くになるナカガワさん","京都市内を移動しながら靴を修理している。","モノづくりが好きで困難は都度自分で解決してしまう。"],
           "medium": [
             {
               "path": "./00_FIXPERTS/img/capture_screen-video.jpg",
@@ -52,22 +65,9 @@
         },
         {
           "sectionId": 3,
-          "sectionTitle": "背景",
-          "oneLine": "弁当箱のように",
-          "description": "収納と陳列を素早く。",
-          "medium": [
-            {
-              "path": "https://www.youtube.com/embed/Se5VDiULb5M",
-              "type": "youtube",
-              "caption": ""
-            }
-          ]
-        },
-        {
-          "sectionId": 3,
           "sectionTitle": "気づかない問題に気付くために",
           "oneLine": "",
-          "description": "",
+          "descriptions": [""],
           "medium": [
             {
               "path": "https://www.youtube.com/embed/Se5VDiULb5M",
@@ -85,17 +85,32 @@
           "sectionId": 4,
           "sectionTitle": "使ってもらいがら改良",
           "oneLine": "",
-          "description": "",
+          "descriptions": [""],
           "medium": [
             {
-              "path": "https://www.youtube.com/embed/Se5VDiULb5M",
-              "type": "youtube",
+              "path": "./00_FIXPERTS/img/prototypes/1.png",
+              "type": "image",
+              "caption": "!! おおきすぎる..."
+            },
+            {
+              "path": "./00_FIXPERTS/img/prototypes/2.png",
+              "type": "image",
+              "caption": "!! 陳列したときに中が見えない..."
+            },
+            {
+              "path": "./00_FIXPERTS/img/prototypes/3.png",
+              "type": "image",
+              "caption": "!! 壊れやすい..."
+            },
+            {
+              "path": "./00_FIXPERTS/img/prototypes/testing1.mp4",
+              "type": "video",
               "caption": ""
             },
             {
-              "path": "./00_FIXPERTS/txt/essay.md",
-              "type": "markdown",
-              "caption": "TEXT BY GAISHI KUDO, TYPEFACE : Noto Sans JP"
+              "path": "./00_FIXPERTS/img/prototypes/testing2.mp4",
+              "type": "video",
+              "caption": ""
             }
           ]
         },
@@ -103,7 +118,7 @@
           "sectionId": 5,
           "sectionTitle": "ドキュメンタリー制作",
           "oneLine": "",
-          "description": "",
+          "descriptions": [""],
           "medium": [
             {
               "path": "./00_FIXPERTS/img/captures_binded/1.png",
@@ -155,43 +170,12 @@
           "sectionId": 1,
           "sectionTitle": "CONCEPT",
           "oneLine": "弁当箱のように",
-          "description": "収納と陳列を素早く。",
+          "descriptions": [""],
           "medium": [
             {
               "path": "https://www.youtube.com/embed/Se5VDiULb5M",
               "type": "youtube",
               "caption": ""
-            }
-          ]
-        },
-        {
-          "sectionId": 2,
-          "sectionTitle": "背景",
-          "oneLine": "弁当箱のように",
-          "description": "収納と陳列を素早く。",
-          "medium": [
-            {
-              "path": "https://www.youtube.com/embed/Se5VDiULb5M",
-              "type": "youtube",
-              "caption": ""
-            }
-          ]
-        },
-        {
-          "sectionId": 3,
-          "sectionTitle": "気づかない問題に気付くために",
-          "oneLine": "",
-          "description": "",
-          "medium": [
-            {
-              "path": "https://www.youtube.com/embed/Se5VDiULb5M",
-              "type": "youtube",
-              "caption": ""
-            },
-            {
-              "path": "./00_FIXPERTS/txt/essay.md",
-              "type": "markdown",
-              "caption": "TEXT BY GAISHI KUDO, TYPEFACE : Noto Sans JP"
             }
           ]
         }
@@ -223,43 +207,12 @@
           "sectionId": 1,
           "sectionTitle": "CONCEPT",
           "oneLine": "弁当箱のように",
-          "description": "収納と陳列を素早く。",
+          "descriptions": [""],
           "medium": [
             {
               "path": "https://www.youtube.com/embed/Se5VDiULb5M",
               "type": "youtube",
               "caption": ""
-            }
-          ]
-        },
-        {
-          "sectionId": 2,
-          "sectionTitle": "背景",
-          "oneLine": "弁当箱のように",
-          "description": "収納と陳列を素早く。",
-          "medium": [
-            {
-              "path": "https://www.youtube.com/embed/Se5VDiULb5M",
-              "type": "youtube",
-              "caption": ""
-            }
-          ]
-        },
-        {
-          "sectionId": 3,
-          "sectionTitle": "気づかない問題に気付くために",
-          "oneLine": "",
-          "description": "",
-          "medium": [
-            {
-              "path": "https://www.youtube.com/embed/Se5VDiULb5M",
-              "type": "youtube",
-              "caption": ""
-            },
-            {
-              "path": "./00_FIXPERTS/txt/essay.md",
-              "type": "markdown",
-              "caption": "TEXT BY GAISHI KUDO, TYPEFACE : Noto Sans JP"
             }
           ]
         }
@@ -291,43 +244,12 @@
           "sectionId": 1,
           "sectionTitle": "CONCEPT",
           "oneLine": "弁当箱のように",
-          "description": "収納と陳列を素早く。",
+          "descriptions": [""],
           "medium": [
             {
               "path": "https://www.youtube.com/embed/Se5VDiULb5M",
               "type": "youtube",
               "caption": ""
-            }
-          ]
-        },
-        {
-          "sectionId": 2,
-          "sectionTitle": "背景",
-          "oneLine": "弁当箱のように",
-          "description": "収納と陳列を素早く。",
-          "medium": [
-            {
-              "path": "https://www.youtube.com/embed/Se5VDiULb5M",
-              "type": "youtube",
-              "caption": ""
-            }
-          ]
-        },
-        {
-          "sectionId": 3,
-          "sectionTitle": "気づかない問題に気付くために",
-          "oneLine": "",
-          "description": "",
-          "medium": [
-            {
-              "path": "https://www.youtube.com/embed/Se5VDiULb5M",
-              "type": "youtube",
-              "caption": ""
-            },
-            {
-              "path": "./00_FIXPERTS/txt/essay.md",
-              "type": "markdown",
-              "caption": "TEXT BY GAISHI KUDO, TYPEFACE : Noto Sans JP"
             }
           ]
         }

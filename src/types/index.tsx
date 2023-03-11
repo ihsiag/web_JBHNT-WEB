@@ -23,7 +23,7 @@ export type T_PRJT_SECTION_IMPORTED ={
   sectionId:number;
   sectionTitle:string;
   oneLine:string;
-  description:string;
+  descriptions:string[];
   medium:T_MEDIA[];
 }
 
@@ -44,7 +44,7 @@ export type T_PRJT_SECTION_FORMATTED ={
   sectionId:number;
   sectionTitle:string;
   oneLine:string;
-  description:string;
+  descriptions:string[];
   medium:T_MEDIA_FORMATTED[];
 }
 

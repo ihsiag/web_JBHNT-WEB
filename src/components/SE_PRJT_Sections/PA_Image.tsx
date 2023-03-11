@@ -2,20 +2,21 @@ import Image from "next/image";
 import ST_IMAGE from "src/styles/ST_IMAGE";
 import * as THEMES from "src/styles/theme";
 
-const PA_Image = ({ src, alt }: { src: string; alt: string }) => {
+type Props = {
+  src: string;
+  alt?: string;
+  r?: string; //border-radius
+  abs?: boolean; //pos : absolute
+  ntl?: boolean; //hold natural aspect
+  h?: string; //height
+};
+const PA_Image = ({ src, alt, r, abs, ntl, h }: Props) => {
   return (
     <>
-      <div className="imageWrap">
-        <ST_IMAGE ntl={true}>
-          <Image src={src} alt={alt} quality={100} priority={false} loading={"lazy"} unoptimized={false} layout={"fill"} objectFit={"contain"} blurDataURL="data:image/jpeg;base64," placeholder="blur" />
-        </ST_IMAGE>
-      </div>
-      <style jsx>{`
-        .imageWrap {
-          width: 100%;
-          filter: drop-shadow(${THEMES.dropShadows.weak});
-        }
-      `}</style>
+      <ST_IMAGE r={r ? r : undefined} ntl={ntl ? ntl : undefined} abs={abs ? abs : undefined} h={h ? h : undefined}>
+        <Image src={src} alt={alt ? alt : ""} quality={100} priority={false} loading={"lazy"} unoptimized={false} layout={"fill"} objectFit={"contain"} blurDataURL="data:image/jpeg;base64," placeholder="blur" />
+      </ST_IMAGE>
+      <style jsx>{``}</style>
     </>
   );
 };

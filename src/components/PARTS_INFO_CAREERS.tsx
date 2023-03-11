@@ -2,8 +2,8 @@ import Link from "next/link";
 import { ExtLink } from "src/utils";
 import {  T_LINK, T_INF_CAREER_CHILD } from "src/types";
 import * as THEMES from "src/styles/theme";
-import Svg_Link_Ext from "./SVG_LINK_EXT";
-import Svg_Link_Int from "./SVG_LINK_INT";
+import Svg_Link_Ext from "src/components/SVG/SVG_LINK_EXT";
+import Svg_Link_Int from "src/components/SVG/SVG_LINK_INT";
 
 const Parts_Info_Careers = ({ title, contentList }: { title: string; contentList: T_INF_CAREER_CHILD[] }) => {
   const get_link_int_list = (links: T_LINK[]) => {

@@ -118,7 +118,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
         sectionId:section.sectionId,
         sectionTitle:section.sectionTitle,
         oneLine:section.oneLine,
-        description:section.description,
+        descriptions:section.descriptions,
         medium: await Promise.all(
           section.medium.map(async(media:T_MEDIA,_im)=>{
             const _path = `/DB/projects/${media.path.slice(2)}`;
@@ -162,12 +162,14 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
       otherProjectIndices.push(projectIndex - 1);
       otherProjectIndices.push(projectIndex + 1);
     } else {
-      otherProjectIndices.push(projectIndex - 2);
+      // otherProjectIndices.push(projectIndex - 2);
       otherProjectIndices.push(projectIndex - 1);
+      otherProjectIndices.push(0);
     }
   } else {
+    otherProjectIndices.push(projects.length-1);
     otherProjectIndices.push(projectIndex + 1);
-    otherProjectIndices.push(projectIndex + 2);
+    // otherProjectIndices.push(projectIndex + 2);
   }
 
   const otherProjects = otherProjectIndices.map((pIx, _i) => {

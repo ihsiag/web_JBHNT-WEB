@@ -2,7 +2,7 @@ import Link from "next/link";
 import Router from "next/router";
 import { useState,useEffect } from "react";
 
-import Svg_Link_Top from "./SVG_LINK_TOP";
+import Svg_Link_Top from "src/components/SVG/SVG_LINK_TOP";
 import * as THEMES from "src/styles/theme";
 import * as UTILS from "src/utils/index";
 

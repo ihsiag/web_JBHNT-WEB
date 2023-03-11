@@ -1,4 +1,4 @@
-import { ReactChild } from "react";
+import { ReactChild, ReactChildren } from "react";
 import * as THEMES from "src/styles/theme"
 
 type Props = {
@@ -6,10 +6,11 @@ type Props = {
   fill?:boolean;
   center?:boolean;
   grid?:number;
+  gap?:string;
   noPadding?:boolean;
 };
 
-const SE_Layout = ({ children, fill, center,grid ,noPadding}: Props) => {
+const SE_Layout = ({children, fill, center, grid, gap, noPadding}: Props) => {
   return (
     <>
       <div className="component">{children}</div>
@@ -17,7 +18,8 @@ const SE_Layout = ({ children, fill, center,grid ,noPadding}: Props) => {
         .component {
           width: ${fill ? "100%" : "1000px"};
           display:${grid ? "grid":center ? "flex" : "block"};
-          ${grid?["grid-template-columns:",grid].join(""):""}
+          ${grid?["grid-template-columns:",grid,";"].join(""):""}
+          ${grid?gap?["gap:",gap,";"].join(" "):"":""};
           ${center?"flex-direction:column;\nalign-items:center":""};
           padding-bottom:${noPadding?"0":THEMES.gaps.xl};
         }
