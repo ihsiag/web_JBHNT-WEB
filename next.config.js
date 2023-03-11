@@ -17,7 +17,7 @@ const nextConfig = {
   },
   env:{
     // NODE_ENV:"development", next already has it maybe??
-    NEXT_PUBLIC_LAST_UPDATED_AT : getFileUpdatedDate("./.next"),
+    // NEXT_PUBLIC_LAST_UPDATED_AT : getFileUpdatedDate("./.next"),
     NEXT_PUBLIC_GOOGLE_ANALYTICS_ID : "G-01VD9P8JLT"
   }
 };
