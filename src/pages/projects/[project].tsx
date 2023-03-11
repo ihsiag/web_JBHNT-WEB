@@ -89,7 +89,7 @@ const Page_Project: NextPage<Props> = ({project,otherProjects}: Props) => {
 export default Page_Project;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const jsonFilePath = path.join(process.cwd(), "public/DB/araara/manager.json");
+  const jsonFilePath = path.join(process.cwd(), "public/DB/PROJECTS/manager.json");
   const data: Buffer = await fsPromises.readFile(jsonFilePath);
   type Json_In = { projects: T_PRJT_IMPORTED[] };
   const objectData = JSON.parse(data.toString()) as Json_In;
@@ -104,7 +104,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     pageId = ctx.params.project;
   }
 
-  const jsonFilePath = path.join(process.cwd(), "public/DB/araara/manager.json");
+  const jsonFilePath = path.join(process.cwd(), "public/DB/PROJECTS/manager.json");
   const data: Buffer = await fsPromises.readFile(jsonFilePath);
   type T_JSON_IN = { projects: T_PRJT_IMPORTED[] };
   const objectData = JSON.parse(data.toString()) as T_JSON_IN;
@@ -121,7 +121,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
         descriptions:section.descriptions,
         medium: await Promise.all(
           section.medium.map(async(media:T_MEDIA,_im)=>{
-            const _path = `/DB/araara/${media.path.slice(2)}`;
+            const _path = `/DB/PROJECTS/${media.path.slice(2)}`;
             const _extPath = media.path;
             if (media.type === "image") {
               return { type: "image", src: _path, formattedContent: "", caption: media.caption };
