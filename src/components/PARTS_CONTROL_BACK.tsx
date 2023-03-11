@@ -36,9 +36,9 @@ const Parts_Control_Back = ({bIsHome}:Props) =>{
         z-index:300;
         display:block;
         position:fixed;
-        top:${THEMES.blockUnits.vert.m};
-        left:${THEMES.blockUnits.vert.m};
-        width:${THEMES.blockUnits.hori.l};
+        top:${THEMES.gaps.xl};
+        left:${THEMES.gaps.xl};
+        width:${THEMES.blockUnits.xl};
       }
 
       .panel{
@@ -51,12 +51,12 @@ const Parts_Control_Back = ({bIsHome}:Props) =>{
 
       .panel{
         position:fixed;
-        width:${THEMES.blockUnits.hori.l};
+        width:${THEMES.blockUnits.xl};
         padding:${THEMES.rs.m};
         border-radius:${THEMES.rs.m};
         background-color:${THEMES.colors.bg.sub};
         filter:drop-shadow(${THEMES.dropShadows.default});
-        transition-duration:${THEMES.animations.duration.l};
+        transition-duration:${THEMES.durations.l};
       }
 
       .panel:hover{
@@ -68,9 +68,9 @@ const Parts_Control_Back = ({bIsHome}:Props) =>{
           height:auto;
           border:none;
           border-radius:${THEMES.rs.xs};
-          padding:${THEMES.paddings.hori.s};
+          padding:${THEMES.gaps.xs};
           cursor:pointer;
-          transition-duration:${THEMES.animations.duration.l};
+          transition-duration:${THEMES.durations.l};
           opacity:0.5;
         }
     `}</style>

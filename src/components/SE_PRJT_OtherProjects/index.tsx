@@ -1,10 +1,10 @@
 import Link from "next/link";
 
-import { T_PRJT_ALL } from "src/types";
+import { T_PRJT_IMPORTED } from "src/types";
 import PA_MiniProject from "../PA_MiniProject";
 import * as THEMES from "src/styles/theme";
 
-const SE_PRJT_OtherProjects = ({ otherProjects }: { otherProjects: T_PRJT_ALL[] }) => {
+const SE_PRJT_OtherProjects = ({ otherProjects }: { otherProjects: T_PRJT_IMPORTED[] }) => {
   return (
     <>
       <div className="component">

@@ -10,10 +10,10 @@ import Layout_Page_Parent from "src/components/PA_Layout";
 import { PageProps_Minimal} from "src/types";
 
 
-const Page_Versions: NextPage<PageProps_Minimal> = ({title_header}: PageProps_Minimal) => {
+const Page_Versions: NextPage<PageProps_Minimal> = () => {
   return (
     <>
-      <Layout_Page_Parent title={title_header}>
+      <Layout_Page_Parent>
         <>
         <div className="component">
         <ul className="data">
@@ -26,33 +26,6 @@ const Page_Versions: NextPage<PageProps_Minimal> = ({title_header}: PageProps_Mi
         </>
       </Layout_Page_Parent>
       <style jsx>{`
-        .component {
-          /* padding-bottom:150px; */
-        }
-
-        .data p{
-        color:${THEMES.colors.text.main};
-        font-size:${THEMES.fontSizes.xs};
-        font-weight:${THEMES.fontWeights.n}
-      }
-
-      .data li{
-        padding:${THEMES.paddings.vert.s} ${THEMES.paddings.hori.m};
-      }
-
-      .data li p{
-        display:inline;
-        padding:0 ${THEMES.paddings.hori.s} 0 ${THEMES.paddings.hori.s};
-      }
-
-      .data li p:first-child{
-        padding-left:0;
-      }
-
-      .data li p:last-child{
-        padding-right:0;
-      }
-
       `}</style>
     </>
   );

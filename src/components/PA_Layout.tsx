@@ -7,10 +7,11 @@ import Parts_Control_Top from "src/components/PARTS_CONTROL_TOP";
 import SE_Footer from "src/components/SE_Footer";
 
 import { motion } from "framer-motion";
+import SE_LayoutWrap from "./SE_LayoutWrap";
 
 type Props = {
   title?:string;
-  children?: ReactChild;
+  children: ReactChild;
   noPadding?:boolean;
 };
 
@@ -24,10 +25,11 @@ const PA_Layout = ({ title,children ,noPadding}: Props) => {
         transition={{ duration: Number(THEMES.durations.l.slice(0, -1)) }}
       >
         <div className="component">
-          {/* <Parts_Control_Back bIsHome={title === "HOME"?true:false}/> */}
           {/* <Parts_Control_Top/> */}
           <div className="contentAreaWrap">
-            {children}
+            <SE_LayoutWrap>
+              {children}
+            </SE_LayoutWrap>
           </div>
           <SE_Footer />
         </div>
@@ -40,18 +42,9 @@ const PA_Layout = ({ title,children ,noPadding}: Props) => {
           z-index: 100;
         }
 
-        @media screen and (max-width: 1000px) {
-          .component{
-            display:none;
-          }
-        }
-
         .contentAreaWrap {
           min-height: calc(100vh - ${THEMES.blockUnits.xl});
           padding-top: ${noPadding?"":THEMES.blockUnits.m};
-          display: flex;
-          flex-direction: column;
-          align-items: center;
         }
       `}</style>
     </>

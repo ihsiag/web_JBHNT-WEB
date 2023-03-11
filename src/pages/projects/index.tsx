@@ -3,14 +3,14 @@ import path from "path";
 
 import type { NextPage } from "next";
 
-import { PageProps_Minimal, T_PRJT_ALL } from "src/types";
+import { PageProps_Minimal, T_PRJT_IMPORTED } from "src/types";
 import PA_Layout from "src/components/PA_Layout";
 import * as THEMES from "src/styles/theme";
 import PA_MiniProject from "src/components/PA_MiniProject";
 import SE_Layout from "src/components/SE_Layout";
 
 type Props = PageProps_Minimal & {
-  projects: T_PRJT_ALL[];
+  projects: T_PRJT_IMPORTED[];
 };
 
 const Page_Projects: NextPage<Props> = ({projects}: Props) => {
@@ -59,9 +59,9 @@ const Page_Projects: NextPage<Props> = ({projects}: Props) => {
 export const getStaticProps = async () => {
   const jsonFilePath = path.join(process.cwd(), "public/DB/projects/manager.json");
   const data: Buffer = await fsPromises.readFile(jsonFilePath);
-  type T_JSON_IN = { projects: T_PRJT_ALL[] };
+  type T_JSON_IN = { projects: T_PRJT_IMPORTED[] };
   const objectData = JSON.parse(data.toString()) as T_JSON_IN;
-  const projects: T_PRJT_ALL[] = objectData.projects;
+  const projects: T_PRJT_IMPORTED[] = objectData.projects;
   projects.sort((a,b)=>(a.id<b.id?-1:+1));
   return {
     props: {

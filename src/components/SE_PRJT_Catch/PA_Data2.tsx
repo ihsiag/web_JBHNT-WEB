@@ -10,18 +10,15 @@ return(
 <>
       <div className="component">
         <ul className="dataBlocks">
-          <li className="year">
-            <p>,</p>
+          <li className="dataBlock year">
+            <p>2017,</p>
           </li>
-          <li className="client">
-            <p>,</p>
+          <li className="dataBlock oneLine">
+            <p>{data2.oneLine},</p>
           </li>
-          <li className="abst">
-            <p>,</p>
-          </li>
-          <li className="tags">
+          <li className="dataBlock keywords">
             {data2.keywords.map((keyword, index) => (
-              <div key={`parts_projects_projectContainer_keyword_${index}`} className="tag">
+              <div  className="keyword" key={`parts_projects_projectContainer_keyword_${index}`}>
                 <p className="text">● {keyword.toUpperCase()}</p>
                 <p className="splitter">,</p>
               </div>
@@ -36,12 +33,21 @@ return(
           /* border-left:1px solid ${THEMES.colors.text.main}; */
           padding-left: ${THEMES.gaps.l};
         }
-        .component p {
+
+        .year p {
+          font-size: ${THEMES.fontSizes.xl};
+          font-weight: ${THEMES.fontWeights.n};
+        }
+
+        .oneLine p{
+          font-size: ${THEMES.fontSizes.m};
+          font-weight: ${THEMES.fontWeights.n};
+        }
+
+        .keyword p{
           font-size: ${THEMES.fontSizes.s};
           font-weight: ${THEMES.fontWeights.n};
-          line-height: ${THEMES.lineHeights.wide};
-          letter-spacing: 1.2px;
-          /* text-align:right; */
+          padding-right: ${THEMES.gaps.xs};
         }
         .dataBlocks {
           width: 100%;
@@ -53,21 +59,25 @@ return(
           border-radius: ${THEMES.rs.s};
           /* border-left:2px solid ${THEMES.colors.accent.gray}; */
         }
-        .year p {
-          font-size: ${THEMES.fontSizes.xl};
-          font-weight: ${THEMES.fontWeights.n};
+
+        .year{
+          padding-bottom: ${THEMES.gaps.m};
         }
-        .tags {
+
+        .oneLine{
+          padding-bottom: ${THEMES.gaps.l};
+        }
+
+
+        .keywords{
           display: flex;
           /* justify-oneLine: flex-end; */
           flex-wrap: wrap;
         }
-        .tag {
+
+        .keyword{
           display: flex;
-          width: fit-oneLine;
-        }
-        .tag p {
-          padding-right: ${THEMES.gaps.xs};
+          width: fit-content;
         }
       `}</style>
     </>

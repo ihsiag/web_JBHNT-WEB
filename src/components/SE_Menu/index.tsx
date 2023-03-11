@@ -18,6 +18,9 @@ const SE_Menu = ({ pageNames }: Props) => {
     }
     return _link;
   };
+  const createLabel = (_pageName:string)=>{
+    return _pageName.replace(/_/g, '-').toUpperCase();
+  }
 
   return (
     <>
@@ -45,7 +48,7 @@ const SE_Menu = ({ pageNames }: Props) => {
               <Link href={createLink(pageNames, index)} scroll={false}>
                 <a>
                   <div className="crumb crumb-text">
-                    <p>{pageName.toUpperCase()}</p>
+                    <p>{createLabel(pageName)}</p>
                   </div>
                   <div className="crumb crumb-separator">
                     <p>/</p>

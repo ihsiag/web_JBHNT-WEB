@@ -19,7 +19,7 @@ const Svg_Link_Top = ({defaultColor,activeColor,bActive}:{defaultColor:string;ac
     }
     .svgpath{
       fill:${defaultColor};
-      transition-duration:${THEMES.animations.duration.m};
+      transition-duration:${THEMES.durations.m};
     }
     .active{
       fill:${activeColor};

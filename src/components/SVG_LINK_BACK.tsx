@@ -20,7 +20,7 @@ const Svg_Link_Back = ({defaultColor,activeColor,bActive}:{defaultColor:string;a
 
     .svgpath{
       fill:${defaultColor};
-      transition-duration:${THEMES.animations.duration.m};
+      transition-duration:${THEMES.durations.m};
     }
 
     .active{

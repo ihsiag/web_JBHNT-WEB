@@ -25,14 +25,14 @@ const Parts_Control_Top = () =>{
         z-index:300;
         display:block;
         position:fixed;
-        bottom:${THEMES.blockUnits.vert.m};
-        right:${THEMES.blockUnits.vert.m};
+        bottom:${THEMES.gaps.xl};
+        right:${THEMES.gaps.xl};
         width:calc(${THEMES.blockUnits.m}*2);
         height:calc(${THEMES.blockUnits.m}*2);
       }
 
       .panel{
-        transition-duration:${THEMES.animations.duration.l};
+        transition-duration:${THEMES.durations.l};
         opacity:0;
         transform:translateY(${THEMES.blockUnits.l});
       }
@@ -62,9 +62,9 @@ const Parts_Control_Top = () =>{
           border:none;
           background:none;
           border-radius:${THEMES.rs.xs};
-          padding:${THEMES.paddings.hori.s};
+          padding:${THEMES.gaps.xs};
           cursor:pointer;
-          transition-duration:${THEMES.animations.duration.l};
+          transition-duration:${THEMES.durations.l};
         }
 
         .arrow:hover{

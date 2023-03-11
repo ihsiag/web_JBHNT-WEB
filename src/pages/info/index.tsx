@@ -1,6 +1,6 @@
 import fsPromises from "fs/promises";
 import path from "path";
-import { PageProps_Minimal,T_INF_ALL } from "src/types";
+import { PageProps_Minimal,T_INF_IMPORTED } from "src/types";
 
 import type { NextPage } from "next";
 import Image from "next/image";
@@ -15,7 +15,7 @@ import Parts_Info_Careers from "src/components/PARTS_INFO_CAREERS";
 import SE_Layout from "src/components/SE_Layout";
 
 type Props = PageProps_Minimal & {
-  info: T_INF_ALL;
+  info: T_INF_IMPORTED;
 };
 
 const Page_Info: NextPage<Props> = ({info }: Props) => {
@@ -98,9 +98,9 @@ const Page_Info: NextPage<Props> = ({info }: Props) => {
 export const getStaticProps = async () => {
   const jsonFilePath = path.join(process.cwd(), "public/DB/info/manager.json");
   const data: Buffer = await fsPromises.readFile(jsonFilePath);
-  type T_JSON_IN = { info: T_JSON_IN };
+  type T_JSON_IN = { info: T_INF_IMPORTED };
   const objectData = JSON.parse(data.toString()) as T_JSON_IN;
-  const info: T_JSON_IN = objectData.info;
+  const info: T_INF_IMPORTED = objectData.info;
   return {
     props: {
       head:"INFO",

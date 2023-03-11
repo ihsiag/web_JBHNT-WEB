@@ -1,6 +1,6 @@
 import fsPromises from "fs/promises";
 import path from "path";
-import { PageProps_Minimal,Json_Dev } from "src/types";
+import { PageProps_Minimal,T_DEV_IMPORTED } from "src/types";
 
 import type { NextPage } from "next";
 import Image from "next/image";
@@ -12,7 +12,7 @@ import Link from "next/link";
 import styled from "styled-components";
 
 type Props = PageProps_Minimal & {
-  contents: Json_Dev;
+  contents: T_DEV_IMPORTED;
 };
 
 const StyleLink = styled.div`
@@ -23,10 +23,10 @@ const StyleLink = styled.div`
   }
 `
 
-const Page_Dev: NextPage<Props> = ({ title_header,contents }: Props) => {
+const Page_Dev: NextPage<Props> = ({ contents }: Props) => {
   return (
     <>
-      <Layout_Page_Parent title={title_header}>
+      <Layout_Page_Parent >
         <>
           <div className="component">
             <div className="pageTitle">
@@ -61,41 +61,6 @@ const Page_Dev: NextPage<Props> = ({ title_header,contents }: Props) => {
         </>
       </Layout_Page_Parent>
       <style jsx>{`
-        .component{
-        }
-
-        .component p{
-          color:${THEMES.colors.text.sub};
-        }
-
-        .inlineWrap{
-          display:flex;
-        }
-
-        .pageTitle p{
-          font-size:${THEMES.fontSizes.l};
-        }
-
-        .sectionTitle p{
-          font-size:${THEMES.fontSizes.m};
-        }
-
-        .sectionTopics p{
-          font-size:${THEMES.fontSizes.s};
-        }
-
-        .pageTitle{
-          padding-bottom:${THEMES.blockUnits.hori.m};
-        }
-
-        .section{
-          border-top:1px solid ${THEMES.colors.accent.red};
-          padding-bottom:${THEMES.blockUnits.hori.m};
-        }
-
-        .sectionTitle{
-          padding-bottom:${THEMES.blockUnits.hori.xs};
-        }
       `}</style>
     </>
   );
@@ -105,9 +70,9 @@ const Page_Dev: NextPage<Props> = ({ title_header,contents }: Props) => {
 export const getStaticProps = async () => {
   const jsonFilePath = path.join(process.cwd(), "public/DB/dev/manager.json");
   const data: Buffer = await fsPromises.readFile(jsonFilePath);
-  type Json_In = { contents: Json_Dev };
+  type Json_In = { contents: T_DEV_IMPORTED };
   const objectData = JSON.parse(data.toString()) as Json_In;
-  const contents: Json_Dev = objectData.contents;
+  const contents: T_DEV_IMPORTED = objectData.contents;
   return {
     props: {
       title_header:"DEV(*)",

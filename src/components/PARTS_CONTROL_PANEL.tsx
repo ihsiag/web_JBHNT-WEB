@@ -18,19 +18,19 @@ const Parts_Control_Panel = ({children}:Props)=>{
       .component{
         display:block;
         position:absolute;
-        width:${THEMES.blockUnits.hori.l};
+        width:${THEMES.blockUnits.xl};
         height:100vh;
       }
 
       .panel{
         position:absolute;
-        width:${THEMES.blockUnits.hori.l};
+        width:${THEMES.blockUnits.xl};
         padding:${THEMES.rs.m};
         border-radius:${THEMES.rs.m};
-        top:${THEMES.blockUnits.vert.m};
+        top:${THEMES.gaps.xl};
         background-color:${THEMES.colors.bg.sub};
         filter:drop-shadow(${THEMES.dropShadows.default});
-        transition-duration:${THEMES.animations.duration.l};
+        transition-duration:${THEMES.durations.l};
       }
 
       .panel:hover{

@@ -18,38 +18,39 @@ return(
           </li>
           <li className="dataBlock mentions">
             {data.mentions.map((mention, _i) => (
-              <p key={`project_inParts_desc_${_i}`}>- {mention}</p>
+              <p className="mention" key={`project_inParts_desc_${_i}`}>- {mention}</p>
             ))}
           </li>
         </ul>
       </div>
       <style jsx>{`
-        .component {
-          /* border-left:2px solid ${THEMES.colors.text.main}; */
-        }
-        .dataBlocks {
-          /* background-color:${THEMES.colors.bg.sub};
-      border-radius:${THEMES.rs.s}; */
-          padding: ${THEMES.gaps.m};
-        }
         .title p {
           font-size: ${THEMES.fontSizes.xl};
           /* font-weight:${THEMES.fontWeights.b}; */
         }
+        
         .oneLine p {
           font-size: ${THEMES.fontSizes.m};
         }
         .mentions p {
           font-size: ${THEMES.fontSizes.s};
         }
-        .description p {
-          font-size: ${THEMES.fontSizes.s};
+        .dataBlocks {
+          padding:${THEMES.gaps.m};
         }
+        
         .title {
           padding-bottom: ${THEMES.gaps.m};
         }
         .oneLine {
-          padding-bottom: ${THEMES.gaps.m};
+          padding-bottom: ${THEMES.gaps.l};
+        }
+        .mentions{
+        }
+
+        .mention{
+          margin-bottom:${THEMES.gaps.xxs};
+          background-color:${THEMES.colors.accent.yellow};
         }
       `}</style>
     </>

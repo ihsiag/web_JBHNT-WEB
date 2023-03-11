@@ -3,13 +3,13 @@ import ReactMarkdown from "react-markdown";
 import ST_MD_PAPER from "src/styles/ST_MD_PAPER";
 import ST_VIDEO from "src/styles/ST_VIDEO";
 import * as THEMES from "src/styles/theme";
-import { T_PRJT_FORMATTED_MEDIA } from "src/types";
+import { T_MEDIA_FORMATTED } from "src/types";
 import PA_Image from "./PA_Image";
 
 
 type Props = {
   projectId:number;
-  projectFormattedMedium:T_PRJT_FORMATTED_MEDIA[];
+  projectFormattedMedium:T_MEDIA_FORMATTED[];
 }
 
 const SE_PRJT_Medium = ({ projectId, projectFormattedMedium }: Props) => {

@@ -1,20 +1,25 @@
 import { ReactChild } from "react";
+import * as THEMES from "src/styles/theme"
 
 type Props = {
   children: ReactChild;
-  custom?:boolean;
+  fill?:boolean;
   center?:boolean;
+  grid?:number;
+  noPadding?:boolean;
 };
 
-const SE_Layout = ({ children, custom,center }: Props) => {
+const SE_Layout = ({ children, fill, center,grid ,noPadding}: Props) => {
   return (
     <>
       <div className="component">{children}</div>
       <style jsx>{`
         .component {
-          width: ${custom ? "100%" : "1000px"};
-          display:${center ? "flex" : "block"};
+          width: ${fill ? "100%" : "1000px"};
+          display:${grid ? "grid":center ? "flex" : "block"};
+          ${grid?["grid-template-columns:",grid].join(""):""}
           ${center?"flex-direction:column;\nalign-items:center":""};
+          padding-bottom:${noPadding?"0":THEMES.gaps.xl};
         }
 
         @media screen and (max-width: 1366px) {

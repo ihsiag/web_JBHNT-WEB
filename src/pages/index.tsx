@@ -15,7 +15,7 @@ const Page_Home: NextPage<PageProps_Minimal> = () => {
   return (
     <>
       <PA_Layout noPadding={true}>
-        <SE_Layout custom={true}>
+        <SE_Layout fill={true}>
         <>
         <div className="component">
           <Link href="projects">

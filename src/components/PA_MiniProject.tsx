@@ -1,13 +1,13 @@
 import ST_IMAGE from "src/styles/ST_IMAGE";
 import ST_VIDEO from "src/styles/ST_VIDEO";
-import { T_PRJT_ALL } from "src/types";
+import { T_PRJT_IMPORTED } from "src/types";
 import Image from "next/image";
 
 import * as THEMES from "src/styles/theme"
 import Link from "next/link";
 
 type Props ={
-  project: T_PRJT_ALL;
+  project: T_PRJT_IMPORTED;
 }
 
 const PA_MiniProject = ({ project }: Props) => {

@@ -6,7 +6,7 @@ export type PageProps_Minimal ={
 };
 
 //-----------------------------------------------------------
-export type T_PRJT_IMPORT = {
+export type T_PRJT_IMPORTED = {
   id:number;
   asUrl:string;
   title:string;
@@ -15,11 +15,11 @@ export type T_PRJT_IMPORT = {
   keywords:string[];
   mentions:string[];  
   bannar:T_BANNAR;
-  sections:T_PRJT_SECTION_IMPORT[];
+  sections:T_PRJT_SECTION_IMPORTED[];
   description:string;
 };
 
-export type T_PRJT_SECTION_IMPORT ={
+export type T_PRJT_SECTION_IMPORTED ={
   sectionId:number;
   sectionTitle:string;
   oneLine:string;
@@ -67,7 +67,7 @@ export type T_MEDIA_FORMATTED ={
 }
 
 //-----------------------------------------------------------
-export type T_INF_ALL = {
+export type T_INF_IMPORTED = {
   introduction:{
     name:T_BILINGUAL;
     role:T_BILINGUAL;
@@ -88,7 +88,7 @@ export type T_INF_CAREER_CHILD = {
   links?:T_LINK[];
 };
 
-export type T_DEV_ALL ={
+export type T_DEV_IMPORTED ={
   title:string;
   topics:T_LINK[];
 }[];
