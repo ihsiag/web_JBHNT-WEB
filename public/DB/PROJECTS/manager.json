@@ -20,7 +20,7 @@
         "選出上映 : Cinewaves Films 2020, Saudi Arabia"
       ],
       "bannar": {
-        "path": "./00_FIXPERTS/img/capture_screen-video.jpg",
+        "path": "./P_SCL_BEBENTO/capture_screen-video.jpg",
         "bVideo": false
       },
       "sections": [
@@ -44,7 +44,7 @@
           "descriptions": ["収納と陳列を素早く。"],
           "medium": [
             {
-              "path": "./00_FIXPERTS/img/capture_screen-video.jpg",
+              "path": "./P_SCL_BEBENTO/capture_screen-video.jpg",
               "type": "image",
               "caption": ""
             }
@@ -57,7 +57,7 @@
           "descriptions": ["70歳近くになるナカガワさん","京都市内を移動しながら靴を修理している。","モノづくりが好きで困難は都度自分で解決してしまう。"],
           "medium": [
             {
-              "path": "./00_FIXPERTS/img/capture_screen-video.jpg",
+              "path": "./P_SCL_BEBENTO/capture_screen-video.jpg",
               "type": "image",
               "caption": ""
             }
@@ -75,7 +75,7 @@
               "caption": ""
             },
             {
-              "path": "./00_FIXPERTS/txt/essay.md",
+              "path": "./P_SCL_BEBENTO/essay.md",
               "type": "markdown",
               "caption": "TEXT BY GAISHI KUDO, TYPEFACE : Noto Sans JP"
             }
@@ -88,27 +88,27 @@
           "descriptions": [""],
           "medium": [
             {
-              "path": "./00_FIXPERTS/img/prototypes/1.png",
+              "path": "./P_SCL_BEBENTO/prototypes/1.png",
               "type": "image",
               "caption": "!! おおきすぎる..."
             },
             {
-              "path": "./00_FIXPERTS/img/prototypes/2.png",
+              "path": "./P_SCL_BEBENTO/prototypes/2.png",
               "type": "image",
               "caption": "!! 陳列したときに中が見えない..."
             },
             {
-              "path": "./00_FIXPERTS/img/prototypes/3.png",
+              "path": "./P_SCL_BEBENTO/prototypes/3.png",
               "type": "image",
               "caption": "!! 壊れやすい..."
             },
             {
-              "path": "./00_FIXPERTS/img/prototypes/testing1.mp4",
+              "path": "./P_SCL_BEBENTO/prototypes/testing1.mp4",
               "type": "video",
               "caption": ""
             },
             {
-              "path": "./00_FIXPERTS/img/prototypes/testing2.mp4",
+              "path": "./P_SCL_BEBENTO/prototypes/testing2.mp4",
               "type": "video",
               "caption": ""
             }
@@ -121,22 +121,22 @@
           "descriptions": [""],
           "medium": [
             {
-              "path": "./00_FIXPERTS/img/captures_binded/1.png",
+              "path": "./P_SCL_BEBENTO/captures_binded/1.png",
               "type": "image",
               "caption": ""
             },
             {
-              "path": "./00_FIXPERTS/img/captures_binded/2.png",
+              "path": "./P_SCL_BEBENTO/captures_binded/2.png",
               "type": "image",
               "caption": ""
             },
             {
-              "path": "./00_FIXPERTS/img/captures_binded/3.png",
+              "path": "./P_SCL_BEBENTO/captures_binded/3.png",
               "type": "image",
               "caption": ""
             },
             {
-              "path": "./00_FIXPERTS/img/captures_binded/4.png",
+              "path": "./P_SCL_BEBENTO/captures_binded/4.png",
               "type": "image",
               "caption": ""
             }
@@ -162,7 +162,7 @@
         "展示 : MAKERS FAIR 2019, 大阪"
       ],
       "bannar": {
-        "path": "./00_BA_GRADUATION/img/resulted-object_01.png",
+        "path": "./P_SCL_THE-WAY-WE-DESIGN/resulted-object_01.png",
         "bVideo": false
       },
       "sections": [
@@ -199,7 +199,7 @@
         "商談 : WOUD, Furniture Company, Denmark"
       ],
       "bannar": {
-        "path": "./00_COATHOOK/img/resulted-object_01.jpg",
+        "path": "./P_SCL_COATHOOK/resulted-object_01.jpg",
         "bVideo": false
       },
       "sections": [
@@ -236,7 +236,7 @@
         "注記 : sunayama stduioの作品「とある出来事の設計」（担当：砂山太一、工藤外四）のコンセプトおよびプロセス設計に基づいている"
       ],
       "bannar": {
-        "path": "./00_MA_GRADUATION/img/desk_trimmed.png",
+        "path": "./P_SCL_SIMULATED-EXPERIENCE-OR-DREAM/desk_trimmed.png",
         "bVideo": false
       },
       "sections": [
