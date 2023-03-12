@@ -8,11 +8,15 @@ type Props ={
 
 const PA_Circle = ({_gapSize,_circleSize,_color}:Props) => {
   const gapSize = _gapSize?_gapSize:THEMES.blockUnits.xs;
-  const circleSize = _circleSize?_circleSize:THEMES.blockUnits.xl;
+  const circleSize = _circleSize?_circleSize:THEMES.blockUnits.m;
   const color = _color?_color:THEMES.colors.text.main;
   return (
     <>
-      <div className="component"></div>
+      <div className="component">
+        <div className="symbol">
+          <div className="circle"></div>
+        </div>
+      </div>
       <style jsx>{`
         .symbol {
           display: flex;

@@ -18,7 +18,7 @@ const SE_Layout = ({children, fill, center, grid, gap, noPadding}: Props) => {
         .component {
           width: ${fill ? "100%" : "1000px"};
           display:${grid ? "grid":center ? "flex" : "block"};
-          ${grid?["grid-template-columns:",grid,";"].join(""):""}
+          ${grid?["grid-template-columns: repeat(",grid,",1fr);"].join(""):""}
           ${grid?gap?["gap:",gap,";"].join(" "):"":""};
           ${center?"flex-direction:column;\nalign-items:center":""};
           padding-bottom:${noPadding?"0":THEMES.gaps.xl};
@@ -26,14 +26,15 @@ const SE_Layout = ({children, fill, center, grid, gap, noPadding}: Props) => {
 
         @media screen and (max-width: 1366px) {
           .component {
-            width: 900px;
+            width: ${fill ? "100%" : "900px"};
           }
         }
 
         @media screen and (max-width: 1024px) {
           .component {
-            width: 100%;
-            padding: 0 50px 0 50px;
+            width: ${fill ? "100%" : "1000px"};
+            padding-left:${THEMES.gaps.xl};
+            padding-right:${THEMES.gaps.xl};
           }
         }
       `}</style>

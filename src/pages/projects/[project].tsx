@@ -14,6 +14,7 @@ import SE_PRJT_Catch from "src/components/SE_PRJT_Catch";
 import SE_PRJT_OtherProjects from "src/components/SE_PRJT_OtherProjects";
 import * as THEMES from "src/styles/theme";
 import SE_PRJT_Sections from "src/components/SE_PRJT_Sections";
+import PA_Circle from "src/components/PA_Circle";
 
 
 type Props = PageProps_Minimal & {
@@ -47,6 +48,10 @@ const Page_Project: NextPage<Props> = ({project,otherProjects}: Props) => {
           {/* <SE_Layout>
             <SE_PRJT_Desc content_md={projectDesc} />
           </SE_Layout> */}
+
+          <SE_Layout>
+            <PA_Circle/>
+          </SE_Layout>
           
           <SE_Layout>
               <SE_PRJT_OtherProjects otherProjects={otherProjects} />
@@ -56,28 +61,6 @@ const Page_Project: NextPage<Props> = ({project,otherProjects}: Props) => {
             .component {
               /* border-bottom:${THEMES.colors.accent.red} solid 2px; */
               margin-bottom: 100px;
-            }
-
-            .imageWrap {
-              position: relative;
-              width: 100%;
-              height: 100%;
-            }
-
-            .symbol {
-              display: flex;
-              justify-content: center;
-              padding-top: calc(${THEMES.blockUnits.m} * 2);
-              padding-bottom: calc(${THEMES.blockUnits.m} * 2);
-            }
-
-            .circle {
-              text-align: center;
-              width: ${THEMES.blockUnits.m};
-              height: ${THEMES.blockUnits.m};
-              line-height: ${THEMES.blockUnits.m};
-              border-radius: 50%;
-              background-color: ${THEMES.colors.text.main};
             }
           `}</style>    
           </>    

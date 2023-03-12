@@ -30,7 +30,6 @@ return(
         .component {
           width: 100%;
           height: 100%;
-          /* border-left:1px solid ${THEMES.colors.text.main}; */
           padding-left: ${THEMES.gaps.l};
         }
 
@@ -52,12 +51,9 @@ return(
         .dataBlocks {
           width: 100%;
           height: 100%;
-          display: flex;
-          flex-direction: column;
           padding: ${THEMES.gaps.m};
           background-color: ${THEMES.colors.bg.sub};
           border-radius: ${THEMES.rs.s};
-          /* border-left:2px solid ${THEMES.colors.accent.gray}; */
         }
 
         .year{
@@ -71,7 +67,6 @@ return(
 
         .keywords{
           display: flex;
-          /* justify-oneLine: flex-end; */
           flex-wrap: wrap;
         }
 

@@ -20,12 +20,12 @@ const PA_MiniProject = ({ project }: Props) => {
           <div className="imageArea">
             {project.bannar.bVideo ? (
               <ST_VIDEO abs={true}>
-                <video src={`/DB/projects/${project.bannar.path.slice(2)}`} loop muted autoPlay playsInline />
+                <video src={`/DB/PROJECTS/${project.bannar.path.slice(2)}`} loop muted autoPlay playsInline />
               </ST_VIDEO>
             ) : (
               <ST_IMAGE abs={true}>
                 <Image
-                  src={`/DB/projects/${project.bannar.path.slice(2)}`}
+                  src={`/DB/PROJECTS/${project.bannar.path.slice(2)}`}
                   alt="bannr image"
                   quality={40}
                   priority={false}

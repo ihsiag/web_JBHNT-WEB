@@ -23,10 +23,10 @@ const SE_PRJT_Catch = ({data,data2,visual}:Props)=>{
     </div>
     <style jsx>{`
     .component{
-      display: flex;
-      padding-top: 100px;
-      padding-bottom: 50px;
-      margin-bottom: 50px;
+      display: grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:${THEMES.gaps.m};
+      padding-bottom:${THEMES.gaps.l};
       border-bottom: 2px solid ${THEMES.colors.accent.gray};
     }
     `}</style>

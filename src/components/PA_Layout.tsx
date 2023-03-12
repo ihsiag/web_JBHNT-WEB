@@ -44,7 +44,7 @@ const PA_Layout = ({ title,children ,noPadding}: Props) => {
 
         .contentAreaWrap {
           min-height: calc(100vh - ${THEMES.blockUnits.xl});
-          padding-top: ${noPadding?"":THEMES.blockUnits.m};
+          padding-top: ${noPadding?"":THEMES.blockUnits.s};
         }
       `}</style>
     </>
