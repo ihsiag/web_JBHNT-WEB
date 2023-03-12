@@ -21,7 +21,7 @@ const SE_Layout = ({children, fill, center, grid, gap, noPadding}: Props) => {
           ${grid?["grid-template-columns: repeat(",grid,",1fr);"].join(""):""}
           ${grid?gap?["gap:",gap,";"].join(" "):"":""};
           ${center?"flex-direction:column;\nalign-items:center":""};
-          padding-bottom:${noPadding?"0":THEMES.gaps.xl};
+          padding-bottom:${noPadding?"0":THEMES.gaps.xxl};
         }
 
         @media screen and (max-width: 1366px) {

@@ -44,8 +44,8 @@
           "sectionTitle": "完成プロタクト",
           "oneLine": "開店時間を従来の25%短縮",
           "descriptions": [
-            "私たちのチーム（工藤外四、中山うらら、八木まどか、Ah Hyoen Kim）は、京都市内を移動しながら靴の修理をおこなうナカガワミチオ氏をパートナーに、民俗学的調査と密着取材の協力を得て、ナカガワ氏が移動した場所で効率的かつ迅速に仕事場とディスプレイのセットアップを可能にする方法の開発に取り組んだ。解決策として、日本のお弁当箱をベースに、セットアップの時間を大幅に短縮できるボックスセットをデザインすることにした",
-            "このボックスセットはFixpertsを代表する作品の一つとして選出され、Paola Antonelliがキュレーターを務める「Broken Nature:the XXII triennale di milano, Italy」に展示された。",
+            "私たちのチーム（工藤外四、中山うらら、八木まどか、Ah Hyoen Kim）は、京都市内を移動しながら靴の修理をおこなうナカガワミチオ氏をパートナーに、民俗学的調査と密着取材の協力を得て、ナカガワ氏が移動した場所で効率的かつ迅速に仕事場とディスプレイのセットアップを可能にする方法の開発に取り組んだ。解決策として、日本のお弁当箱をベースに、セットアップの時間を大幅に短縮できるボックスセットをデザインすることにした。",
+            "このボックスセットは\"Fixperts\"と呼ばれる活動を代表する作品の一つとして選出され、Paola Antonelliがキュレーターを務める「Broken Nature:the XXII triennale di milano, Italy」に展示された。",
             "また、本プロジェクトを一本の映像にまとめたドキュメンタリーフィルムは「Real To Reel 2019, Crafts Council, UK」、「RCA Helen Hamlyn Fixperts Award 2018, UK」、「Nordic Makers' Film Festival, Kristinestad, Finland」、「Cinewaves Films, Saudi Arabia」に選出されヨーロッパをはじめ、サウジアラビアなど国境を越えて複数の都市で上映された。"
           ],
           "medium": [
@@ -65,7 +65,7 @@
           ],
           "medium": [
             {
-              "path": "./P_SCL_BEBENTO/capture_screen-video.jpg",
+              "path": "./P_SCL_BEBENTO/mrnakagawa.png",
               "type": "image",
               "caption": ""
             }
@@ -74,7 +74,7 @@
         {
           "sectionId": 2,
           "sectionTitle": "背景",
-          "oneLine": "弁当箱のように",
+          "oneLine": "",
           "descriptions": [
             "70歳近くになるナカガワさん",
             "京都市内を移動しながら靴を修理している。",
@@ -82,7 +82,7 @@
           ],
           "medium": [
             {
-              "path": "./P_SCL_BEBENTO/capture_screen-video.jpg",
+              "path": "./P_SCL_BEBENTO/mrnakagawa.png",
               "type": "image",
               "caption": ""
             }
@@ -91,7 +91,7 @@
         {
           "sectionId": 3,
           "sectionTitle": "気づかない問題に気付くために",
-          "oneLine": "複数の定点カメラで一日中記録観察",
+          "oneLine": "複数の定点カメラで\n一日中記録観察",
           "descriptions": [
             "気づかないで直面している問題を見つけるためにはどうしたら良いだろうか？",
             "問題の発見というと、どうしても手元に目が行ってしまう。",
@@ -121,17 +121,17 @@
             {
               "path": "./P_SCL_BEBENTO/prototypes/1.png",
               "type": "image",
-              "caption": "!! おおきすぎる..."
+              "caption": "一つ目の試作品。\nおおきい。もう少しコンパクトにしたい。"
             },
             {
               "path": "./P_SCL_BEBENTO/prototypes/2.png",
               "type": "image",
-              "caption": "!! 陳列したときに中が見えない..."
+              "caption": "二つ目の試作品。\n陳列したときに中が見えない。少し重たい。"
             },
             {
               "path": "./P_SCL_BEBENTO/prototypes/3.png",
               "type": "image",
-              "caption": "!! 壊れやすい..."
+              "caption": "三つめの試作品。\n穴を空けて軽量化。ただし、壊れやすい。"
             },
             {
               "path": "./P_SCL_BEBENTO/prototypes/testing1.mp4",
@@ -367,7 +367,7 @@
           ],
           "medium": [
             {
-              "path": "./P_SCL_COATHOOK/3.jpg",
+              "path": "./P_SCL_COATHOOK/3.png",
               "type": "image",
               "caption": ""
             },
@@ -422,7 +422,7 @@
               "caption": ""
             },
             {
-              "path": "./P_SCL_COATHOOK/prototypes/phase_02.jpg",
+              "path": "./P_SCL_COATHOOK/prototypes/phase_02.png",
               "type": "image",
               "caption": ""
             },

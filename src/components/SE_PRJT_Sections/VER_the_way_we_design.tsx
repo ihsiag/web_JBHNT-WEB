@@ -273,7 +273,7 @@ const InSE_Prototyping_StoolStructure = ({ section }: PropsInSE) => {
   const _columnNum = 6;
   const _size = 6;
   const _makeGrid = () => {
-    let _list: string[] = [];
+    const _list: string[] = [];
     for (let i = 0; i < _columnNum; i++) {
       _list.push(`${_size}fr`);
       i !== _columnNum - 1 && _list.push("1fr");

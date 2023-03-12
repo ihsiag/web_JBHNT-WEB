@@ -19,25 +19,25 @@ const SE_PRJT_Sections_bebento = ({ sections }: Props) => {
       <div className="component">
         <SE_LayoutWrap>
           <>
-            <SE_Layout fill={true} center={true}>
+            <SE_Layout fill={false} center={true}>
               <InSE_Movie section={sections[0]} />
             </SE_Layout>
-            <SE_Layout fill={true} center={true}>
+            <SE_Layout fill={false} center={true}>
               <InSE_FinalImage section={sections[1]} />
             </SE_Layout>
-            <SE_Layout fill={true} grid={8}>
-              <>
-                <InSE_Concept section={sections[2]} />
-                <InSE_Background section={sections[3]} />
-              </>
+            <SE_Layout fill={false} grid={8}>
+              <InSE_Concept section={sections[2]} />
             </SE_Layout>
-            <SE_Layout fill={true}>
+            <SE_Layout fill={false}>
+              <InSE_Background section={sections[3]} />
+            </SE_Layout>
+            <SE_Layout fill={false}>
               <InSE_Idea section={sections[4]} />
             </SE_Layout>
-            <SE_Layout fill={true}>
+            <SE_Layout fill={false}>
               <InSE_Prototyping section={sections[5]} />
             </SE_Layout>
-            <SE_Layout fill={true}>
+            <SE_Layout fill={false}>
               <InSE_Film section={sections[6]} />
             </SE_Layout>
             {/* <InSE_End section={sections[5]}/> */}
@@ -73,7 +73,7 @@ const InSE_Movie = ({ section }: PropsInSE) => {
     <>
       <div className="component">
         <div className="area-title">
-          <PA_SectionTitle title = {section.sectionTitle}/>
+          <PA_SectionTitle title={section.sectionTitle} />
         </div>
         <div className="area-content">
           <SE_LayoutWrap>
@@ -81,13 +81,13 @@ const InSE_Movie = ({ section }: PropsInSE) => {
               <PA_Youtube src={section.medium[0].src} />
             </SE_Layout>
           </SE_LayoutWrap>
-        </div> 
+        </div>
       </div>
       <style jsx>{`
         .component {
         }
 
-        .area-content{
+        .area-content {
           background-color: ${THEMES.colors.bg.sub};
           padding: ${THEMES.gaps.s} 0;
           border: 2px solid ${THEMES.colors.accent.gray};
@@ -102,37 +102,62 @@ const InSE_FinalImage = ({ section }: PropsInSE) => {
     <>
       <div className="component">
         <div className="area-title">
-          <PA_SectionTitle title ={section.sectionTitle}/>
+          <PA_SectionTitle title={section.sectionTitle} />
         </div>
         <div className="area-content">
           <div className="content-image">
-          <PA_Image src={section.medium[0].src} ntl={true}/>            
+            <PA_Image src={section.medium[0].src} ntl={true} />
           </div>
           <div className="content-oneLine">
             <p>{section.oneLine}</p>
           </div>
           <ul className="content-descriptions">
-            <li><p>{section.descriptions[0]}</p></li>
-            <li><p>{section.descriptions[1]}</p></li>
-            <li><p>{section.descriptions[2]}</p></li>
+            <li>
+              <p>{section.descriptions[0]}</p>
+            </li>
+            <li>
+              <p>{section.descriptions[1]}</p>
+            </li>
+            <li>
+              <p>{section.descriptions[2]}</p>
+            </li>
           </ul>
         </div>
       </div>
       <style jsx>{`
-        .content-oneLine p{
+        .content-oneLine p {
           font-size: ${THEMES.fontSizes.xl};
           font-weight: ${THEMES.fontWeights.b};
         }
 
-        .content-descriptions p{
+        .content-descriptions p {
           font-size: ${THEMES.fontSizes.s};
           font-weight: ${THEMES.fontWeights.n};
+          letter-spacing:${THEMES.letterSpacings.s};
         }
 
-        .content-descriptions { 
-          display:grid;
-          grid-template-columns:repeat(3,1fr);
-          gap:${THEMES.gaps.xl};
+        .content-descriptions p::first-letter {
+          font-size: ${THEMES.fontSizes.l};
+          font-weight: ${THEMES.fontWeights.b};
+        }
+
+        .content-image{
+          padding-bottom:${THEMES.gaps.m};
+        }
+
+        .content-oneLine{
+          padding-bottom:${THEMES.gaps.m};
+        }
+
+        .content-descriptions {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: ${THEMES.gaps.l};
+        }
+
+        .content-descriptions li{
+          border-top:2px solid ${THEMES.colors.accent.gray};
+          padding-top:${THEMES.gaps.s};
         }
       `}</style>
     </>
@@ -152,7 +177,7 @@ const InSE_Concept = ({ section }: PropsInSE) => {
               {/* <Image src={section.medium[0].src} alt={""} quality={100} priority={false} loading={"lazy"} unoptimized={false} layout={"fill"} objectFit={"contain"} blurDataURL="data:image/jpeg;base64," placeholder="blur" /> */}
             </ST_IMAGE>
           </div>
-          <div className="content-detail">
+          <div className="content-text">
             <div className="detail-oneLine">
               <p>{section.oneLine}</p>
             </div>
@@ -164,7 +189,7 @@ const InSE_Concept = ({ section }: PropsInSE) => {
       </div>
       <style jsx>{`
         .detail-oneLine p {
-          font-size: ${THEMES.fontSizes.l};
+          font-size: ${THEMES.fontSizes.xl};
           font-weight: ${THEMES.fontWeights.b};
         }
 
@@ -175,21 +200,24 @@ const InSE_Concept = ({ section }: PropsInSE) => {
 
         .component {
           grid-column-start: 1;
-          grid-column-end: 5;
+          grid-column-end: 6;
         }
 
         .area-content {
-          display: flex;
+          display: grid;
+          grid-template-columns:repeat(4,1fr);
+          gap:${THEMES.gaps.m};
         }
 
         .content-visual {
-          width: ${THEMES.blockUnits.l};
-          height: ${THEMES.blockUnits.l};
           background: blue;
+          grid-column-start: 1;
+          grid-column-end: 3;
         }
 
-        .content-detail {
-          flex: 1;
+        .content-text {
+          grid-column-start: 3;
+          grid-column-end: 5;
         }
 
         .detail-oneLine {
@@ -207,11 +235,14 @@ const InSE_Background = ({ section }: PropsInSE) => {
   return (
     <>
       <div className="component">
-        <div className="area-title">
-          <PA_SectionTitle title={section.sectionTitle} noPadding={false} />
+        <div className="outerarea-visual">
+          <PA_Image src={section.medium[0].src} />
         </div>
-        <div className="area-content">
-          <ul className="content-descs">
+        <div className="outerarea-text">
+          <div className="area-title">
+            <PA_SectionTitle title={section.sectionTitle} noPadding={false} />
+          </div>
+          <ul className="area-descs">
             {section.descriptions.map((desc, _i) => {
               return (
                 <li key={`InSE_Background_${_i}`}>
@@ -220,36 +251,30 @@ const InSE_Background = ({ section }: PropsInSE) => {
               );
             })}
           </ul>
-          <div className="content-visual">
-            <PA_Image src={section.medium[0].src} />
-          </div>
         </div>
       </div>
       <style jsx>{`
         .component {
-          grid-column-start: 5;
+          display:grid;
+          grid-template-columns:repeat(8,1fr);
+          gap:${THEMES.gaps.xl};
+        }
+
+        .outerarea-visual{
+          grid-column-start: 1;
+          grid-column-end: 4;
+          position:relative;
+          padding-top:100%;
+        }
+
+        .outerarea-text{
+          grid-column-start: 4;
           grid-column-end: 9;
         }
 
-        .content-descs p {
+        .area-descs p {
           font-size: ${THEMES.fontSizes.m};
           font-weight: ${THEMES.fontWeights.n};
-        }
-
-        .area-content {
-          display: grid;
-          /* height:100%; */
-          grid-template-columns: repeat(2, 1fr);
-        }
-
-        .content-descs {
-          flex: 1;
-        }
-
-        .content-visual {
-          position: relative;
-          width: 100%;
-          height: ${THEMES.blockUnits.l};
         }
       `}</style>
     </>
@@ -264,56 +289,72 @@ const InSE_Idea = ({ section }: PropsInSE) => {
           <PA_SectionTitle title={section.sectionTitle} noPadding={false} />
         </div>
         <div className="area-content">
-          <div className="content-oneLine">
-            <p>{section.oneLine}</p>
-          </div>
-          <div className="content-descs">
-            {section.descriptions.map((desc, _i) => (
-              <p key={`InSE_Idea_content_desc_${_i}`}>{desc}</p>
-            ))}
-          </div>
-          <div className="content-videos">
-            <div className="video1">
-              <PA_Video src={section.medium[0].src} />
+          <div className="content-text">
+            <div className="text-oneLine">
+              <p>{section.oneLine}</p>
             </div>
-            <div className="video2">
-              <PA_Video src={section.medium[1].src} />
+            <div className="text-descs">
+              {section.descriptions.map((desc, _i) => (
+                <p key={`InSE_Idea_content_desc_${_i}`}>{desc}</p>
+              ))}
+            </div>
+          </div>
+          <div className="content-visual">
+            <div className="visual-videos">
+              <div className="video1">
+                <PA_Video src={section.medium[0].src} />
+              </div>
+              <div className="video2">
+                <PA_Video src={section.medium[1].src} />
+              </div>
             </div>
           </div>
         </div>
       </div>
       <style jsx>{`
-        .component {
-        }
-
-        .area-content {
-          /* height:100%; */
-        }
-
-        .content-oneLine P {
-          font-size: ${THEMES.fontSizes.l};
+        .text-oneLine P {
+          font-size: ${THEMES.fontSizes.xl};
           font-weight: ${THEMES.fontWeights.b};
         }
 
-        .content-descs p {
+        .text-descs p {
           font-size: ${THEMES.fontSizes.m};
           font-weight: ${THEMES.fontWeights.n};
         }
 
-        .content-videos {
+        .component {
+        }
+
+        .area-content {
           display: grid;
           grid-template-columns: repeat(8, 1fr);
           gap: ${THEMES.gaps.m};
         }
 
-        .video1 {
+        .content-text {
           grid-column-start: 1;
-          grid-column-end: 5;
+          grid-column-end: 6;
+        }
+
+        .content-visual {
+          grid-column-start: 6;
+          grid-column-end: 9;
+        }
+
+        .text-oneLine{
+          padding-bottom:${THEMES.gaps.m};
+        }
+
+        .visual-videos {
+          
+        }
+
+        .video1 {
+          
         }
 
         .video2 {
-          grid-column-start: 5;
-          grid-column-end: 9;
+          
         }
       `}</style>
     </>
@@ -377,8 +418,8 @@ const InSE_Prototyping = ({ section }: PropsInSE) => {
           grid-column-end: 6;
           display: grid;
           gap: ${THEMES.gaps.m};
-          width: 100%;
           grid-template-columns: 6fr 1fr 6fr 1fr 6fr;
+          padding-bottom:${THEMES.gaps.m}
         }
 
         .areas-improving li {
@@ -413,7 +454,6 @@ const InSE_Prototyping = ({ section }: PropsInSE) => {
         }
 
         .area-caption {
-          text-align: center;
         }
       `}</style>
     </>

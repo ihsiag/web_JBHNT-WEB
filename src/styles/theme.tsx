@@ -85,6 +85,12 @@ export const fontWeights={
   }
 } as const;
 
+export const letterSpacings={
+  s:"0.2rem",
+  m:"",
+  l:""
+} as const;
+
 export const dropShadows = {
   weak:"0 0 1px rgba(30,30,46,0.2)",
   default:"0 0 5px rgba(30,30,46,0.2)",
