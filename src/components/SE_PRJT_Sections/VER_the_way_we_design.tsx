@@ -2,7 +2,6 @@ import { T_PRJT_SECTION_FORMATTED } from "src/types";
 import SE_Layout from "src/components/SE_Layout";
 import PA_SectionTitle from "src/components/PA_SectionTitle";
 import SE_LayoutWrap from "src/components/SE_LayoutWrap";
-import PA_Youtube from "./PA_Youtube";
 import PA_Image from "./PA_Image";
 import PA_Video from "./PA_Video";
 import SVG_ARROW_Transition from "../SVG/SVG_ARROW_TRANSITION";
@@ -37,19 +36,6 @@ const SE_PRJT_Sections_the_way_we_design = ({ sections }: Props) => {
             <SE_Layout fill={true}>
               <InSE_Demos section={sections[5]} />
             </SE_Layout>
-            {/* <SE_Layout fill={true} center={true}>
-              <InSE_Movie section={sections[0]} />
-            </SE_Layout>
-            
-            
-            
-            <SE_Layout fill={true}>
-              <InSE_Prototyping section={sections[5]} />
-            </SE_Layout>
-            <SE_Layout fill={true}>
-              <InSE_Film section={sections[6]} />
-            </SE_Layout> */}
-            {/* <InSE_End section={sections[5]}/> */}
           </>
         </SE_LayoutWrap>
       </div>
@@ -75,35 +61,6 @@ export default SE_PRJT_Sections_the_way_we_design;
 
 type PropsInSE = {
   section: T_PRJT_SECTION_FORMATTED;
-};
-
-const InSE_Movie = ({ section }: PropsInSE) => {
-  return (
-    <>
-      <div className="component">
-        <div className="area-title">
-          <PA_SectionTitle title = {section.sectionTitle}/>
-        </div>
-        <div className="area-content">
-          <SE_LayoutWrap>
-            <SE_Layout noPadding={true}>
-              <PA_Youtube src={section.medium[0].src} />
-            </SE_Layout>
-          </SE_LayoutWrap>
-        </div> 
-      </div>
-      <style jsx>{`
-        .component {
-        }
-
-        .area-content{
-          background-color: ${THEMES.colors.bg.sub};
-          padding: ${THEMES.gaps.s} 0;
-          border: 2px solid ${THEMES.colors.accent.gray};
-        }
-      `}</style>
-    </>
-  );
 };
 
 const InSE_FinalImage = ({ section }: PropsInSE) => {
@@ -313,6 +270,16 @@ const InSE_Idea = ({ section }: PropsInSE) => {
 };
 
 const InSE_Prototyping_StoolStructure = ({ section }: PropsInSE) => {
+  const _columnNum = 6;
+  const _size = 6;
+  const _makeGrid = () => {
+    let _list: string[] = [];
+    for (let i = 0; i < _columnNum; i++) {
+      _list.push(`${_size}fr`);
+      i !== _columnNum - 1 && _list.push("1fr");
+    }
+    return _list.join(" ");
+  };
   return (
     <>
       <div className="component">
@@ -322,9 +289,16 @@ const InSE_Prototyping_StoolStructure = ({ section }: PropsInSE) => {
         <div className="area-content">
           <div className="content-images">
             {section.medium.map((media,_i)=>
-            <div className="content-image" key={`InSE_Prototyping_Media_{_i}`}>
+            <>
+            <div className="content-image" key={`InSE_Prototyping_Media_${_i}`}>
               <PA_Image src={media.src} abs={true} objectFit="cover"/>
             </div>
+            {(_i+1)%_columnNum !== 0 && _i+1 !== section.medium.length&&
+              <div className="content-image arrow"key={`InSE_Prototyping_Arrow_${_i}`}>
+                <SVG_ARROW_Transition/>
+              </div>  
+            }
+            </>
             )}
           </div>
         </div>
@@ -335,13 +309,19 @@ const InSE_Prototyping_StoolStructure = ({ section }: PropsInSE) => {
 
         .content-images{
           display:grid;
-          grid-template-columns:repeat(4,1fr);
-          gap:${THEMES.gaps.m};  
+          grid-template-columns: ${_makeGrid()};
+          gap: ${THEMES.gaps.xl} ${THEMES.gaps.m}; 
         }
 
         .content-image{
           position:relative;
           padding-top:100%;
+          /* background-color:green; */
+        }
+
+        .arrow{
+          display:grid;
+          align-items:center;
         }
       `}</style>
     </>
@@ -384,30 +364,6 @@ const InSE_Demos = ({ section }: PropsInSE) => {
         .video2 {
           grid-column-start: 5;
           grid-column-end: 9;
-        }
-      `}</style>
-    </>
-  );
-};
-
-
-
-const InSE_End = ({ section }: PropsInSE) => {
-  return (
-    <>
-      <div className="component">
-        <div className="area-title">
-          <PA_SectionTitle title={section.sectionTitle} noPadding={false} />
-        </div>
-        <div className="area-content"></div>
-      </div>
-      <style jsx>{`
-        .component {
-        }
-
-        .area-content {
-          background-color: green;
-          height: 100%;
         }
       `}</style>
     </>

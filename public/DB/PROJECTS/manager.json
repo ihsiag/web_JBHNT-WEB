@@ -359,8 +359,28 @@
       },
       "sections": [
         {
+          "sectionId": 0,
+          "sectionTitle": "",
+          "oneLine": "",
+          "descriptions": [
+            ""
+          ],
+          "medium": [
+            {
+              "path": "./P_SCL_COATHOOK/3.jpg",
+              "type": "image",
+              "caption": ""
+            },
+            {
+              "path": "./P_SCL_COATHOOK/resulted-object_02.jpg",
+              "type": "image",
+              "caption": ""
+            }
+          ]
+        },
+        {
           "sectionId": 1,
-          "sectionTitle": "CONCEPT",
+          "sectionTitle": "コンセプト",
           "oneLine": "弁当箱のように",
           "descriptions": [
             ""
@@ -369,6 +389,66 @@
             {
               "path": "https://www.youtube.com/embed/Se5VDiULb5M",
               "type": "youtube",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 1,
+          "sectionTitle": "背景",
+          "oneLine": "弁当箱のように",
+          "descriptions": [
+            ""
+          ],
+          "medium": [
+            {
+              "path": "https://www.youtube.com/embed/Se5VDiULb5M",
+              "type": "youtube",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 0,
+          "sectionTitle": "プロトタイピング",
+          "oneLine": "",
+          "descriptions": [
+            ""
+          ],
+          "medium": [
+            {
+              "path": "./P_SCL_COATHOOK/prototypes/phase_01.png",
+              "type": "image",
+              "caption": ""
+            },
+            {
+              "path": "./P_SCL_COATHOOK/prototypes/phase_02.jpg",
+              "type": "image",
+              "caption": ""
+            },
+            {
+              "path": "./P_SCL_COATHOOK/prototypes/phase_03.png",
+              "type": "image",
+              "caption": ""
+            },
+            {
+              "path": "./P_SCL_COATHOOK/prototypes/phase_04.png",
+              "type": "image",
+              "caption": ""
+            },
+            {
+              "path": "./P_SCL_COATHOOK/prototypes/phase_05.png",
+              "type": "image",
+              "caption": ""
+            },
+            {
+              "path": "./P_SCL_COATHOOK/prototypes/phase_06.png",
+              "type": "image",
+              "caption": ""
+            },
+            {
+              "path": "./P_SCL_COATHOOK/prototypes/phase_07.png",
+              "type": "image",
               "caption": ""
             }
           ]

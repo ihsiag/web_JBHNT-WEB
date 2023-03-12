@@ -378,7 +378,7 @@ const InSE_Prototyping = ({ section }: PropsInSE) => {
           display: grid;
           gap: ${THEMES.gaps.m};
           width: 100%;
-          grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+          grid-template-columns: 6fr 1fr 6fr 1fr 6fr;
         }
 
         .areas-improving li {
