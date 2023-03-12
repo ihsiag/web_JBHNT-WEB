@@ -9,6 +9,7 @@ export type PageProps_Minimal ={
 export type T_PRJT_IMPORTED = {
   id:number;
   asUrl:string;
+  year:number;
   title:string;
   subtitle:string;
   oneLine:string;
@@ -30,6 +31,7 @@ export type T_PRJT_SECTION_IMPORTED ={
 export type T_PRJT_FORMATTED = {
   id:number;
   asUrl:string;
+  year:number;
   title:string;
   subtitle:string;
   oneLine:string;
@@ -55,6 +57,7 @@ export type T_PRJT_DATA ={
 }
 
 export type T_PRJT_DATA2 = {
+  year:number;
   oneLine:string;
   keywords:string[];
 }

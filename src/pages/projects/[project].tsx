@@ -30,6 +30,7 @@ const Page_Project: NextPage<Props> = ({project,otherProjects}: Props) => {
     mentions:project.mentions
   };
   const data2:T_PRJT_DATA2 = {
+    year:project.year,
     oneLine:project.oneLine,
     keywords:project.keywords
   }
@@ -127,6 +128,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   const formattedProject = {
     id:project.id,
     asUrl:project.asUrl,
+    year:project.year,
     title:project.title,
     subtitle:project.subtitle,
     oneLine:project.oneLine,

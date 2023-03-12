@@ -19,23 +19,23 @@ const SE_PRJT_Sections_the_way_we_design = ({ sections }: Props) => {
         <SE_LayoutWrap>
           <>
           <SE_Layout fill={false} center={true}>
-              <InSE_FinalImage section={sections[0]} />
-            </SE_Layout>
-          <SE_Layout fill={true} grid={8}>
-              <>
-                <InSE_Concept section={sections[1]} />
-                <InSE_Background section={sections[2]} />
-              </>
-            </SE_Layout>
-            <SE_Layout fill={true}>
-              <InSE_Idea section={sections[3]} />
-            </SE_Layout>
-            <SE_Layout fill={true}>
-              <InSE_Prototyping_StoolStructure section={sections[4]} />
-            </SE_Layout>
-            <SE_Layout fill={true}>
-              <InSE_Demos section={sections[5]} />
-            </SE_Layout>
+            <InSE_FinalImage section={sections[0]} />
+          </SE_Layout>
+          <SE_Layout fill={false} grid={8}>
+            <InSE_Concept section={sections[1]} />
+          </SE_Layout>
+          <SE_Layout>
+            <InSE_Background section={sections[2]} />
+          </SE_Layout>
+          <SE_Layout fill={false}>
+            <InSE_Idea section={sections[3]} />
+          </SE_Layout>
+          <SE_Layout fill={false}>
+            <InSE_Prototyping_StoolStructure section={sections[4]} />
+          </SE_Layout>
+          <SE_Layout fill={false}>
+            <InSE_Demos section={sections[5]} />
+          </SE_Layout>
           </>
         </SE_LayoutWrap>
       </div>
@@ -68,26 +68,62 @@ const InSE_FinalImage = ({ section }: PropsInSE) => {
     <>
       <div className="component">
         <div className="area-title">
-          {/* <PA_SectionTitle title ={section.sectionTitle}/> */}
+          {/* <PA_SectionTitle title={section.sectionTitle} /> */}
         </div>
         <div className="area-content">
           <div className="content-image">
-          <PA_Image src={section.medium[0].src} abs={true} objectFit={"cover"}/>            
+            <PA_Image src={section.medium[0].src} ntl={true} />
           </div>
           <div className="content-oneLine">
             <p>{section.oneLine}</p>
           </div>
+          <ul className="content-descriptions">
+            <li>
+              <p>{section.descriptions[0]}</p>
+            </li>
+            <li>
+              <p>{section.descriptions[1]}</p>
+            </li>
+            <li>
+              <p>{section.descriptions[2]}</p>
+            </li>
+          </ul>
         </div>
       </div>
       <style jsx>{`
-        .content-oneLine p{
+        .content-oneLine p {
           font-size: ${THEMES.fontSizes.xl};
           font-weight: ${THEMES.fontWeights.b};
         }
 
+        .content-descriptions p {
+          font-size: ${THEMES.fontSizes.s};
+          font-weight: ${THEMES.fontWeights.n};
+          letter-spacing:${THEMES.letterSpacings.s};
+        }
+
+        .content-descriptions p::first-letter {
+          font-size: ${THEMES.fontSizes.l};
+          font-weight: ${THEMES.fontWeights.b};
+        }
+
         .content-image{
-          padding-top:calc(100% / 1.6);
-          position:relative;
+          padding-bottom:${THEMES.gaps.m};
+        }
+
+        .content-oneLine{
+          padding-bottom:${THEMES.gaps.m};
+        }
+
+        .content-descriptions {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: ${THEMES.gaps.l};
+        }
+
+        .content-descriptions li{
+          border-top:2px solid ${THEMES.colors.accent.gray};
+          padding-top:${THEMES.gaps.s};
         }
       `}</style>
     </>
@@ -107,19 +143,20 @@ const InSE_Concept = ({ section }: PropsInSE) => {
               {/* <Image src={section.medium[0].src} alt={""} quality={100} priority={false} loading={"lazy"} unoptimized={false} layout={"fill"} objectFit={"contain"} blurDataURL="data:image/jpeg;base64," placeholder="blur" /> */}
             </ST_IMAGE>
           </div>
-          <div className="content-detail">
+          <div className="content-text">
             <div className="detail-oneLine">
               <p>{section.oneLine}</p>
             </div>
             <div className="detail-desc">
               <p>{section.descriptions[0]}</p>
+              <p>{section.descriptions[1]}</p>
             </div>
           </div>
         </div>
       </div>
       <style jsx>{`
         .detail-oneLine p {
-          font-size: ${THEMES.fontSizes.l};
+          font-size: ${THEMES.fontSizes.xl};
           font-weight: ${THEMES.fontWeights.b};
         }
 
@@ -130,21 +167,24 @@ const InSE_Concept = ({ section }: PropsInSE) => {
 
         .component {
           grid-column-start: 1;
-          grid-column-end: 5;
+          grid-column-end: 7;
         }
 
         .area-content {
-          display: flex;
+          display: grid;
+          grid-template-columns:repeat(4,1fr);
+          gap:${THEMES.gaps.m};
         }
 
         .content-visual {
-          width: ${THEMES.blockUnits.l};
-          height: ${THEMES.blockUnits.l};
           background: blue;
+          grid-column-start: 1;
+          grid-column-end: 3;
         }
 
-        .content-detail {
-          flex: 1;
+        .content-text {
+          grid-column-start: 3;
+          grid-column-end: 5;
         }
 
         .detail-oneLine {
@@ -175,14 +215,10 @@ const InSE_Background = ({ section }: PropsInSE) => {
               );
             })}
           </ul>
-          <div className="content-visual">
-          </div>
         </div>
       </div>
       <style jsx>{`
         .component {
-          grid-column-start: 5;
-          grid-column-end: 9;
         }
 
         .content-descs p {
@@ -191,19 +227,6 @@ const InSE_Background = ({ section }: PropsInSE) => {
         }
 
         .area-content {
-          display: grid;
-          /* height:100%; */
-          grid-template-columns: repeat(2, 1fr);
-        }
-
-        .content-descs {
-          flex: 1;
-        }
-
-        .content-visual {
-          position: relative;
-          width: 100%;
-          height: ${THEMES.blockUnits.l};
         }
       `}</style>
     </>

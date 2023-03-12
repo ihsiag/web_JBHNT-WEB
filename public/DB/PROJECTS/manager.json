@@ -3,6 +3,7 @@
     {
       "id": 1,
       "asUrl": "Bebento",
+      "year":2018,
       "title": "BEBENTO",
       "subtitle": "屋外で働く職人さんのための「弁当箱」",
       "oneLine": "モノづくりで喜ばせたい！",
@@ -181,6 +182,7 @@
     {
       "id": 2,
       "asUrl": "The_Way_We_Design",
+      "year":2019,
       "title": "The Way We Design | ファーストコンタクト",
       "subtitle": "人とコンピューターの共創",
       "oneLine": "ヒトらしさって...?",
@@ -202,13 +204,15 @@
         {
           "sectionId": 0,
           "sectionTitle": "",
-          "oneLine": "",
+          "oneLine": "コンピューターとヒトで作るモノづくりの未来",
           "descriptions": [
-            ""
+            "私はヒト特有の震えや癖に、コンピューターの計算生成には代え難い強い魅力を感じる。癖をコンピューターで扱うことはできるだろうか。単純な動作であり、被験者によって様々な結果が得られる「円のドローイング」を用いて実験することにする。",
+            "以下の手順を構想し、ヒト特有の震えや癖をコンピューターを用いることで、より魅力的に出力しようと試みた。",
+            "人間特有の有機的データがデザインエレメントとなる。出来上がるものは奇妙である。震える手はそれを制御するべきだろうか。情報技術がより発達した世界は奇妙で有機的な形であふれかえっているのだろうか。そう遠くない未来世界の価値体系を妄想する。"
           ],
           "medium": [
             {
-              "path": "./P_SCL_THE-WAY-WE-DESIGN/resulted-object_02.jpg",
+              "path": "./P_SCL_THE-WAY-WE-DESIGN/cover.jpg",
               "type": "image",
               "caption": ""
             }
@@ -217,9 +221,10 @@
         {
           "sectionId": 0,
           "sectionTitle": "コンセプト",
-          "oneLine": "ヒトがコンピューターに助けられ、正確さから解放される",
+          "oneLine": "「完璧」からの解放",
           "descriptions": [
-            ""
+            "コンピューターによって正確さから解放された時代の",
+            "「ヒトらしい」デザインの方法を模索する。"
           ],
           "medium": [
             {
@@ -234,7 +239,8 @@
           "sectionTitle": "背景",
           "oneLine": "",
           "descriptions": [
-            ""
+            "コンピューターの計算能力が向上し、「最適化」の考えが流行。デザインも例外ではない。",
+            "最適化が普及する社会的意義は大きいが、一方でデザインを画一化し、デザインの世界に限界をもたらす可能性がある。私はコンピュータの計算能力を活用するデザインに異なる手法を模索することにした。"
           ],
           "medium": [
             {
@@ -340,6 +346,7 @@
     {
       "id": 3,
       "asUrl": "A_coathook_designed_for_the_exhibition_in_Milan",
+      "year":2018,
       "title": "DAVE (STRIKE)",
       "subtitle": "ミラノ国際家具見本市出展に向けてデザインしたコートフック",
       "oneLine": "モノづくりで喜ばせたい！",
@@ -459,6 +466,7 @@
     {
       "id": 4,
       "asUrl": "Simulated_Experience_Or_Dream",
+      "year":2022,
       "title": "とある出来事の設計II",
       "subtitle": "仮想空間での出来事を記録し、モデリングする3Dソフト",
       "oneLine": "人間らしさとは...?",
@@ -494,6 +502,364 @@
         }
       ],
       "description": "研究報告書 : [ダウンロードリンク](/DB/projects/00_MA_GRADUATION/report.pdf)"
+    },
+    {
+      "id": 5,
+      "asUrl": "The_Laughing_Man_Knows",
+      "year":2018,
+      "title": "The Laughing Man Knows",
+      "subtitle": "都市に蓄積される大規模データのその行方",
+      "oneLine": "モノづくりで喜ばせたい！",
+      "keywords": [
+        "ビッグデータ",
+        "都市空間",
+        "感情"
+      ],
+      "mentions": [
+        "指導教員 : Frank Kolkman",
+        "銀賞 : RCA Helen Hamlyn Fixperts Award 2018, United Kingdom",
+        "選出展示 : Broken Nature Show @ XX11 Milano Triennale 2019, Italy",
+        "選出上映 : Real To Reel 2019, by Crafts Council, United Kingdom",
+        "選出上映 : Nordic Makers' Film Festival, Kristinestad, Finland",
+        "選出上映 : Cinewaves Films 2020, Saudi Arabia"
+      ],
+      "bannar": {
+        "path": "./P_SCL_BEBENTO/capture_screen-video.jpg",
+        "bVideo": false
+      },
+      "sections": [
+        {
+          "sectionId": 0,
+          "sectionTitle": "ドキュメンタリーをご覧ください",
+          "oneLine": "",
+          "descriptions": [
+            ""
+          ],
+          "medium": [
+            {
+              "path": "https://www.youtube.com/embed/Se5VDiULb5M",
+              "type": "youtube",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 1,
+          "sectionTitle": "完成プロタクト",
+          "oneLine": "開店時間を従来の25%短縮",
+          "descriptions": [
+            "私たちのチーム（工藤外四、中山うらら、八木まどか、Ah Hyoen Kim）は、京都市内を移動しながら靴の修理をおこなうナカガワミチオ氏をパートナーに、民俗学的調査と密着取材の協力を得て、ナカガワ氏が移動した場所で効率的かつ迅速に仕事場とディスプレイのセットアップを可能にする方法の開発に取り組んだ。解決策として、日本のお弁当箱をベースに、セットアップの時間を大幅に短縮できるボックスセットをデザインすることにした。",
+            "このボックスセットは\"Fixperts\"と呼ばれる活動を代表する作品の一つとして選出され、Paola Antonelliがキュレーターを務める「Broken Nature:the XXII triennale di milano, Italy」に展示された。",
+            "また、本プロジェクトを一本の映像にまとめたドキュメンタリーフィルムは「Real To Reel 2019, Crafts Council, UK」、「RCA Helen Hamlyn Fixperts Award 2018, UK」、「Nordic Makers' Film Festival, Kristinestad, Finland」、「Cinewaves Films, Saudi Arabia」に選出されヨーロッパをはじめ、サウジアラビアなど国境を越えて複数の都市で上映された。"
+          ],
+          "medium": [
+            {
+              "path": "./P_SCL_BEBENTO/capture_screen-video_displayingBebento.png",
+              "type": "image",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 1,
+          "sectionTitle": "コンセプト",
+          "oneLine": "弁当箱のように",
+          "descriptions": [
+            "収納と陳列を素早く。"
+          ],
+          "medium": [
+            {
+              "path": "./P_SCL_BEBENTO/mrnakagawa.png",
+              "type": "image",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 2,
+          "sectionTitle": "背景",
+          "oneLine": "",
+          "descriptions": [
+            "70歳近くになるナカガワさん",
+            "京都市内を移動しながら靴を修理している。",
+            "モノづくりが好きで困難は都度自分で解決してしまう。"
+          ],
+          "medium": [
+            {
+              "path": "./P_SCL_BEBENTO/mrnakagawa.png",
+              "type": "image",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 3,
+          "sectionTitle": "気づかない問題に気付くために",
+          "oneLine": "複数の定点カメラで\n一日中記録観察",
+          "descriptions": [
+            "気づかないで直面している問題を見つけるためにはどうしたら良いだろうか？",
+            "問題の発見というと、どうしても手元に目が行ってしまう。",
+            "状況を俯瞰するための工夫。"
+          ],
+          "medium": [
+            {
+              "path": "./P_SCL_BEBENTO/observes/captureFromFar.mp4",
+              "type": "video",
+              "caption": ""
+            },
+            {
+              "path": "./P_SCL_BEBENTO/observes/captureFromFar2_1.mp4",
+              "type": "video",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 4,
+          "sectionTitle": "使ってもらいながら改良",
+          "oneLine": "",
+          "descriptions": [
+            ""
+          ],
+          "medium": [
+            {
+              "path": "./P_SCL_BEBENTO/prototypes/1.png",
+              "type": "image",
+              "caption": "一つ目の試作品。\nおおきい。もう少しコンパクトにしたい。"
+            },
+            {
+              "path": "./P_SCL_BEBENTO/prototypes/2.png",
+              "type": "image",
+              "caption": "二つ目の試作品。\n陳列したときに中が見えない。少し重たい。"
+            },
+            {
+              "path": "./P_SCL_BEBENTO/prototypes/3.png",
+              "type": "image",
+              "caption": "三つめの試作品。\n穴を空けて軽量化。ただし、壊れやすい。"
+            },
+            {
+              "path": "./P_SCL_BEBENTO/prototypes/testing1.mp4",
+              "type": "video",
+              "caption": ""
+            },
+            {
+              "path": "./P_SCL_BEBENTO/prototypes/testing2.mp4",
+              "type": "video",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 5,
+          "sectionTitle": "ドキュメンタリー制作",
+          "oneLine": "",
+          "descriptions": [
+            ""
+          ],
+          "medium": [
+            {
+              "path": "./P_SCL_BEBENTO/captures_binded/1.png",
+              "type": "image",
+              "caption": ""
+            },
+            {
+              "path": "./P_SCL_BEBENTO/captures_binded/2.png",
+              "type": "image",
+              "caption": ""
+            },
+            {
+              "path": "./P_SCL_BEBENTO/captures_binded/3.png",
+              "type": "image",
+              "caption": ""
+            },
+            {
+              "path": "./P_SCL_BEBENTO/captures_binded/4.png",
+              "type": "image",
+              "caption": ""
+            }
+          ]
+        }
+      ],
+      "description": "私たちのチーム（工藤外四、中山うらら、八木まどか、Ah Hyoen Kim）は、京都市内を移動しながら靴の修理をおこなうナカガワミチオ氏をパートナーに、民俗学的調査と密着取材の協力を得て、ナカガワ氏が移動した場所で効率的かつ迅速に仕事場とディスプレイのセットアップを可能にする方法の開発に取り組んだ。解決策として、日本のお弁当箱をベースに、セットアップの時間を大幅に短縮できるボックスセットをデザインすることにした。\nこのボックスセットはFixpertsを代表する作品の一つとして選出され、Paola Antonelliがキュレーターを務める「Broken Nature:the XXII triennale di milano, Italy」に展示された。\nまた、本プロジェクトを一本の映像にまとめたドキュメンタリーフィルムは「Real To Reel 2019, Crafts Council, UK」、「RCA Helen Hamlyn Fixperts Award 2018, UK」、「Nordic Makers' Film Festival, Kristinestad, Finland」、「Cinewaves Films, Saudi Arabia」に選出されヨーロッパをはじめ、サウジアラビアなど国境を越えて複数の都市で上映された。"
+    },
+    {
+      "id": 6,
+      "asUrl": "Bush_Look_Bag",
+      "year":2021,
+      "title": "草むらになるゴミ袋",
+      "subtitle": "ゴミ捨て場を青々とした茂みに変えるゴミ袋",
+      "oneLine": "明日を生きる幸福のために",
+      "keywords": [
+        "ビッグデータ",
+        "都市空間",
+        "感情"
+      ],
+      "mentions": [
+        "指導教員 : Frank Kolkman",
+        "銀賞 : RCA Helen Hamlyn Fixperts Award 2018, United Kingdom",
+        "選出展示 : Broken Nature Show @ XX11 Milano Triennale 2019, Italy",
+        "選出上映 : Real To Reel 2019, by Crafts Council, United Kingdom",
+        "選出上映 : Nordic Makers' Film Festival, Kristinestad, Finland",
+        "選出上映 : Cinewaves Films 2020, Saudi Arabia"
+      ],
+      "bannar": {
+        "path": "./P_SCL_BEBENTO/capture_screen-video.jpg",
+        "bVideo": false
+      },
+      "sections": [
+        {
+          "sectionId": 0,
+          "sectionTitle": "ドキュメンタリーをご覧ください",
+          "oneLine": "",
+          "descriptions": [
+            ""
+          ],
+          "medium": [
+            {
+              "path": "https://www.youtube.com/embed/Se5VDiULb5M",
+              "type": "youtube",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 1,
+          "sectionTitle": "完成プロタクト",
+          "oneLine": "開店時間を従来の25%短縮",
+          "descriptions": [
+            "私たちのチーム（工藤外四、中山うらら、八木まどか、Ah Hyoen Kim）は、京都市内を移動しながら靴の修理をおこなうナカガワミチオ氏をパートナーに、民俗学的調査と密着取材の協力を得て、ナカガワ氏が移動した場所で効率的かつ迅速に仕事場とディスプレイのセットアップを可能にする方法の開発に取り組んだ。解決策として、日本のお弁当箱をベースに、セットアップの時間を大幅に短縮できるボックスセットをデザインすることにした。",
+            "このボックスセットは\"Fixperts\"と呼ばれる活動を代表する作品の一つとして選出され、Paola Antonelliがキュレーターを務める「Broken Nature:the XXII triennale di milano, Italy」に展示された。",
+            "また、本プロジェクトを一本の映像にまとめたドキュメンタリーフィルムは「Real To Reel 2019, Crafts Council, UK」、「RCA Helen Hamlyn Fixperts Award 2018, UK」、「Nordic Makers' Film Festival, Kristinestad, Finland」、「Cinewaves Films, Saudi Arabia」に選出されヨーロッパをはじめ、サウジアラビアなど国境を越えて複数の都市で上映された。"
+          ],
+          "medium": [
+            {
+              "path": "./P_SCL_BEBENTO/capture_screen-video_displayingBebento.png",
+              "type": "image",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 1,
+          "sectionTitle": "コンセプト",
+          "oneLine": "弁当箱のように",
+          "descriptions": [
+            "収納と陳列を素早く。"
+          ],
+          "medium": [
+            {
+              "path": "./P_SCL_BEBENTO/mrnakagawa.png",
+              "type": "image",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 2,
+          "sectionTitle": "背景",
+          "oneLine": "",
+          "descriptions": [
+            "70歳近くになるナカガワさん",
+            "京都市内を移動しながら靴を修理している。",
+            "モノづくりが好きで困難は都度自分で解決してしまう。"
+          ],
+          "medium": [
+            {
+              "path": "./P_SCL_BEBENTO/mrnakagawa.png",
+              "type": "image",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 3,
+          "sectionTitle": "気づかない問題に気付くために",
+          "oneLine": "複数の定点カメラで\n一日中記録観察",
+          "descriptions": [
+            "気づかないで直面している問題を見つけるためにはどうしたら良いだろうか？",
+            "問題の発見というと、どうしても手元に目が行ってしまう。",
+            "状況を俯瞰するための工夫。"
+          ],
+          "medium": [
+            {
+              "path": "./P_SCL_BEBENTO/observes/captureFromFar.mp4",
+              "type": "video",
+              "caption": ""
+            },
+            {
+              "path": "./P_SCL_BEBENTO/observes/captureFromFar2_1.mp4",
+              "type": "video",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 4,
+          "sectionTitle": "使ってもらいながら改良",
+          "oneLine": "",
+          "descriptions": [
+            ""
+          ],
+          "medium": [
+            {
+              "path": "./P_SCL_BEBENTO/prototypes/1.png",
+              "type": "image",
+              "caption": "一つ目の試作品。\nおおきい。もう少しコンパクトにしたい。"
+            },
+            {
+              "path": "./P_SCL_BEBENTO/prototypes/2.png",
+              "type": "image",
+              "caption": "二つ目の試作品。\n陳列したときに中が見えない。少し重たい。"
+            },
+            {
+              "path": "./P_SCL_BEBENTO/prototypes/3.png",
+              "type": "image",
+              "caption": "三つめの試作品。\n穴を空けて軽量化。ただし、壊れやすい。"
+            },
+            {
+              "path": "./P_SCL_BEBENTO/prototypes/testing1.mp4",
+              "type": "video",
+              "caption": ""
+            },
+            {
+              "path": "./P_SCL_BEBENTO/prototypes/testing2.mp4",
+              "type": "video",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 5,
+          "sectionTitle": "ドキュメンタリー制作",
+          "oneLine": "",
+          "descriptions": [
+            ""
+          ],
+          "medium": [
+            {
+              "path": "./P_SCL_BEBENTO/captures_binded/1.png",
+              "type": "image",
+              "caption": ""
+            },
+            {
+              "path": "./P_SCL_BEBENTO/captures_binded/2.png",
+              "type": "image",
+              "caption": ""
+            },
+            {
+              "path": "./P_SCL_BEBENTO/captures_binded/3.png",
+              "type": "image",
+              "caption": ""
+            },
+            {
+              "path": "./P_SCL_BEBENTO/captures_binded/4.png",
+              "type": "image",
+              "caption": ""
+            }
+          ]
+        }
+      ],
+      "description": "私たちのチーム（工藤外四、中山うらら、八木まどか、Ah Hyoen Kim）は、京都市内を移動しながら靴の修理をおこなうナカガワミチオ氏をパートナーに、民俗学的調査と密着取材の協力を得て、ナカガワ氏が移動した場所で効率的かつ迅速に仕事場とディスプレイのセットアップを可能にする方法の開発に取り組んだ。解決策として、日本のお弁当箱をベースに、セットアップの時間を大幅に短縮できるボックスセットをデザインすることにした。\nこのボックスセットはFixpertsを代表する作品の一つとして選出され、Paola Antonelliがキュレーターを務める「Broken Nature:the XXII triennale di milano, Italy」に展示された。\nまた、本プロジェクトを一本の映像にまとめたドキュメンタリーフィルムは「Real To Reel 2019, Crafts Council, UK」、「RCA Helen Hamlyn Fixperts Award 2018, UK」、「Nordic Makers' Film Festival, Kristinestad, Finland」、「Cinewaves Films, Saudi Arabia」に選出されヨーロッパをはじめ、サウジアラビアなど国境を越えて複数の都市で上映された。"
     }
   ]
 }

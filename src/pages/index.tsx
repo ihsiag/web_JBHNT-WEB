@@ -15,7 +15,7 @@ const Page_Home: NextPage<PageProps_Minimal> = () => {
   return (
     <>
       <PA_Layout noPadding={true}>
-        <SE_Layout fill={true}>
+        <SE_Layout fill={false}>
         <>
         <div className="component">
           <Link href="projects">
@@ -36,10 +36,11 @@ const Page_Home: NextPage<PageProps_Minimal> = () => {
         
         .canvas{
           width:100%;
-          height:100vh;
           position:absolute;
-          z-index:-1;
+          z-index:1;
           /* background-color:green; */
+          height:${THEMES.blockUnits.xl};
+          top:${THEMES.blockUnits.l};
         }
       `}</style>
     </>

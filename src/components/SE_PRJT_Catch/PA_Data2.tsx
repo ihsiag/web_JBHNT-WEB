@@ -11,7 +11,7 @@ return(
       <div className="component">
         <ul className="dataBlocks">
           <li className="dataBlock year">
-            <p>2017,</p>
+            <p>{data2.year},</p>
           </li>
           <li className="dataBlock oneLine">
             <p>{data2.oneLine},</p>
