@@ -18,33 +18,33 @@ const SE_PRJT_Sections_the_way_we_design = ({ sections }: Props) => {
       <div className="component">
         <SE_LayoutWrap>
           <>
-          <SE_Layout fill={false} center={true}>
-            <InSE_FinalImage section={sections[0]} />
-          </SE_Layout>
-          <SE_Layout fill={false} grid={8}>
-            <InSE_Concept section={sections[1]} />
-          </SE_Layout>
-          <SE_Layout>
-            <InSE_Background section={sections[2]} />
-          </SE_Layout>
-          <SE_Layout fill={false}>
-            <InSE_Idea section={sections[3]} />
-          </SE_Layout>
-          <SE_Layout fill={false}>
-            <InSE_Idea section={sections[4]} />
-          </SE_Layout>
-          <SE_Layout fill={false}>
-            <InSE_Idea section={sections[5]} />
-          </SE_Layout>
-          <SE_Layout fill={false}>
-            <InSE_Idea section={sections[6]} />
-          </SE_Layout>
-          <SE_Layout fill={false}>
-            <InSE_Prototyping_StoolStructure section={sections[7]} />
-          </SE_Layout>
-          <SE_Layout fill={false}>
-            <InSE_Demos section={sections[8]} />
-          </SE_Layout>
+            <SE_Layout fill={false} center={true}>
+              <InSE_FinalImage section={sections[0]} />
+            </SE_Layout>
+            <SE_Layout fill={false} grid={8}>
+              <InSE_Concept section={sections[1]} />
+            </SE_Layout>
+            <SE_Layout>
+              <InSE_Background section={sections[2]} />
+            </SE_Layout>
+            <SE_Layout fill={false}>
+              <InSE_Research section={sections[3]} />
+            </SE_Layout>
+            <SE_Layout fill={false}>
+              <InSE_Humanity section={sections[4]} />
+            </SE_Layout>
+            {/* <SE_Layout fill={false}>
+              <InSE_Idea section={sections[5]} />
+            </SE_Layout> */}
+            {/* <SE_Layout fill={false}>
+              <InSE_Idea section={sections[6]} />
+            </SE_Layout> */}
+            <SE_Layout fill={false}>
+              <InSE_Prototyping_StoolStructure section={sections[7]} />
+            </SE_Layout>
+            <SE_Layout fill={false}>
+              <InSE_Demos section={sections[8]} />
+            </SE_Layout>
           </>
         </SE_LayoutWrap>
       </div>
@@ -76,9 +76,7 @@ const InSE_FinalImage = ({ section }: PropsInSE) => {
   return (
     <>
       <div className="component">
-        <div className="area-title">
-          {/* <PA_SectionTitle title={section.sectionTitle} /> */}
-        </div>
+        <div className="area-title">{/* <PA_SectionTitle title={section.sectionTitle} /> */}</div>
         <div className="area-content">
           <div className="content-image">
             <PA_Image src={section.medium[0].src} ntl={true} />
@@ -108,7 +106,7 @@ const InSE_FinalImage = ({ section }: PropsInSE) => {
         .content-descriptions p {
           font-size: ${THEMES.fontSizes.s};
           font-weight: ${THEMES.fontWeights.n};
-          letter-spacing:${THEMES.letterSpacings.s};
+          letter-spacing: ${THEMES.letterSpacings.s};
         }
 
         .content-descriptions p::first-letter {
@@ -116,12 +114,12 @@ const InSE_FinalImage = ({ section }: PropsInSE) => {
           font-weight: ${THEMES.fontWeights.b};
         }
 
-        .content-image{
-          padding-bottom:${THEMES.gaps.m};
+        .content-image {
+          padding-bottom: ${THEMES.gaps.m};
         }
 
-        .content-oneLine{
-          padding-bottom:${THEMES.gaps.m};
+        .content-oneLine {
+          padding-bottom: ${THEMES.gaps.m};
         }
 
         .content-descriptions {
@@ -130,9 +128,9 @@ const InSE_FinalImage = ({ section }: PropsInSE) => {
           gap: ${THEMES.gaps.l};
         }
 
-        .content-descriptions li{
-          border-top:2px solid ${THEMES.colors.accent.gray};
-          padding-top:${THEMES.gaps.s};
+        .content-descriptions li {
+          border-top: 2px solid ${THEMES.colors.accent.gray};
+          padding-top: ${THEMES.gaps.s};
         }
       `}</style>
     </>
@@ -181,8 +179,8 @@ const InSE_Concept = ({ section }: PropsInSE) => {
 
         .area-content {
           display: grid;
-          grid-template-columns:repeat(4,1fr);
-          gap:${THEMES.gaps.m};
+          grid-template-columns: repeat(4, 1fr);
+          gap: ${THEMES.gaps.m};
         }
 
         .content-visual {
@@ -211,111 +209,172 @@ const InSE_Background = ({ section }: PropsInSE) => {
   return (
     <>
       <div className="component">
-        <div className="outerarea-text">
-          <div className="area-title">
-            <PA_SectionTitle title={section.sectionTitle} noPadding={false} />
-          </div>
-          <ul className="area-descs">
-            {section.descriptions.map((desc, _i) => {
-              return (
-                <li className={(section.descriptions.length-1) == _i?"strong":""}key={`InSE_Background_${_i}`}>
-                  <p>{desc}</p>
-                </li>
-              );
-            })}
-          </ul>
+        <div className="area-title">
+          <PA_SectionTitle title={section.sectionTitle} noPadding={false} />
         </div>
-        <div className="outerarea-visual">
-          <PA_Image src={section.medium[0].src} />
+        <div className="flex">
+          <div className="block">
+            <div className="oneLine">
+              <p>{section.oneLine}</p>
+            </div>
+            <ul className="descs">
+              {section.descriptions.map((desc, _i) => {
+                return (
+                  <li className={section.descriptions.length - 1 == _i ? "strong" : ""} key={`InSE_Background_${_i}`}>
+                    <p>{desc}</p>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className="visual">
+            <PA_Image src={section.medium[0].src} ntl={true} />
+          </div>
         </div>
       </div>
       <style jsx>{`
-        .component {
-          display:grid;
-          grid-template-columns:repeat(8,1fr);
-          gap:${THEMES.gaps.xl};
-        }
-
-        .outerarea-visual{
-          grid-column-start: 6;
-          grid-column-end: 9;
-          position:relative;
-          padding-top:100%;
-        }
-
-        .outerarea-text{
-          grid-column-start: 1;
-          grid-column-end: 6;
-        }
-
-        .area-descs p {
+        .descs p {
           font-size: ${THEMES.fontSizes.m};
           font-weight: ${THEMES.fontWeights.n};
         }
 
-        .strong p {
+        .oneLine p {
           font-size: ${THEMES.fontSizes.xl};
           font-weight: ${THEMES.fontWeights.b};
+        }
+
+        .component {
+        }
+
+        .visual {
+          width: 60%;
+        }
+
+        .block {
+          flex:1;
+        }
+
+        .flex {
+          display: flex;
         }
       `}</style>
     </>
   );
 };
 
-const InSE_Idea = ({ section }: PropsInSE) => {
+const InSE_Research = ({ section }: PropsInSE) => {
   return (
     <>
       <div className="component">
         <div className="area-title">
           <PA_SectionTitle title={section.sectionTitle} noPadding={false} />
         </div>
-        <div className="area-content">
-          
-          <div className="content-image">
-            {/* <PA_Image src={section.medium[0].src} ntl ={true}/> */}
+        <div className="flex">
+          <div className="image">
+            <PA_Image src={section.medium[0].src} ntl={true} />
           </div>
-          <div className="content-oneLine">
+          <div className="block">
+          <div className="oneLine">
             <p>{section.oneLine}</p>
           </div>
-          <div className="content-descs">
+          <div className="descs">
             {section.descriptions.map((desc, _i) => (
               <p key={`InSE_Idea_content_desc_${_i}`}>{desc}</p>
             ))}
           </div>
         </div>
+        </div>
       </div>
       <style jsx>{`
-        .component {
-        }
-
-        .area-content {
-          /* height:100%; */
-        }
-
-        .content-oneLine P {
+        .oneLine P {
           font-size: ${THEMES.fontSizes.xl};
           font-weight: ${THEMES.fontWeights.b};
         }
 
-        .content-descs p {
+        .descs p {
           font-size: ${THEMES.fontSizes.m};
           font-weight: ${THEMES.fontWeights.n};
         }
 
-        .content-videos {
+        .component {
+        }
+
+        .flex{
+          display:flex;
+        }
+
+        .content {
+          /* height:100%; */
+        }
+
+        .videos {
           display: grid;
           grid-template-columns: repeat(8, 1fr);
           gap: ${THEMES.gaps.m};
         }
+      `}</style>
+    </>
+  );
+};
 
-        .video1 {
-          grid-column-start: 1;
-          grid-column-end: 5;
+const InSE_Humanity = ({ section }: PropsInSE) => {
+  return (
+    <>
+      <div className="component">
+        <div className="area-title">
+          <PA_SectionTitle title={section.sectionTitle} noPadding={false} />
+        </div>
+        <div className="flex">
+          <div className="block">
+          <div className="image">
+            <PA_Image src={section.medium[0].src} ntl={true} />
+          </div>
+          <div className="image">
+            <PA_Image src={section.medium[1].src} ntl={true} />
+          </div>
+          <div className="image">
+            <PA_Image src={section.medium[2].src} ntl={true} />
+          </div>
+          </div>
+          
+          <div className="block">
+          <div className="oneLine">
+            <p>{section.oneLine}</p>
+          </div>
+          <div className="descs">
+            {section.descriptions.map((desc, _i) => (
+              <p key={`InSE_Idea_content_desc_${_i}`}>{desc}</p>
+            ))}
+          </div>
+        </div>
+        </div>
+      </div>
+      <style jsx>{`
+        .oneLine P {
+          font-size: ${THEMES.fontSizes.xl};
+          font-weight: ${THEMES.fontWeights.b};
         }
 
-        .video2 {
-          grid-column-start: 5;
-          grid-column-end: 9;
+        .descs p {
+          font-size: ${THEMES.fontSizes.m};
+          font-weight: ${THEMES.fontWeights.n};
+        }
+
+        .component {
+        }
+
+        .flex{
+          display:flex;
+        }
+
+        .content {
+          /* height:100%; */
+        }
+
+        .videos {
+          display: grid;
+          grid-template-columns: repeat(8, 1fr);
+          gap: ${THEMES.gaps.m};
         }
       `}</style>
     </>
@@ -341,18 +400,18 @@ const InSE_Prototyping_StoolStructure = ({ section }: PropsInSE) => {
         </div>
         <div className="area-content">
           <div className="content-images">
-            {section.medium.map((media,_i)=>
-            <>
-            <div className="content-image" key={`InSE_Prototyping_Media_${_i}`}>
-              <PA_Image src={media.src} abs={true} objectFit="cover"/>
-            </div>
-            {(_i+1)%_columnNum !== 0 && _i+1 !== section.medium.length&&
-              <div className="content-image arrow"key={`InSE_Prototyping_Arrow_${_i}`}>
-                <SVG_ARROW_Transition/>
-              </div>  
-            }
-            </>
-            )}
+            {section.medium.map((media, _i) => (
+              <>
+                <div className="content-image" key={`InSE_Prototyping_Media_${_i}`}>
+                  <PA_Image src={media.src} abs={true} objectFit="cover" />
+                </div>
+                {(_i + 1) % _columnNum !== 0 && _i + 1 !== section.medium.length && (
+                  <div className="content-image arrow" key={`InSE_Prototyping_Arrow_${_i}`}>
+                    <SVG_ARROW_Transition />
+                  </div>
+                )}
+              </>
+            ))}
           </div>
         </div>
       </div>
@@ -360,21 +419,21 @@ const InSE_Prototyping_StoolStructure = ({ section }: PropsInSE) => {
         .component {
         }
 
-        .content-images{
-          display:grid;
+        .content-images {
+          display: grid;
           grid-template-columns: ${_makeGrid()};
-          gap: ${THEMES.gaps.xl} ${THEMES.gaps.m}; 
+          gap: ${THEMES.gaps.xl} ${THEMES.gaps.m};
         }
 
-        .content-image{
-          position:relative;
-          padding-top:100%;
+        .content-image {
+          position: relative;
+          padding-top: 100%;
           /* background-color:green; */
         }
 
-        .arrow{
-          display:grid;
-          align-items:center;
+        .arrow {
+          display: grid;
+          align-items: center;
         }
       `}</style>
     </>
@@ -391,10 +450,10 @@ const InSE_Demos = ({ section }: PropsInSE) => {
         <div className="area-content">
           <div className="content-videos">
             <div className="video1">
-              <PA_Video src={section.medium[0].src}/>
+              <PA_Video src={section.medium[0].src} />
             </div>
             <div className="video2">
-              <PA_Video src={section.medium[1].src}/>
+              <PA_Video src={section.medium[1].src} />
             </div>
           </div>
         </div>

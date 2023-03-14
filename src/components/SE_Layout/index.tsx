@@ -26,7 +26,7 @@ const SE_Layout = ({children, fill, center, grid, gap, noPadding}: Props) => {
 
         @media screen and (max-width: 1366px) {
           .component {
-            width: ${fill ? "100%" : "900px"};
+            /* width: ${fill ? "100%" : "900px"}; */
           }
         }
 
