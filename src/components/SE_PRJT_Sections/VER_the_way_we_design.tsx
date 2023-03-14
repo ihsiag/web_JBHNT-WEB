@@ -31,10 +31,19 @@ const SE_PRJT_Sections_the_way_we_design = ({ sections }: Props) => {
             <InSE_Idea section={sections[3]} />
           </SE_Layout>
           <SE_Layout fill={false}>
-            <InSE_Prototyping_StoolStructure section={sections[4]} />
+            <InSE_Idea section={sections[4]} />
           </SE_Layout>
           <SE_Layout fill={false}>
-            <InSE_Demos section={sections[5]} />
+            <InSE_Idea section={sections[5]} />
+          </SE_Layout>
+          <SE_Layout fill={false}>
+            <InSE_Idea section={sections[6]} />
+          </SE_Layout>
+          <SE_Layout fill={false}>
+            <InSE_Prototyping_StoolStructure section={sections[7]} />
+          </SE_Layout>
+          <SE_Layout fill={false}>
+            <InSE_Demos section={sections[8]} />
           </SE_Layout>
           </>
         </SE_LayoutWrap>
@@ -202,31 +211,51 @@ const InSE_Background = ({ section }: PropsInSE) => {
   return (
     <>
       <div className="component">
-        <div className="area-title">
-          <PA_SectionTitle title={section.sectionTitle} noPadding={false} />
-        </div>
-        <div className="area-content">
-          <ul className="content-descs">
+        <div className="outerarea-text">
+          <div className="area-title">
+            <PA_SectionTitle title={section.sectionTitle} noPadding={false} />
+          </div>
+          <ul className="area-descs">
             {section.descriptions.map((desc, _i) => {
               return (
-                <li key={`InSE_Background_${_i}`}>
-                  <p>- {desc}</p>
+                <li className={(section.descriptions.length-1) == _i?"strong":""}key={`InSE_Background_${_i}`}>
+                  <p>{desc}</p>
                 </li>
               );
             })}
           </ul>
         </div>
+        <div className="outerarea-visual">
+          <PA_Image src={section.medium[0].src} />
+        </div>
       </div>
       <style jsx>{`
         .component {
+          display:grid;
+          grid-template-columns:repeat(8,1fr);
+          gap:${THEMES.gaps.xl};
         }
 
-        .content-descs p {
-          font-size: ${THEMES.fontSizes.l};
+        .outerarea-visual{
+          grid-column-start: 6;
+          grid-column-end: 9;
+          position:relative;
+          padding-top:100%;
+        }
+
+        .outerarea-text{
+          grid-column-start: 1;
+          grid-column-end: 6;
+        }
+
+        .area-descs p {
+          font-size: ${THEMES.fontSizes.m};
+          font-weight: ${THEMES.fontWeights.n};
+        }
+
+        .strong p {
+          font-size: ${THEMES.fontSizes.xl};
           font-weight: ${THEMES.fontWeights.b};
-        }
-
-        .area-content {
         }
       `}</style>
     </>
@@ -241,6 +270,10 @@ const InSE_Idea = ({ section }: PropsInSE) => {
           <PA_SectionTitle title={section.sectionTitle} noPadding={false} />
         </div>
         <div className="area-content">
+          
+          <div className="content-image">
+            {/* <PA_Image src={section.medium[0].src} ntl ={true}/> */}
+          </div>
           <div className="content-oneLine">
             <p>{section.oneLine}</p>
           </div>
@@ -248,9 +281,6 @@ const InSE_Idea = ({ section }: PropsInSE) => {
             {section.descriptions.map((desc, _i) => (
               <p key={`InSE_Idea_content_desc_${_i}`}>{desc}</p>
             ))}
-          </div>
-          <div className="content-image">
-            <PA_Image src={section.medium[0].src} ntl ={true}/>
           </div>
         </div>
       </div>
@@ -263,7 +293,7 @@ const InSE_Idea = ({ section }: PropsInSE) => {
         }
 
         .content-oneLine P {
-          font-size: ${THEMES.fontSizes.l};
+          font-size: ${THEMES.fontSizes.xl};
           font-weight: ${THEMES.fontWeights.b};
         }
 

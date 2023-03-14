@@ -2,9 +2,10 @@ import * as THEMES from "src/styles/theme";
 
 type Props = {
   defaultColor?:string;
+  rotate?:string;
   abs?:boolean;
 }
-const SVG_ARROW_Transition = ({defaultColor,abs}:Props) =>{
+const SVG_ARROW_Transition = ({defaultColor,rotate,abs}:Props) =>{
   return(
   <>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
@@ -17,6 +18,7 @@ const SVG_ARROW_Transition = ({defaultColor,abs}:Props) =>{
     svg{
       ${abs?"position:absolute;\ntop:0;\nleft:0;":""}
       width:100%;
+      ${rotate?`transform:rotate(${rotate}deg);`:""}
     }
     path,circle{
       width:100%;

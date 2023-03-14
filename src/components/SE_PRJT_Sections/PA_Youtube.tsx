@@ -3,12 +3,13 @@ import * as THEMES from "src/styles/theme";
 
 type Props ={
   src:string;
+  r?:string;
 }
 
-const PA_Youtube = ({src}:Props)=>{
+const PA_Youtube = ({src,r}:Props)=>{
   return(
   <>
-    <ST_YOUTUBE r={THEMES.rs.s}>
+    <ST_YOUTUBE r={r?r:THEMES.rs.s}>
     <iframe 
       className="youtube"
       width="560"

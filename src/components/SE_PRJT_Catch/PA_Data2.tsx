@@ -1,5 +1,6 @@
 import * as THEMES from "src/styles/theme";
 import { T_PRJT_DATA2 } from "src/types";
+import PA_Circle from "../PA_Circle";
 
 type Props ={
   data2:T_PRJT_DATA2;
@@ -9,18 +10,20 @@ const PA_Data2 = ({data2}:Props)=>{
 return(
 <>
       <div className="component">
-        <ul className="dataBlocks">
-          <li className="dataBlock year">
-            <p>{data2.year},</p>
+        <ul className="blocks">
+          <li className="block year">
+            {/* <p>{data2.year},</p> */}
+            <p>-</p>
           </li>
-          <li className="dataBlock oneLine">
-            <p>{data2.oneLine},</p>
+          <li className="block oneLine">
+            {/* <p>{data2.oneLine},</p> */}
+            <p>-</p>
           </li>
-          <li className="dataBlock keywords">
+          <li className="block keywords">
             {data2.keywords.map((keyword, index) => (
               <div  className="keyword" key={`parts_projects_projectContainer_keyword_${index}`}>
-                <p className="text">● {keyword.toUpperCase()}</p>
-                <p className="splitter">,</p>
+                <div className="circle"><PA_Circle _circleSize={THEMES.blockUnits.xs} _fontSize={THEMES.fontSizes.s} _fontWeight={THEMES.fontWeights.b} _noFill={true} _fillColor={THEMES.colors.accent.red} _strokeWidth={THEMES.gaps.s} _strokeColor={THEMES.colors.accent.red}>{keyword.charAt(0)}</PA_Circle></div>
+                <div className="text"> <p>{keyword}</p></div>
               </div>
             ))}
           </li>
@@ -44,11 +47,10 @@ return(
         }
 
         .keyword p{
-          font-size: ${THEMES.fontSizes.s};
+          font-size: ${THEMES.fontSizes.m};
           font-weight: ${THEMES.fontWeights.n};
-          padding-right: ${THEMES.gaps.xs};
         }
-        .dataBlocks {
+        .blocks {
           width: 100%;
           height: 100%;
           padding: ${THEMES.gaps.m};
@@ -66,13 +68,20 @@ return(
 
 
         .keywords{
-          display: flex;
-          flex-wrap: wrap;
+          display: grid;
+          grid-template-columns:repeat(3,1fr);
+          gap:${THEMES.gaps.m};
         }
 
-        .keyword{
-          display: flex;
-          width: fit-content;
+        .keyword > div{
+          display:flex;
+          flex-direction:column;
+          align-items:center;
+          /* background-color:green; */
+        }
+
+        .keyword .circle{
+          padding-bottom:${THEMES.gaps.m};
         }
       `}</style>
     </>

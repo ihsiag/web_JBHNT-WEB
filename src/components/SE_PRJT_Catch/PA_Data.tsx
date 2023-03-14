@@ -1,5 +1,6 @@
 import { T_PRJT_DATA } from "src/types";
 import * as THEMES from "src/styles/theme";
+import PA_Circle from "../PA_Circle";
 
 type Props ={
   data:T_PRJT_DATA;
@@ -9,16 +10,26 @@ const PA_Data = ({data}:Props)=>{
 return(
 <>
       <div className="component">
-        <ul className="dataBlocks">
-          <li className="dataBlock title">
-            <p>{data.title.length > 0 ? data.title : "---"}</p>
+        <ul className="blocks">
+          <li className="block title">
+            <p>{data.title}</p>
           </li>
-          <li className="dataBlock oneLine">
+          <li className="block oneLine">
             <p>{data.subtitle}</p>
           </li>
-          <li className="dataBlock mentions">
+          <li className="block mentions">
+            {/* {data.mentions.map((mention, _i) => (
+              <div className="mention" key={`PA_Data_${_i}`}>
+                <div className="circle">
+                  <PA_Circle _circleSize={THEMES.fontSizes.s} _lineHeight ={"1"} _color={THEMES.colors.accent.yellow}/>
+                  </div>
+                <p>{mention}</p>
+              </div> 
+            ))} */}
             {data.mentions.map((mention, _i) => (
-              <p className="mention" key={`project_inParts_desc_${_i}`}>- {mention}</p>
+              <div className="mention" key={`PA_Data_${_i}`}>
+                <p>- {mention}</p>
+              </div> 
             ))}
           </li>
         </ul>
@@ -35,7 +46,8 @@ return(
         .mentions p {
           font-size: ${THEMES.fontSizes.s};
         }
-        .dataBlocks {
+        
+        .blocks {
           padding:${THEMES.gaps.m};
         }
         
@@ -46,11 +58,25 @@ return(
           padding-bottom: ${THEMES.gaps.l};
         }
         .mentions{
+
         }
 
         .mention{
-          margin-bottom:${THEMES.gaps.xxs};
+          display:flex;
           background-color:${THEMES.colors.accent.yellow};
+          margin-bottom:${THEMES.gaps.xxs};
+        }
+
+        .circle{
+          width:calc(${THEMES.fontSizes.s} * 1.6);
+          width:${THEMES.fontSizes.s};
+          /* width:fit-content; */
+          display:grid;
+          align-items:center;
+        }
+
+        .text{
+          flex:1;
         }
       `}</style>
     </>

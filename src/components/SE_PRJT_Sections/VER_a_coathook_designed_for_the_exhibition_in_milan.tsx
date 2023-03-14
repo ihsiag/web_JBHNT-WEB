@@ -21,11 +21,8 @@ const SE_PRJT_Sections_a_coathook_designed_for_the_exhibition_in_Milan = ({ sect
             <SE_Layout fill={false} center={true}>
               <InSE_FinalImage section={sections[0]} />
             </SE_Layout>
-            <SE_Layout fill={false} grid={8}>
-              <>
+            <SE_Layout fill={false}>
                 <InSE_Concept section={sections[1]} />
-                <InSE_Background section={sections[2]} />
-              </>
             </SE_Layout>
             <SE_Layout fill={false}>
               <InSE_Prototyping section={sections[3]} />
@@ -75,6 +72,17 @@ const InSE_FinalImage = ({ section }: PropsInSE) => {
           <div className="content-oneLine">
             <p>{section.oneLine}</p>
           </div>
+          <ul className="content-descriptions">
+            <li>
+              <p>{section.descriptions[0]}</p>
+            </li>
+            <li>
+              <p>{section.descriptions[1]}</p>
+            </li>
+            <li>
+              <p>{section.descriptions[2]}</p>
+            </li>
+          </ul>
         </div>
       </div>
       <style jsx>{`
@@ -110,56 +118,36 @@ const InSE_Concept = ({ section }: PropsInSE) => {
           <PA_SectionTitle title={section.sectionTitle} noPadding={false} />
         </div>
         <div className="area-content">
-          <div className="content-visual">
-            <ST_IMAGE>
-              {/* <Image src={section.medium[0].src} alt={""} quality={100} priority={false} loading={"lazy"} unoptimized={false} layout={"fill"} objectFit={"contain"} blurDataURL="data:image/jpeg;base64," placeholder="blur" /> */}
-            </ST_IMAGE>
+          
+          <div className="content-image">
+            {/* <PA_Image src={section.medium[0].src} ntl ={true}/> */}
           </div>
-          <div className="content-detail">
-            <div className="detail-oneLine">
-              <p>{section.oneLine}</p>
-            </div>
-            <div className="detail-desc">
-              <p>{section.descriptions[0]}</p>
-            </div>
+          <div className="content-oneLine">
+            <p>{section.oneLine}</p>
+          </div>
+          <div className="content-descs">
+            {section.descriptions.map((desc, _i) => (
+              <p key={`InSE_Idea_content_desc_${_i}`}>{desc}</p>
+            ))}
           </div>
         </div>
       </div>
       <style jsx>{`
-        .detail-oneLine p {
-          font-size: ${THEMES.fontSizes.l};
-          font-weight: ${THEMES.fontWeights.b};
-        }
-
-        .detail-desc p {
-          font-size: ${THEMES.fontSizes.m};
-          font-weight: ${THEMES.fontWeights.n};
-        }
-
         .component {
-          grid-column-start: 1;
-          grid-column-end: 5;
         }
 
         .area-content {
-          display: flex;
+          /* height:100%; */
         }
 
-        .content-visual {
-          width: ${THEMES.blockUnits.l};
-          height: ${THEMES.blockUnits.l};
-          background: blue;
+        .content-oneLine P {
+          font-size: ${THEMES.fontSizes.xl};
+          font-weight: ${THEMES.fontWeights.b};
         }
 
-        .content-detail {
-          flex: 1;
-        }
-
-        .detail-oneLine {
-          padding-bottom: ${THEMES.gaps.l};
-        }
-
-        .detail-desc {
+        .content-descs p {
+          font-size: ${THEMES.fontSizes.m};
+          font-weight: ${THEMES.fontWeights.n};
         }
       `}</style>
     </>

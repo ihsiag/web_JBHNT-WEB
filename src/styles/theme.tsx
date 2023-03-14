@@ -62,7 +62,7 @@ export const fontFamilies ={
 
 export const fontSizes={
   xs:"0.8rem",
-  s:"1.25rem",
+  s:"1.3rem",
   m:"1.5rem",//default
   l:"2rem",
   xl:"4rem",

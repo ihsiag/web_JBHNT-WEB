@@ -41,11 +41,11 @@
           ]
         },
         {
-          "sectionId": 1,
+          "sectionId": 0,
           "sectionTitle": "完成プロタクト",
           "oneLine": "開店時間を従来の25%短縮",
           "descriptions": [
-            "私たちのチーム（工藤外四、中山うらら、八木まどか、Ah Hyoen Kim）は、京都市内を移動しながら靴の修理をおこなうナカガワミチオ氏をパートナーに、民俗学的調査と密着取材の協力を得て、ナカガワ氏が移動した場所で効率的かつ迅速に仕事場とディスプレイのセットアップを可能にする方法の開発に取り組んだ。解決策として、日本のお弁当箱をベースに、セットアップの時間を大幅に短縮できるボックスセットをデザインすることにした。",
+            "私たちのチームは、京都市内を移動しながら靴の修理をおこなうナカガワミチオ氏をパートナーに、民俗学的調査と密着取材の協力を得て、ナカガワ氏が移動した場所で効率的かつ迅速に仕事場とディスプレイのセットアップを可能にする方法の開発に取り組んだ。解決策として、日本のお弁当箱をベースに、セットアップの時間を大幅に短縮できるボックスセットをデザインすることにした。",
             "このボックスセットは\"Fixperts\"と呼ばれる活動を代表する作品の一つとして選出され、Paola Antonelliがキュレーターを務める「Broken Nature:the XXII triennale di milano, Italy」に展示された。",
             "また、本プロジェクトを一本の映像にまとめたドキュメンタリーフィルムは「Real To Reel 2019, Crafts Council, UK」、「RCA Helen Hamlyn Fixperts Award 2018, UK」、「Nordic Makers' Film Festival, Kristinestad, Finland」、「Cinewaves Films, Saudi Arabia」に選出されヨーロッパをはじめ、サウジアラビアなど国境を越えて複数の都市で上映された。"
           ],
@@ -58,26 +58,11 @@
           ]
         },
         {
-          "sectionId": 1,
-          "sectionTitle": "コンセプト",
-          "oneLine": "弁当箱のように",
+          "sectionId": 0,
+          "sectionTitle": "背景 / ターゲット",
+          "oneLine": "気が付かないで直面している課題は無いだろうか？",
           "descriptions": [
-            "収納と陳列を素早く。"
-          ],
-          "medium": [
-            {
-              "path": "./P_SCL_BEBENTO/mrnakagawa.png",
-              "type": "image",
-              "caption": ""
-            }
-          ]
-        },
-        {
-          "sectionId": 2,
-          "sectionTitle": "背景",
-          "oneLine": "",
-          "descriptions": [
-            "70歳近くになるナカガワさん",
+            "ナカガワさんは70歳近くなる靴職人。",
             "京都市内を移動しながら靴を修理している。",
             "モノづくりが好きで困難は都度自分で解決してしまう。"
           ],
@@ -90,7 +75,7 @@
           ]
         },
         {
-          "sectionId": 3,
+          "sectionId": 0,
           "sectionTitle": "気づかない問題に気付くために",
           "oneLine": "複数の定点カメラで\n一日中記録観察",
           "descriptions": [
@@ -100,21 +85,47 @@
           ],
           "medium": [
             {
-              "path": "./P_SCL_BEBENTO/observes/captureFromFar.mp4",
-              "type": "video",
-              "caption": ""
-            },
-            {
-              "path": "./P_SCL_BEBENTO/observes/captureFromFar2_1.mp4",
-              "type": "video",
+              "path": "./P_SCL_BEBENTO/mrnakagawa-drawing.png",
+              "type": "image",
               "caption": ""
             }
           ]
         },
         {
-          "sectionId": 4,
-          "sectionTitle": "使ってもらいながら改良",
-          "oneLine": "",
+          "sectionId": 0,
+          "sectionTitle": "発見した課題",
+          "oneLine": "開店準備に時間がかかっている\n短くできるかもしれない",
+          "descriptions": [
+            "毎朝、市内を移動した先々で店を構えるナカガワさんは、車とお店の間を何度も段ボールを抱えて往復している。",
+            "特に、商品の陳列に費やしている時間に目を付けた。この時間を短縮できる工夫があるのではないだろうか？"
+          ],
+          "medium": [
+            {
+            "path": "./P_SCL_BEBENTO/displayingSpentTime.mp4",
+            "type": "video",
+            "caption": ""
+          }]
+        },
+        {
+          "sectionId": 0,
+          "sectionTitle": "コンセプト",
+          "oneLine": "弁当箱のように",
+          "descriptions": [
+            "収納と陳列を素早くコンパクトに。",
+            "商品を一つずつ段ボールから出すのではなく、陳列状態を維持したまま積み重ねて片づけたり取り出したりできるように。"
+          ],
+          "medium": [
+            {
+              "path": "",
+              "type": "image",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 0,
+          "sectionTitle": "プロトタイプ作成",
+          "oneLine": "使ってもらいながら改良を重ねる",
           "descriptions": [
             ""
           ],
@@ -122,32 +133,27 @@
             {
               "path": "./P_SCL_BEBENTO/prototypes/1.png",
               "type": "image",
-              "caption": "一つ目の試作品。\nおおきい。もう少しコンパクトにしたい。"
+              "caption": "おおきい。もう少しコンパクトにしたい。"
             },
             {
               "path": "./P_SCL_BEBENTO/prototypes/2.png",
               "type": "image",
-              "caption": "二つ目の試作品。\n陳列したときに中が見えない。少し重たい。"
+              "caption": "陳列したときに中が見えない。少し重たい。"
             },
             {
               "path": "./P_SCL_BEBENTO/prototypes/3.png",
               "type": "image",
-              "caption": "三つめの試作品。\n穴を空けて軽量化。ただし、壊れやすい。"
+              "caption": "穴を空けて軽量化。ただし、壊れやすい。"
             },
             {
-              "path": "./P_SCL_BEBENTO/prototypes/testing1.mp4",
+              "path": "./P_SCL_BEBENTO/prototypes/04.mp4",
               "type": "video",
-              "caption": ""
-            },
-            {
-              "path": "./P_SCL_BEBENTO/prototypes/testing2.mp4",
-              "type": "video",
-              "caption": ""
+              "caption": "完成の一歩手前。色を塗り、構造をテストした。"
             }
           ]
         },
         {
-          "sectionId": 5,
+          "sectionId": 7,
           "sectionTitle": "ドキュメンタリー制作",
           "oneLine": "",
           "descriptions": [
@@ -176,6 +182,7 @@
             }
           ]
         }
+
       ],
       "description": "私たちのチーム（工藤外四、中山うらら、八木まどか、Ah Hyoen Kim）は、京都市内を移動しながら靴の修理をおこなうナカガワミチオ氏をパートナーに、民俗学的調査と密着取材の協力を得て、ナカガワ氏が移動した場所で効率的かつ迅速に仕事場とディスプレイのセットアップを可能にする方法の開発に取り組んだ。解決策として、日本のお弁当箱をベースに、セットアップの時間を大幅に短縮できるボックスセットをデザインすることにした。\nこのボックスセットはFixpertsを代表する作品の一つとして選出され、Paola Antonelliがキュレーターを務める「Broken Nature:the XXII triennale di milano, Italy」に展示された。\nまた、本プロジェクトを一本の映像にまとめたドキュメンタリーフィルムは「Real To Reel 2019, Crafts Council, UK」、「RCA Helen Hamlyn Fixperts Award 2018, UK」、「Nordic Makers' Film Festival, Kristinestad, Finland」、「Cinewaves Films, Saudi Arabia」に選出されヨーロッパをはじめ、サウジアラビアなど国境を越えて複数の都市で上映された。"
     },
@@ -184,7 +191,7 @@
       "asUrl": "The_Way_We_Design",
       "year":2019,
       "title": "The Way We Design | ファーストコンタクト",
-      "subtitle": "人とコンピューターの共創",
+      "subtitle": "人とコンピューターの共創方法論の開発",
       "oneLine": "ヒトらしさって...?",
       "keywords": [
         "人とコンピューター",
@@ -221,7 +228,7 @@
         {
           "sectionId": 0,
           "sectionTitle": "コンセプト",
-          "oneLine": "「完璧」からの解放",
+          "oneLine": "「完璧」であることからの解放",
           "descriptions": [
             "コンピューターによって正確さから解放された時代の",
             "「ヒトらしい」デザインの方法を模索する。"
@@ -239,8 +246,9 @@
           "sectionTitle": "背景",
           "oneLine": "",
           "descriptions": [
-            "コンピューターの計算能力が向上し、「最適化」の考えが流行。デザインも例外ではない。",
-            "最適化が普及する社会的意義は大きいが、一方でデザインを画一化し、デザインの世界に限界をもたらす可能性がある。私はコンピュータの計算能力を活用するデザインに異なる手法を模索することにした。"
+            "コンピューターの計算能力が向上し、「最適化」というワードが流行した。",
+            "最適化が普及する社会的意義は大きいが、一方でデザインを画一化し、デザインの世界に限界をもたらす可能性もある。",
+            "より幸福な未来へと向かうコンピューターの活用方法はあるだろうか？"
           ],
           "medium": [
             {
@@ -253,7 +261,23 @@
         {
           "sectionId": 0,
           "sectionTitle": "リサーチ / 思索 / 議論",
-          "oneLine": "",
+          "oneLine": "キーワードは「癖」",
+          "descriptions": [
+            "コンピューターにとって「ヒトらしい」とはどういうことか様々な分野の文献を調査した。",
+            "時に周りの人を巻き込んで、「もし、ヒトの労働が機械に置き換わったらヒトは何をすると思う..?」など「今、ここ」ではない世界を仮定して思索と議論を楽しんだ。"
+          ],
+          "medium": [
+            {
+              "path": "./P_SCL_THE-WAY-WE-DESIGN/hirotookuda_1.png",
+              "type": "image",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 0,
+          "sectionTitle": "「癖」を探し求めて",
+          "oneLine": "人が描く\"円\"の多様性",
           "descriptions": [
             ""
           ],
@@ -262,7 +286,32 @@
               "path": "./P_SCL_THE-WAY-WE-DESIGN/hirotookuda_1.png",
               "type": "image",
               "caption": ""
-            },
+            }
+          ]
+        },
+        {
+          "sectionId": 0,
+          "sectionTitle": "デザイン手法にまとめる - 1",
+          "oneLine": "描いた円から「癖」をコンピューターで読み取る",
+          "descriptions": [
+            ""
+          ],
+          "medium": [
+            {
+              "path": "./P_SCL_THE-WAY-WE-DESIGN/hirotookuda_1.png",
+              "type": "image",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "sectionId": 0,
+          "sectionTitle": "デザイン手法にまとめる - 2",
+          "oneLine": "「癖」をデザインエレメントに",
+          "descriptions": [
+            ""
+          ],
+          "medium": [
             {
               "path": "./P_SCL_THE-WAY-WE-DESIGN/hirotookuda_1.png",
               "type": "image",
@@ -368,7 +417,7 @@
         {
           "sectionId": 0,
           "sectionTitle": "",
-          "oneLine": "",
+          "oneLine": "生活を支える小さな家具 / ヒトとの関係",
           "descriptions": [
             ""
           ],
@@ -388,9 +437,16 @@
         {
           "sectionId": 1,
           "sectionTitle": "コンセプト",
-          "oneLine": "弁当箱のように",
+          "oneLine": "「いってらっしゃい」「おかえり」",
           "descriptions": [
-            ""
+            "フックにコートが無造作にかけられている。",
+            "人の生活を支えている道具たちが、無関心に使われている。",
+            "どうしたら人に関心を持って使ってもらえるだろうか。",
+            "いくつか身の回りにある無意識に使われがちな道具を考えてみる。",
+            "時計とコートフックをくっつけてみたとき、",
+            "コートをかけたあとも動き続けている時計は生きているようで愛らしかった。",
+            "帰宅すると、出迎えてくれる道具は",
+            "もっと人に関心をもたせることができるんじゃないかと思う。"
           ],
           "medium": [
             {

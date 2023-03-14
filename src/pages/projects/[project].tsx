@@ -50,7 +50,7 @@ const Page_Project: NextPage<Props> = ({project,otherProjects}: Props) => {
             <SE_PRJT_Desc content_md={projectDesc} />
           </SE_Layout> */}
 
-          <SE_Layout>
+          <SE_Layout center={true}>
             <PA_Circle/>
           </SE_Layout>
           
