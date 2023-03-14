@@ -21,9 +21,9 @@ const SE_PRJT_Sections_the_way_we_design = ({ sections }: Props) => {
             <SE_Layout fill={false} center={true}>
               <InSE_FinalImage section={sections[0]} />
             </SE_Layout>
-            <SE_Layout fill={false} grid={8}>
+            {/* <SE_Layout fill={false} grid={8}>
               <InSE_Concept section={sections[1]} />
-            </SE_Layout>
+            </SE_Layout> */}
             <SE_Layout>
               <InSE_Background section={sections[2]} />
             </SE_Layout>
@@ -174,7 +174,7 @@ const InSE_Concept = ({ section }: PropsInSE) => {
 
         .component {
           grid-column-start: 1;
-          grid-column-end: 7;
+          grid-column-end: 9;
         }
 
         .area-content {
@@ -212,25 +212,25 @@ const InSE_Background = ({ section }: PropsInSE) => {
         <div className="area-title">
           <PA_SectionTitle title={section.sectionTitle} noPadding={false} />
         </div>
-        <div className="flex">
-          <div className="block">
-            <div className="oneLine">
-              <p>{section.oneLine}</p>
-            </div>
-            <ul className="descs">
-              {section.descriptions.map((desc, _i) => {
-                return (
-                  <li className={section.descriptions.length - 1 == _i ? "strong" : ""} key={`InSE_Background_${_i}`}>
-                    <p>{desc}</p>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-          <div className="visual">
-            <PA_Image src={section.medium[0].src} ntl={true} />
-          </div>
+        <div className="visual">
+          <PA_Image src={section.medium[0].src} abs={true} objectFit={"cover"}/>
         </div>
+        
+        <div className="flex">
+          <div className="oneLine">
+            <p>{section.oneLine}</p>
+          </div>
+          <ul className="descs">
+            {section.descriptions.map((desc, _i) => {
+              return (
+                <li className={section.descriptions.length - 1 == _i ? "strong" : ""} key={`InSE_Background_${_i}`}>
+                  <p>{desc}</p>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        
       </div>
       <style jsx>{`
         .descs p {
@@ -243,19 +243,27 @@ const InSE_Background = ({ section }: PropsInSE) => {
           font-weight: ${THEMES.fontWeights.b};
         }
 
-        .component {
+        .oneLine {
+          width:fit-content;
+          padding-right:${THEMES.gaps.xxl};
+        }
+
+        .descs {
+          flex:1;
+          display:flex;
+          flex-direction:column;
+          justify-content:flex-start;
         }
 
         .visual {
-          width: 60%;
-        }
-
-        .block {
-          flex:1;
+          width: 100%;
+          padding-top:calc(100% * 0.5);
+          position:relative;
         }
 
         .flex {
           display: flex;
+          padding-bottom:${THEMES.gaps.xl};
         }
       `}</style>
     </>
@@ -296,21 +304,24 @@ const InSE_Research = ({ section }: PropsInSE) => {
           font-weight: ${THEMES.fontWeights.n};
         }
 
-        .component {
+        .oneLine{
+          padding-bottom:${THEMES.gaps.xl};
         }
 
         .flex{
           display:flex;
         }
 
-        .content {
-          /* height:100%; */
+        .image{
+          width:60%;
         }
 
-        .videos {
-          display: grid;
-          grid-template-columns: repeat(8, 1fr);
-          gap: ${THEMES.gaps.m};
+        .block{
+          flex:1;
+        }
+
+        .content {
+          /* height:100%; */
         }
       `}</style>
     </>
@@ -324,23 +335,19 @@ const InSE_Humanity = ({ section }: PropsInSE) => {
         <div className="area-title">
           <PA_SectionTitle title={section.sectionTitle} noPadding={false} />
         </div>
-        <div className="flex">
-          <div className="block">
-          <div className="image">
+        <div className="oneLine">
+            <p>{section.oneLine}</p>
+          </div>
+        <div className="image">
             <PA_Image src={section.medium[0].src} ntl={true} />
           </div>
+        <div className="flex">
+          <div className="block">
+          
           <div className="image">
             <PA_Image src={section.medium[1].src} ntl={true} />
           </div>
-          <div className="image">
-            <PA_Image src={section.medium[2].src} ntl={true} />
-          </div>
-          </div>
           
-          <div className="block">
-          <div className="oneLine">
-            <p>{section.oneLine}</p>
-          </div>
           <div className="descs">
             {section.descriptions.map((desc, _i) => (
               <p key={`InSE_Idea_content_desc_${_i}`}>{desc}</p>

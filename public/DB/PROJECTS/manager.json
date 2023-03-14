@@ -240,7 +240,7 @@
         {
           "sectionId": 0,
           "sectionTitle": "背景",
-          "oneLine": "より幸福な未来へと向かうコンピューターの活用方法はあるだろうか？",
+          "oneLine": "より幸福な未来へと向かう\nコンピューターの活用方法は\nあるだろうか？",
           "descriptions": [
             "コンピューターの計算能力が向上し、「最適化」というワードが流行した。",
             "最適化が普及する社会的意義は大きいが、一方でデザインを画一化し、デザインの世界に限界をもたらす可能性もある。"
@@ -278,17 +278,12 @@
           ],
           "medium": [
             {
-              "path": "./P_SCL_THE-WAY-WE-DESIGN/diagrams/4.png",
+              "path": "./P_SCL_THE-WAY-WE-DESIGN/diagrams/45+.png",
               "type": "image",
               "caption": ""
             },
             {
-              "path": "./P_SCL_THE-WAY-WE-DESIGN/diagrams/5.png",
-              "type": "image",
-              "caption": ""
-            },
-            {
-              "path": "./P_SCL_THE-WAY-WE-DESIGN/diagrams/1.png",
+              "path": "./P_SCL_THE-WAY-WE-DESIGN/diagrams/1+.png",
               "type": "image",
               "caption": ""
             }
@@ -451,7 +446,7 @@
             "時計とコートフックをくっつけてみたとき、",
             "コートをかけたあとも動き続けている時計は生きているようで愛らしかった。",
             "帰宅すると、出迎えてくれる道具は",
-            "もっと人に関心をもたせることができるんじゃないかと思う。"
+            "もっと人に関心をもたせることができるのではないかと思う。"
           ],
           "medium": [
             {
